@@ -1,0 +1,58 @@
+.container {
+	
+	width: 1470px !important;
+}
+
+div.hero-unit.awesome.flat {
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+	
+}
+
+
+.testdiv {
+	background: #bbb;
+}
+
+ .nav {
+    margin-left:auto;
+    margin-right:auto;
+    width: 40%;
+}
+      
+.nav {
+    margin-left: 35% !important;
+    width: 30%;    
+}
+
+.nav li {
+ width:25%;   
+}
+
+.pinnedcontent {
+ height: auto;   
+}
+
+.pinnedcontent div {
+}
+
+.awesome {
+    background-color: #b1b1b1;
+    width: auto
+}
+
+.middlebutton {
+    margin-left:40%;
+    width:20%;    
+}
+
+.hero-unit h1 {
+	
+text-shadow: 1px 1px 0px rgb(73, 124, 255);
+}
+
+.hero-unit p{
+	color:#33AAE6;
+	text-shadow: 1px 1px 0px rgb(60, 100, 255);
+}
