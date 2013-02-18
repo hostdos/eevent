@@ -1,0 +1,7 @@
+/app/Config
+/app/tmp
+/vendors
+/build
+/dist
+.DS_Store
+/tags
