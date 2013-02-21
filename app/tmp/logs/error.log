@@ -4072,3 +4072,79 @@ Stack Trace:
 #3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-02-21 19:36:44 Error: [MissingControllerException] Controller class EventController could not be found.
+Exception Attributes: array (
+  'class' => 'EventController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 19:36:53 Error: [MissingControllerException] Controller class EventController could not be found.
+Exception Attributes: array (
+  'class' => 'EventController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 19:36:56 Error: [MissingControllerException] Controller class TeamController could not be found.
+Exception Attributes: array (
+  'class' => 'TeamController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/team
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 19:37:08 Error: [MissingControllerException] Controller class EventController could not be found.
+Exception Attributes: array (
+  'class' => 'EventController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 20:16:37 Error: [MissingControllerException] Controller class EventController could not be found.
+Exception Attributes: array (
+  'class' => 'EventController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 20:25:14 Error: [MissingControllerException] Controller class EventController could not be found.
+Exception Attributes: array (
+  'class' => 'EventController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 20:29:19 Error: [MissingLayoutException] Layout file "C:\xampp\htdocs\eevent_test\app\View\Layouts\bootstrap_frontpage.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\eevent_test\\app\\View\\Layouts\\bootstrap_frontpage.ctp',
+)
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(508): View->_getLayoutFileName('bootstrap_front...')
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(478): View->renderLayout('', 'bootstrap_front...')
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#4 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-21 20:30:38 Error: [MissingControllerException] Controller class TeamController could not be found.
+Exception Attributes: array (
+  'class' => 'TeamController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/team
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

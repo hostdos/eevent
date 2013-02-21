@@ -42,13 +42,15 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 <body>
 
-	<?php echo $this->element('eevent_banner'); ?>
 
 
-	<?php echo $this->element('main_nav'); ?>
+        <div class="container">
+  <?php echo $this->element('eevent_banner'); ?>
 
-	<div class="container">
-		<div class="row-fluid">
+		<div class="row">
+
+        <?php echo $this->element('main_nav'); ?>
+
 			<?php echo $this->Session->flash(); ?>
        <div class="span2">
         <?php echo $this->element('left_sidebar'); ?>

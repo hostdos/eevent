@@ -32,7 +32,7 @@ public $helpers = array('Form', 'Html', 'Js');
 
 
 	function event(){
-		$this->layout = 'bootstrap_frontpage';
+		$this->layout = 'bootstrap';
 
 	}    
 
