@@ -63,7 +63,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
   <div class="container">
       <div class="row-fluid">
- 
+      <?php echo $this->Session->flash(); ?>
+
 
        <div class="span2">
         <?php echo $this->element('left_sidebar'); ?>

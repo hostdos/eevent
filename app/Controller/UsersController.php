@@ -10,10 +10,13 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
 public $helpers = array('Form', 'Html', 'Js');
 
+
 // Login Functionality
 	function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('bootstrap');
+		$this->Auth->allow('event');
+		$this->layout = 'bootstrap';
+
 		
       }
     function login() {
@@ -28,8 +31,8 @@ public $helpers = array('Form', 'Html', 'Js');
 }   
 
 
-	function bootstrap(){
-		$this->layout = 'bootstrap_basic';
+	function event(){
+		$this->layout = 'bootstrap_frontpage';
 
 	}    
 
@@ -65,7 +68,9 @@ public $helpers = array('Form', 'Html', 'Js');
  *
  * @var array
  */
-	public $components = array('Session', 'Auth' => array(
+
+
+	public $components = array('RequestHandler','Session', 'Auth' => array(
         'loginAction' => array(
             'controller' => 'users',
             'action' => 'login',
@@ -123,68 +128,6 @@ public $helpers = array('Form', 'Html', 'Js');
 		$this->set('user', $this->User->find('first', $options));
 	}
 
-/**
- * add method
- *
- * @return void
- */
-	public function add() {
-		if ($this->request->is('post')) {
-			$this->User->create();
-			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
-			}
-		}
-	}
-
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function edit($id = null) {
-		if (!$this->User->exists($id)) {
-			throw new NotFoundException(__('Invalid user'));
-		}
-		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
-			}
-		} else {
-			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
-			$this->request->data = $this->User->find('first', $options);
-		}
-	}
-
-/**
- * delete method
- *
- * @throws NotFoundException
- * @throws MethodNotAllowedException
- * @param string $id
- * @return void
- */
-	public function delete($id = null) {
-		$this->User->id = $id;
-		if (!$this->User->exists()) {
-			throw new NotFoundException(__('Invalid user'));
-		}
-		$this->request->onlyAllow('post', 'delete');
-		if ($this->User->delete()) {
-			$this->Session->setFlash(__('User deleted'));
-			$this->redirect(array('action' => 'index'));
-		}
-		$this->Session->setFlash(__('User was not deleted'));
-		$this->redirect(array('action' => 'index'));
-	}
 
 /**
  * admin_index method

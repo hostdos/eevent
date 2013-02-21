@@ -3772,3 +3772,303 @@ Stack Trace:
 #3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-02-19 20:44:14 Error: [MissingControllerException] Controller class TeamController could not be found.
+Exception Attributes: array (
+  'class' => 'TeamController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/team
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-19 20:47:18 Error: [MissingControllerException] Controller class TeamController could not be found.
+Exception Attributes: array (
+  'class' => 'TeamController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/team
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-19 20:53:55 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 39]
+2013-02-19 20:53:55 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /eevent_test/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 39, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 39, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 20:54:25 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 39]
+2013-02-19 20:54:25 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /eevent_test/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 39, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 39, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 20:54:26 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 39]
+2013-02-19 20:54:26 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /eevent_test/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 39, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 39, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 20:54:28 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 39]
+2013-02-19 20:54:28 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /eevent_test/users/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 39, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 39, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 20:54:52 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-02-19 20:54:52 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /eevent_test/users/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 20:55:03 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 12]
+2013-02-19 20:55:03 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /eevent_test/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 20:55:39 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'web123536\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /eevent_test/users
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Model.php(3195): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Model.php(3217): Model->setSource('users')
+#5 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Model.php(2674): Model->getDataSource()
+#6 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#7 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#8 C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php(110): Controller->paginate()
+#9 [internal function]: UsersController->index()
+#10 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-02-19 20:58:35 Error: [MissingControllerException] Controller class EventController could not be found.
+Exception Attributes: array (
+  'class' => 'EventController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-19 21:04:26 Error: [MissingControllerException] Controller class EventController could not be found.
+Exception Attributes: array (
+  'class' => 'EventController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-19 23:55:45 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 40]
+2013-02-19 23:55:45 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 40, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 40, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 23:56:33 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 40]
+2013-02-19 23:56:33 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 40, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 40, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 23:56:42 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 40]
+2013-02-19 23:56:42 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/users/bootstrap
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 40, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 40, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 23:56:47 Error: [MissingActionException] Action UsersController::bootstrap() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'bootstrap',
+)
+Request URL: /eevent_test/users/bootstrap
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-19 23:57:15 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-02-19 23:57:15 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 23:57:33 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-02-19 23:57:33 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 23:57:45 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-02-19 23:57:45 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-19 23:57:55 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-02-19 23:57:55 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 00:02:54 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-02-20 00:02:54 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 00:02:55 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-02-20 00:02:55 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 00:06:26 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-02-20 00:06:26 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 00:06:31 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\View\Layouts\bootstrap.ctp, line 4]
+2013-02-20 00:06:31 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 4, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 4, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 00:06:56 Error: Fatal Error (64): Cannot redeclare UsersController::$helpers in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 13]
+2013-02-20 00:06:56 Error: [FatalErrorException] Cannot redeclare UsersController::$helpers
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 00:07:01 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 83]
+2013-02-20 00:07:01 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 83)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 83, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 83, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 00:07:26 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 83]
+2013-02-20 00:07:26 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 83)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 83, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 83, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 00:07:34 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 83]
+2013-02-20 00:07:34 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 83)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 83, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 83, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 00:08:04 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 85]
+2013-02-20 00:08:04 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 85)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 85, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 85, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 00:08:04 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 85]
+2013-02-20 00:08:04 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 85)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 85, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 85, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

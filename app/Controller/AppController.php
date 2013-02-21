@@ -36,7 +36,11 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+	    public function beforeFilter() {
+
+	} 
+
+
 //plugin
 //public $components = array('DebugKit.Toolbar');
-
 }

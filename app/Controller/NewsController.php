@@ -23,7 +23,8 @@ class NewsController extends AppController {
  */
 	public function index() {
 		$this->News->recursive = 0;
-		$this->set('news', $this->paginate());
+		$this->set('news', $this->news->find(all));
+		//$this->set('news', $this->paginate());
 	}
 
 /**
