@@ -14,7 +14,7 @@ class ForumHelper extends AppHelper {
 		foreach ($forum as $mega64um) {
 			
 		$title = $forum['name'];
-		$description = $forum['description'];
+		$description = $forum['description'].0;
 
 		}
 		$title = $forum['name'];

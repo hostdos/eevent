@@ -8,11 +8,12 @@ App::uses('AppController', 'Controller');
  * @property AuthComponent $Auth
  */
 class UsersController extends AppController {
-public $helpers = array('Form', 'Html', 'Js');
+public $helpers = array('Html', 'Js');
 
+public $components = array('Session', 'Auth', 'Newss');
 
 // Login Functionality
-	function beforeFilter() {
+	public function beforeFilter() {
 		parent::beforeFilter();
 		$this->Auth->allow('event');
 		$this->layout = 'bootstrap';
@@ -31,18 +32,20 @@ public $helpers = array('Form', 'Html', 'Js');
 }   
 
 
-	function event(){
+	public function event(){
+		
 		$this->layout = 'bootstrap';
-
+		$dat = $this->Newss->getNewsBig(2);
+		var_dump($dat);
 	}    
 
-    function logout()
+public  function logout()
     {
         $this->Session->setFlash('You are logged out!');
         $this->redirect($this->Auth->logout());
     }
  
-    function signup() 
+    public  function signup() 
     {
  
         if (!empty($this->data)) {
@@ -70,7 +73,7 @@ public $helpers = array('Form', 'Html', 'Js');
  */
 
 
-	public $components = array('RequestHandler','Session', 'Auth' => array(
+/*	public $components = array('RequestHandler','Session', 'Auth' => array(
         'loginAction' => array(
             'controller' => 'users',
             'action' => 'login',
@@ -82,7 +85,7 @@ public $helpers = array('Form', 'Html', 'Js');
             )
         )
     ));
-
+*/
 
 // Pass settings in $components array
 /*public $components = array(

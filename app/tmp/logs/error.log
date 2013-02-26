@@ -4148,3 +4148,902 @@ Request URL: /eevent_test/team
 Stack Trace:
 #0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-02-22 18:41:36 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\xampp\htdocs\eevent_test\lib\Cake\Core\Object.php, line 16]
+2013-02-22 18:41:36 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /eevent_test/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\xampp\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\xampp\htdocs...', 16, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\xampp\htdocs...', 16, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-25 20:44:53 Error: [MissingActionException] Action UsersController::bootstrap() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'bootstrap',
+)
+Request URL: /eevent_test/users/bootstrap
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-25 20:45:02 Error: [MissingControllerException] Controller class EventController could not be found.
+Exception Attributes: array (
+  'class' => 'EventController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-25 20:45:15 Error: [MissingActionException] Action UsersController::bootstrap() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'bootstrap',
+)
+Request URL: /eevent_test/users/bootstrap
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-25 20:45:22 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-25 20:58:11 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 36]
+2013-02-25 20:58:11 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 36, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 36, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-25 21:00:40 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 36]
+2013-02-25 21:00:40 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 36, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 36, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-25 21:02:10 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 36]
+2013-02-25 21:02:10 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 36, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 36, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-25 21:02:28 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 37]
+2013-02-25 21:02:28 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-25 21:04:22 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 37]
+2013-02-25 21:04:22 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-25 21:04:30 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 37]
+2013-02-25 21:04:30 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-25 21:04:57 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewsHelper.php, line 15]
+2013-02-25 21:04:57 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-25 21:04:58 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewsHelper.php, line 15]
+2013-02-25 21:04:58 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-25 21:05:01 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewsHelper.php, line 15]
+2013-02-25 21:05:01 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-25 21:05:07 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewsHelper.php, line 15]
+2013-02-25 21:05:07 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:12:22 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 37]
+2013-02-26 00:12:22 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:12:25 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 37]
+2013-02-26 00:12:25 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:18:41 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 36]
+2013-02-26 00:18:41 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 36, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 36, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:18:56 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 36]
+2013-02-26 00:18:56 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 36, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 36, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:22:45 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 17]
+2013-02-26 00:22:45 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:24:13 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 36]
+2013-02-26 00:24:13 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 36, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 36, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:28:18 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 36]
+2013-02-26 00:28:18 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 36, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 36, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:34:13 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 17]
+2013-02-26 00:34:13 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:34:28 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 17]
+2013-02-26 00:34:28 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:34:29 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 17]
+2013-02-26 00:34:29 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:34:42 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 17]
+2013-02-26 00:34:42 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:35:11 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewssHelper.php, line 15]
+2013-02-26 00:35:11 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:35:21 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewssHelper.php, line 15]
+2013-02-26 00:35:21 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:35:30 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewssHelper.php, line 15]
+2013-02-26 00:35:30 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:35:31 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewssHelper.php, line 15]
+2013-02-26 00:35:31 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:35:36 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(884): HelperCollection->load('Auth', Array)
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(463): View->loadHelpers()
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#4 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-26 00:36:06 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewssHelper.php, line 10]
+2013-02-26 00:36:06 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 10, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 10, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:36:10 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewssHelper.php, line 10]
+2013-02-26 00:36:10 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 10, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 10, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:36:36 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewssHelper.php, line 10]
+2013-02-26 00:36:36 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 10, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 10, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:38:11 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\View\Helper\NewssHelper.php, line 10]
+2013-02-26 00:38:11 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 10, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 10, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:39:04 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 38]
+2013-02-26 00:39:04 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:39:16 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 38]
+2013-02-26 00:39:16 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:39:56 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 38]
+2013-02-26 00:39:56 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:40:47 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 38]
+2013-02-26 00:40:47 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:44:33 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 38]
+2013-02-26 00:44:33 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:46:14 Error: Fatal Error (1): Call to a member function load() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php, line 38]
+2013-02-26 00:46:14 Error: [FatalErrorException] Call to a member function load() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:46:28 Error: [MissingComponentException] Component class HelpersComponent could not be found.
+Exception Attributes: array (
+  'class' => 'HelpersComponent',
+  'plugin' => false,
+)
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\ComponentCollection.php(52): ComponentCollection->load('Helpers', Array)
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(634): ComponentCollection->init(Object(UsersController))
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(182): Controller->constructClasses()
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-26 00:49:17 Error: Fatal Error (1): Class 'AppComponent' not found in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 5]
+2013-02-26 00:49:17 Error: [FatalErrorException] Class 'AppComponent' not found
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class 'AppCompo...', 'C:\xampp\htdocs...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppCompo...', 'C:\xampp\htdocs...', 5, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'AppCompo...', 'C:\xampp\htdocs...', 5, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:49:59 Error: Fatal Error (1): Call to undefined method NewssComponent::loadModel() in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:49:59 Error: [FatalErrorException] Call to undefined method NewssComponent::loadModel()
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:50:14 Error: Fatal Error (1): Call to a member function loadModel() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:50:14 Error: [FatalErrorException] Call to a member function loadModel() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:50:41 Error: Fatal Error (1): Call to a member function loadModel() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:50:41 Error: [FatalErrorException] Call to a member function loadModel() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:51:24 Error: Fatal Error (1): Class 'Model' not found in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:51:24 Error: [FatalErrorException] Class 'Model' not found
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class 'Model' n...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Model' n...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Model' n...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:53:11 Error: Fatal Error (1): Class 'Model' not found in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 12]
+2013-02-26 00:53:11 Error: [FatalErrorException] Class 'Model' not found
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class 'Model' n...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Model' n...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Model' n...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:53:26 Error: Fatal Error (1): Class 'News' not found in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 12]
+2013-02-26 00:53:26 Error: [FatalErrorException] Class 'News' not found
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class 'News' no...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'News' no...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'News' no...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:53:35 Error: Fatal Error (1): Call to undefined method NewssComponent::loadModel() in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 12]
+2013-02-26 00:53:35 Error: [FatalErrorException] Call to undefined method NewssComponent::loadModel()
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:54:13 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting T_FUNCTION in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 8]
+2013-02-26 00:54:13 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting T_FUNCTION
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:54:22 Error: Fatal Error (1): Call to undefined method NewssComponent::loadModel() in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 12]
+2013-02-26 00:54:22 Error: [FatalErrorException] Call to undefined method NewssComponent::loadModel()
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:55:47 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 12]
+2013-02-26 00:55:47 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:55:56 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 12]
+2013-02-26 00:55:56 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:56:06 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 12]
+2013-02-26 00:56:06 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:56:47 Error: Fatal Error (1): Cannot access empty property in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 12]
+2013-02-26 00:56:47 Error: [FatalErrorException] Cannot access empty property
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:56:57 Error: Fatal Error (1): Cannot access empty property in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 10]
+2013-02-26 00:56:57 Error: [FatalErrorException] Cannot access empty property
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\xampp\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\xampp\htdocs...', 10, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\xampp\htdocs...', 10, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:02 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:02 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:03 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:03 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:09 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:09 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:10 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:10 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:10 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:10 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:10 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:10 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:11 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:11 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:11 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:11 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:11 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:11 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:11 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:11 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:11 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:11 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:11 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:11 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:12 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:12 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:12 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:12 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:12 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:12 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:57:28 Error: Fatal Error (1): Class name must be a valid object or a string in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 00:57:28 Error: [FatalErrorException] Class name must be a valid object or a string
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class name must...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class name must...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:58:22 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 29]
+2013-02-26 00:58:22 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 00:58:34 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 30]
+2013-02-26 00:58:34 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:04:24 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 13]
+2013-02-26 01:04:24 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:04:37 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 14]
+2013-02-26 01:04:37 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:04:52 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 14]
+2013-02-26 01:04:52 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:04:52 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 14]
+2013-02-26 01:04:52 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:05:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fields' in 'where clause'
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `News`.`...', Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `News`.`...', Array, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `News`.`...', false)
+#4 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Model.php(2674): DboSource->read(Object(News), Array)
+#5 C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php(14): Model->find('all', Array)
+#6 C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php(38): NewssComponent->getNewsBig(2)
+#7 [internal function]: UsersController->event()
+#8 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-02-26 01:05:34 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW, expecting ')' in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 14]
+2013-02-26 01:05:34 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW, expecting ')'
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:05:38 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW, expecting ')' in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 14]
+2013-02-26 01:05:38 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW, expecting ')'
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:06:03 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 14]
+2013-02-26 01:06:03 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:06:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit' in 'where clause'
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `News`.`...', Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `News`.`...', Array, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `News`.`...', false)
+#4 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Model.php(2674): DboSource->read(Object(News), Array)
+#5 C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php(14): Model->find('all', Array)
+#6 C:\xampp\htdocs\eevent_test\app\Controller\UsersController.php(38): NewssComponent->getNewsBig(2)
+#7 [internal function]: UsersController->event()
+#8 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-02-26 01:08:38 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 14]
+2013-02-26 01:08:38 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:08:44 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 29]
+2013-02-26 01:08:44 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:10:57 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 29]
+2013-02-26 01:10:57 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-26 01:11:51 Error: Fatal Error (4): syntax error, unexpected T_PROTECTED in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 11]
+2013-02-26 01:11:51 Error: [FatalErrorException] syntax error, unexpected T_PROTECTED
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
