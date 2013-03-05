@@ -1,27 +1,23 @@
 <div class="forums index">
 	<h2><?php echo __('Forums'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table class="table table-striped" cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th><?php echo $this->Paginator->sort('description'); ?></th>
 			<th><?php echo $this->Paginator->sort('users_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('isdisabled'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($forums as $forum): ?>
 	<tr>
-		<td><?php echo h($forum['Forum']['id']); ?>&nbsp;</td>
-		<td><?php echo h($forum['Forum']['name']); ?>&nbsp;</td>
+		<td>
+			<?php
+			echo $this->Html->link($forum['Forum']['name'], array('action' => 'view', $forum['Forum']['id']));
+			?>
+		</td>
 		<td><?php echo h($forum['Forum']['description']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($forum['Users']['id'], array('controller' => 'users', 'action' => 'view', $forum['Users']['id'])); ?>
 		</td>
-		<td><?php echo h($forum['Forum']['isdisabled']); ?>&nbsp;</td>
-		<td><?php echo h($forum['Forum']['created']); ?>&nbsp;</td>
-		<td><?php echo h($forum['Forum']['modified']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $forum['Forum']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $forum['Forum']['id'])); ?>

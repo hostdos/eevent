@@ -1,5 +1,5 @@
     <ul class="nav nav-tabs">
-<?php $menupoints = array('News' => array('controller' => 'users', 'action' => 'bootstrap'), 'Event' => array( 'controller' => 'event', 'action' => 'index'), 'Forum' => array('controller' => 'forums',
+<?php $menupoints = array('News' => array('controller' => 'news', 'action' => 'index'), 'Event' => array( 'controller' => 'event', 'action' => 'index'), 'Forum' => array('controller' => 'forums',
 'action' => 'index'), 'Team' => array('controller' => 'team', 'action' => 'index'));?>
 
 <?php 

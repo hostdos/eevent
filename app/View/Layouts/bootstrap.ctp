@@ -14,7 +14,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="dominique hostettler @ myinsanity.eu">
 
 
   
@@ -59,20 +59,11 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         <div class="span8">
 
           <?php echo $this->element('eevent_info'); ?>
-          
-<?php $this->Paginator->options(array(
-    'update' => '#content',
-    'evalScripts' => true
-));
-?>
-
-        </div>
-
+      <?php echo $this->fetch('content'); ?>
         <div class="span2">
         </div>
       </div>
-      <hr>
-      <?php echo $this->element('breadcrumb'); ?>
+      <?php //echo $this->element('breadcrumb'); ?>
     </div>
 
 </body>

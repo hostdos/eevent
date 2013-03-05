@@ -22,8 +22,11 @@ class ForumsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'content_only';
 		$this->Forum->recursive = 0;
 		$this->set('forums', $this->paginate());
+		
+		
 	}
 
 /**

@@ -12,6 +12,27 @@ border-radius: 0px;
 	background: #bbb;
 }
 
+.news {
+  background-color: rgba(82, 157, 255, 0.3);
+  border-radius: 1px;
+  padding-top: 1px;
+  padding-left: 3px;
+  margin-bottom: 22px;
+}
+
+.news h1 {
+  font-weight: bolder;
+  color: #228;
+  padding-left: 5px;
+}
+article p{
+  color: #4545A5;
+  margin-left: 6px;
+  padding-left: 4px;
+  padding-top: 5px;
+  border-left: 1px dashed #99B;
+}
+
  .nav {
     margin-left:auto;
     margin-right:auto;
@@ -50,7 +71,7 @@ text-shadow: 1px 1px 0px rgb(73, 124, 255);
 }
 
 body {
-
+    background-color: #FFF;
     padding-top:60px;
 }
 

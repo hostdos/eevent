@@ -35,8 +35,9 @@ public $components = array('Session', 'Auth', 'Newss');
 	public function event(){
 		
 		$this->layout = 'bootstrap';
-		$dat = $this->Newss->getNewsBig(2);
-		var_dump($dat);
+		$dat = $this->Newss->getNewsBig(8);
+		$this->set('newsposts',$dat);
+
 	}    
 
 public  function logout()

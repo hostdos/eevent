@@ -7,14 +7,14 @@ App::uses('AppController', 'Controller');
  * @property SessionComponent $Session
  * @property AuthComponent $Auth
  */
-class NewsController extends AppController {
+class EventController extends AppController {
 
 /**
  * Components
  *
  * @var array
  */
-	public $components = array('Session', 'Auth','Newss');
+	public $components = array('Session', 'Auth', 'Newss');
 
 /**
  * index method
@@ -23,20 +23,10 @@ class NewsController extends AppController {
  */
 	public function index() {
 		$this->layout = 'bootstrap';
-		$dat = $this->Newss->getNewsBig(2);
+		$dat = $this->Newss->getNewsBig(8);
 		$this->set('newsposts',$dat);
+		
 	}
-
-
-
-public function all(){
-
-		$this->layout = 'bootstrap_basic';
-		$dat = $this->Newss->getNewsBig(88);
-		$this->set('newsposts',$dat);
-		$this->render('index');
-}
-
 
 /**
  * view method

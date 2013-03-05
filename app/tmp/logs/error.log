@@ -5047,3 +5047,379 @@ Stack Trace:
 #3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-02-28 23:37:00 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php, line 22]
+2013-02-28 23:37:00 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /eevent_test/users/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 22, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 22, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-28 23:37:56 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 26]
+2013-02-28 23:37:56 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-28 23:38:10 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 60]
+2013-02-28 23:38:10 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news/add
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-28 23:38:14 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 60]
+2013-02-28 23:38:14 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news/add
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-28 23:48:25 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 60]
+2013-02-28 23:48:25 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news/add
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 17:09:49 Error: [MissingControllerException] Controller class EventController could not be found.
+Exception Attributes: array (
+  'class' => 'EventController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-03 17:09:50 Error: [MissingActionException] Action UsersController::bootstrap() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'bootstrap',
+)
+Request URL: /eevent_test/users/bootstrap
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-04 22:35:13 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 26]
+2013-03-04 22:35:13 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 22:35:16 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 26]
+2013-03-04 22:35:16 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 21:30:48 Error: [MissingControllerException] Controller class EventController could not be found.
+Exception Attributes: array (
+  'class' => 'EventController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-05 21:41:43 Error: [MissingViewException] View file "C:\xampp\htdocs\eevent_test\app\View\Event\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\eevent_test\\app\\View\\Event\\index.ctp',
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(467): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(EventController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-05 21:42:51 Error: [MissingViewException] View file "C:\xampp\htdocs\eevent_test\app\View\Event\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\eevent_test\\app\\View\\Event\\index.ctp',
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(467): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(EventController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-05 21:42:52 Error: [MissingViewException] View file "C:\xampp\htdocs\eevent_test\app\View\Event\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\eevent_test\\app\\View\\Event\\index.ctp',
+)
+Request URL: /eevent_test/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(467): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(EventController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-05 21:43:07 Error: [MissingActionException] Action UsersController::bootstrap() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'bootstrap',
+)
+Request URL: /eevent_test/users/bootstrap
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-05 21:44:02 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 26]
+2013-03-05 21:44:02 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 22:01:11 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 26]
+2013-03-05 22:01:11 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/news
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 22:01:12 Error: Fatal Error (1): Call to a member function getNewsBig() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 26]
+2013-03-05 22:01:12 Error: [FatalErrorException] Call to a member function getNewsBig() on a non-object
+Request URL: /eevent_test/news
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 22:17:28 Error: [MissingActionException] Action UsersController::bootstrap() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'bootstrap',
+)
+Request URL: /eevent_test/users/bootstrap
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-05 22:17:51 Error: [MissingControllerException] Controller class TeamController could not be found.
+Exception Attributes: array (
+  'class' => 'TeamController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/team
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-05 22:20:23 Error: [MissingViewException] View file "C:\xampp\htdocs\eevent_test\app\View\Team\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\eevent_test\\app\\View\\Team\\index.ctp',
+)
+Request URL: /eevent_test/team
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(467): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(TeamController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-05 23:07:18 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\View\Forums\index.ctp, line 15]
+2013-03-05 23:07:18 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:09:13 Error: [MissingHelperException] Helper class UsersHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UsersHelper',
+  'plugin' => false,
+)
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Users')
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(835): HelperCollection->__isset('Users')
+#2 C:\xampp\htdocs\eevent_test\app\View\Forums\index.ctp(15): View->__get('Users')
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(947): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(909): View->_evaluate('C:\xampp\htdocs...', Array)
+#5 C:\xampp\htdocs\eevent_test\lib\Cake\View\View.php(470): View->_render('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#8 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-05 23:09:44 Error: Fatal Error (1): Call to undefined method View::loadModel() in [C:\xampp\htdocs\eevent_test\app\View\Forums\index.ctp, line 16]
+2013-03-05 23:09:44 Error: [FatalErrorException] Call to undefined method View::loadModel()
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 16, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 16, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:14:41 Error: Fatal Error (1): Call to a member function getUserById() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\ForumsController.php, line 27]
+2013-03-05 23:14:41 Error: [FatalErrorException] Call to a member function getUserById() on a non-object
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 27, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 27, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:16:11 Error: Fatal Error (1): Class 'User' not found in [C:\xampp\htdocs\eevent_test\app\View\Forums\index.ctp, line 3]
+2013-03-05 23:16:11 Error: [FatalErrorException] Class 'User' not found
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:16:18 Error: Fatal Error (1): Class 'User' not found in [C:\xampp\htdocs\eevent_test\app\View\Forums\index.ctp, line 3]
+2013-03-05 23:16:18 Error: [FatalErrorException] Class 'User' not found
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:16:19 Error: Fatal Error (1): Class 'User' not found in [C:\xampp\htdocs\eevent_test\app\View\Forums\index.ctp, line 3]
+2013-03-05 23:16:19 Error: [FatalErrorException] Class 'User' not found
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:16:21 Error: Fatal Error (1): Class 'User' not found in [C:\xampp\htdocs\eevent_test\app\View\Forums\index.ctp, line 3]
+2013-03-05 23:16:21 Error: [FatalErrorException] Class 'User' not found
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'User' no...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:16:27 Error: Fatal Error (1): Class 'Users' not found in [C:\xampp\htdocs\eevent_test\app\View\Forums\index.ctp, line 3]
+2013-03-05 23:16:27 Error: [FatalErrorException] Class 'Users' not found
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class 'Users' n...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Users' n...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Users' n...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:16:32 Error: Fatal Error (1): Class 'Users' not found in [C:\xampp\htdocs\eevent_test\app\View\Forums\index.ctp, line 3]
+2013-03-05 23:16:32 Error: [FatalErrorException] Class 'Users' not found
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Class 'Users' n...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Users' n...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Users' n...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:26:43 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\ForumsController.php, line 30]
+2013-03-05 23:26:43 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:27:10 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\ForumsController.php, line 30]
+2013-03-05 23:27:10 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:27:22 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\ForumsController.php, line 30]
+2013-03-05 23:27:22 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:28:07 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\ForumsController.php, line 30]
+2013-03-05 23:28:07 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:28:08 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Controller\ForumsController.php, line 30]
+2013-03-05 23:28:08 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-05 23:29:35 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\xampp\htdocs\eevent_test\app\View\Forums\index.ctp, line 14]
+2013-03-05 23:29:35 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
