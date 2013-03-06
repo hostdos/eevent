@@ -23,8 +23,6 @@
 App::uses('Controller', 'Controller');
 
 
-
-
 /**
  * Application Controller
  *
@@ -37,6 +35,8 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
 	    public function beforeFilter() {
+			//AuthComponent::redirectUrl($url = null)
+		//	$this->Auth->allow('*');
 
 	} 
 

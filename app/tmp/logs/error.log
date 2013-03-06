@@ -5423,3 +5423,369 @@ Stack Trace:
 #3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-03-06 22:12:55 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 71]
+2013-03-06 22:12:55 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news/add
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 71, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 71, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 22:13:39 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 71]
+2013-03-06 22:13:39 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news/add
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 71, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 71, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 22:33:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'News.is_disabled' in 'where clause'
+Request URL: /eevent_test/news
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `News`.`...', Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `News`.`...', Array, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `News`.`...', false)
+#4 C:\xampp\htdocs\eevent_test\lib\Cake\Model\Model.php(2674): DboSource->read(Object(News), Array)
+#5 C:\xampp\htdocs\eevent_test\app\Controller\Component\NewssComponent.php(12): Model->find('all', Array)
+#6 C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php(26): NewssComponent->getNewsBig(2)
+#7 [internal function]: NewsController->index()
+#8 C:\xampp\htdocs\eevent_test\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#9 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-06 22:49:51 Error: [MissingActionException] Action NewsController::insert() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'insert',
+)
+Request URL: /eevent_test/news/insert
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-06 22:49:56 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 100]
+2013-03-06 22:49:56 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news/edit/3
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 100)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 100, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 100, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 22:49:59 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\NewsController.php, line 100]
+2013-03-06 22:49:59 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /eevent_test/news/edit/2
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 100)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 100, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 100, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 22:51:12 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Config\routes.php, line 29]
+2013-03-06 22:51:12 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/news/edit/2
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 22:51:14 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Config\routes.php, line 29]
+2013-03-06 22:51:14 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/news/edit/2
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 22:51:14 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Config\routes.php, line 29]
+2013-03-06 22:51:14 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/team
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 22:51:17 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\eevent_test\app\Config\routes.php, line 29]
+2013-03-06 22:51:17 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /eevent_test/forums
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 22:52:05 Error: [PrivateActionException] Private Action NewsController::admin_add() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'admin_add',
+)
+Request URL: /eevent_test/news/add
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-06 23:19:10 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-03-06 23:19:10 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /eevent_test/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:32:29 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:32:29 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-03-06 23:32:29 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:32:54 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:32:54 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-03-06 23:32:54 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:32:57 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:32:57 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 41]
+2013-03-06 23:32:57 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 41, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 41, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:33:48 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:33:48 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 26]
+2013-03-06 23:33:48 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:33:59 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:33:59 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 26]
+2013-03-06 23:33:59 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:34:00 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:34:00 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 26]
+2013-03-06 23:34:00 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:37:06 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:37:06 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 26]
+2013-03-06 23:37:06 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:37:07 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:37:07 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 26]
+2013-03-06 23:37:07 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:37:08 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:37:08 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 26]
+2013-03-06 23:37:08 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:37:11 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 26]
+2013-03-06 23:37:11 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/users/index
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:37:16 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\eevent_test\app\Controller\AppController.php, line 26]
+2013-03-06 23:37:16 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /eevent_test/news/index
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\eevent_test\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-06 23:39:05 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/logout
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:39:10 Error: [MissingActionException] Action NewsController::event() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'event',
+)
+Request URL: /eevent_test/news/event
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-06 23:46:38 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:47:07 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-06 23:47:08 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /eevent_test/
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

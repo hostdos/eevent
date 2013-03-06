@@ -8,6 +8,20 @@ border-radius: 0px;
 }
 
 
+.glass-pill input {
+  width: 80%;
+}
+
+.newsinput {
+  width: 80%;
+  height: 300px;
+  background-color: white;
+}
+
+.nicEdit-main {
+  background-color: white;
+}
+
 .testdiv {
 	background: #bbb;
 }
@@ -75,6 +89,14 @@ body {
     padding-top:60px;
 }
 
+.shadowblock{
+    width: 800px;
+height: 3px;
+margin: 0px;
+padding: 0px;
+}
+
+
 .nav-tabs > .active a{
 
     background-color:#DDDDFF;
@@ -100,6 +122,8 @@ body {
 }
 .span8 {
   width: 800px;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 .span7 {
   width: 700px;

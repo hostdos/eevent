@@ -15,7 +15,7 @@ public $components = array('Session', 'Auth', 'Newss');
 // Login Functionality
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('event');
+		$this->Auth->allow('*');
 		$this->layout = 'bootstrap';
 
 		

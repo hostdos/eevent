@@ -68,8 +68,11 @@ public function all(){
 				$this->Session->setFlash(__('The news could not be saved. Please, try again.'));
 			}
 		}
-		$users = $this->News->User->find('list');
+		$users = $this->News->Users->find('list');
 		$this->set(compact('users'));
+
+		$this->layout = 'bootstrap_basic';
+		$this->render('add');
 	}
 
 /**
@@ -94,7 +97,7 @@ public function all(){
 			$options = array('conditions' => array('News.' . $this->News->primaryKey => $id));
 			$this->request->data = $this->News->find('first', $options);
 		}
-		$users = $this->News->User->find('list');
+		$users = $this->News->Users->find('list');
 		$this->set(compact('users'));
 	}
 

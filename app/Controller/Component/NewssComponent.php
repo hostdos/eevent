@@ -8,7 +8,7 @@ public $helpers = array('Html');
 	$_output = null;
 		$this->News = ClassRegistry::init('News');
 		$this->Comments = ClassRegistry::init('Comments');
-		$options = array( 'fields' => array('News.id', 'News.title', 'News.content', 'News.users_id'), 'limit' => ($count));
+		$options = array( 'fields' => array('News.id', 'News.title', 'News.content', 'News.users_id'), 'limit' => ($count) , 'conditions' => array('News.isdisabled' => 0) );
 		$News = $this->News->find('all', $options);
 		foreach ($News as $nws) {
 	$_output .= '<article class="news">';

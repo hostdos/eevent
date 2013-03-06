@@ -57,11 +57,14 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         </div>
 
         <div class="span8">
+                <div class="shadowblock"> </div>
 
       <?php echo $this->fetch('content'); ?>
+                <div class="shadowblock"> </div>
+
+      </div>
         <div class="span2">
         </div>
-      </div>
       <?php //echo $this->element('breadcrumb'); ?>
     </div>
 
