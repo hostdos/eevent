@@ -22,7 +22,6 @@
 
 App::uses('Controller', 'Controller');
 
-
 /**
  * Application Controller
  *
@@ -33,14 +32,4 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-
-	    public function beforeFilter() {
-			//AuthComponent::redirectUrl($url = null)
-		//	$this->Auth->allow('*');
-
-	} 
-
-
-//plugin
-//public $components = array('DebugKit.Toolbar');
 }

@@ -8,6 +8,10 @@ App::uses('AppController', 'Controller');
  * @property AuthComponent $Auth
  */
 class NewsController extends AppController {
+	public function beforeFilter() {
+		parent::beforeFilter();
+		//$this->Auth->allow('all');
+      }
 
 /**
  * Components

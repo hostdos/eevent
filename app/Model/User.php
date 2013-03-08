@@ -6,7 +6,7 @@ App::uses('AppModel', 'Model');
  * @property Forums $Forums
  * @property News $News
  * @property Comments $Comments
- * @property Posts $Posts
+ * @property Posts $Špsts
  * @property Threads $Threads
  */
 class User extends AppModel {
@@ -27,6 +27,42 @@ class User extends AppModel {
 		'username' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+			'18_30' => array(
+				'rule' => array('18{30}'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'password' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+			'18_50' => array(
+				'rule' => array('18{50}'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'email' => array(
+			'email' => array(
+				'rule' => array('email'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -57,6 +93,16 @@ class User extends AppModel {
 		'birthdate' => array(
 			'datetime' => array(
 				'rule' => array('datetime'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'status' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -123,7 +169,7 @@ class User extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'Posts' => array(
+		'Špsts' => array(
 			'className' => 'Posts',
 			'foreignKey' => 'users_id',
 			'dependent' => false,
@@ -138,7 +184,7 @@ class User extends AppModel {
 		),
 		'Threads' => array(
 			'className' => 'Threads',
-			'foreignKey' => 'type',
+			'foreignKey' => 'users_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',

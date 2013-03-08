@@ -120,7 +120,7 @@
  *	`manager_index()` and `/manager/controller/index`
  *
  */
-	//Configure::write('Routing.prefixes', array('admin'));
+Configure::write('Routing.prefixes', array('admin'));
 
 /**
  * Turn off all caching application-wide.
@@ -198,13 +198,11 @@
 
 /**
  * A random string used in security hashing methods.
- */
-	Configure::write('Security.salt', 'eevent');
+ */	Configure::write('Security.salt', '845a1e093081649feacb820e19e11a489d824063');
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
- */
-	Configure::write('Security.cipherSeed', 'eevent');
+ */	Configure::write('Security.cipherSeed', '376361653134653238626433326435');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
@@ -326,7 +324,7 @@ if (Configure::read('debug') > 0) {
 }
 
 // Prefix each application on the same server with a different string, to avoid Memcache and APC conflicts.
-$prefix = 'myapp_';
+$prefix = 'app_';
 
 /**
  * Configure the cache used for general framework caching. Path information,
@@ -351,8 +349,3 @@ Cache::config('_cake_model_', array(
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
-
-
-
-//Enable Admin Routing.
-Configure::write('Routing.prefixes', array('admin'));

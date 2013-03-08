@@ -11,6 +11,16 @@
 			<?php echo h($user['User']['username']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Password'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['password']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Email'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['email']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Prename'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['prename']); ?>
@@ -34,6 +44,11 @@
 		<dt><?php echo __('Website'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['website']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Status'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['status']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Isdisabled'); ?></dt>
@@ -67,7 +82,7 @@
 		<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Comments'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Posts'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Špsts'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Threads'), array('controller' => 'threads', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Threads'), array('controller' => 'threads', 'action' => 'add')); ?> </li>
 	</ul>
@@ -197,7 +212,7 @@
 </div>
 <div class="related">
 	<h3><?php echo __('Related Posts'); ?></h3>
-	<?php if (!empty($user['Posts'])): ?>
+	<?php if (!empty($user['Špsts'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
@@ -211,19 +226,19 @@
 	</tr>
 	<?php
 		$i = 0;
-		foreach ($user['Posts'] as $posts): ?>
+		foreach ($user['Špsts'] as $špsts): ?>
 		<tr>
-			<td><?php echo $posts['id']; ?></td>
-			<td><?php echo $posts['content']; ?></td>
-			<td><?php echo $posts['users_id']; ?></td>
-			<td><?php echo $posts['threads_id']; ?></td>
-			<td><?php echo $posts['isdisabled']; ?></td>
-			<td><?php echo $posts['created']; ?></td>
-			<td><?php echo $posts['modified']; ?></td>
+			<td><?php echo $špsts['id']; ?></td>
+			<td><?php echo $špsts['content']; ?></td>
+			<td><?php echo $špsts['users_id']; ?></td>
+			<td><?php echo $špsts['threads_id']; ?></td>
+			<td><?php echo $špsts['isdisabled']; ?></td>
+			<td><?php echo $špsts['created']; ?></td>
+			<td><?php echo $špsts['modified']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'posts', 'action' => 'view', $posts['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'posts', 'action' => 'edit', $posts['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'posts', 'action' => 'delete', $posts['id']), null, __('Are you sure you want to delete # %s?', $posts['id'])); ?>
+				<?php echo $this->Html->link(__('View'), array('controller' => 'posts', 'action' => 'view', $špsts['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'posts', 'action' => 'edit', $špsts['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'posts', 'action' => 'delete', $špsts['id']), null, __('Are you sure you want to delete # %s?', $špsts['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -232,7 +247,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Posts'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('New Špsts'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>

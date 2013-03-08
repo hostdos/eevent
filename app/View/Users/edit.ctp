@@ -5,11 +5,14 @@
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('username');
+		echo $this->Form->input('password');
+		echo $this->Form->input('email');
 		echo $this->Form->input('prename');
 		echo $this->Form->input('surname');
 		echo $this->Form->input('birthdate');
 		echo $this->Form->input('clan');
 		echo $this->Form->input('website');
+		echo $this->Form->input('status');
 		echo $this->Form->input('isdisabled');
 	?>
 	</fieldset>
@@ -28,7 +31,7 @@
 		<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Comments'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Posts'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Špsts'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Threads'), array('controller' => 'threads', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Threads'), array('controller' => 'threads', 'action' => 'add')); ?> </li>
 	</ul>

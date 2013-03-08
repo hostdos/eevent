@@ -106,8 +106,3 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
-
-
-//plugins
-//CakePlugin::load('DebugKit');
-CakePlugin::load('CakeBootstrappifier');
