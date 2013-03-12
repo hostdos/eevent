@@ -4,7 +4,6 @@ App::uses('AppModel', 'Model');
  * Forum Model
  *
  * @property Users $Users
- * @property Threads $Threads
  */
 class Forum extends AppModel {
 
@@ -79,26 +78,4 @@ class Forum extends AppModel {
 			'order' => ''
 		)
 	);
-
-/**
- * hasMany associations
- *
- * @var array
- */
-	public $hasMany = array(
-		'Threads' => array(
-			'className' => 'Threads',
-			'foreignKey' => 'forums_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		)
-	);
-
 }

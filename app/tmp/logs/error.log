@@ -5811,3 +5811,47 @@ Stack Trace:
 #1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2013-03-12 18:51:38 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /eevent_test/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-12 18:53:28 Error: [MissingActionException] Action NewsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'index',
+)
+Request URL: /eevent_test/News
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-12 18:53:36 Error: [MissingActionException] Action NewsController::all() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'all',
+)
+Request URL: /eevent_test/News/all
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-12 18:53:49 Error: [MissingActionException] Action NewsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'index',
+)
+Request URL: /eevent_test/News
+Stack Trace:
+#0 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\eevent_test\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\eevent_test\app\webroot\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

@@ -13,7 +13,7 @@ class Post extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'id';
+	public $displayField = 'users_id';
 
 /**
  * Validation rules

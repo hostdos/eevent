@@ -13,7 +13,7 @@ class Comment extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'id';
+	public $displayField = 'content';
 
 /**
  * Validation rules

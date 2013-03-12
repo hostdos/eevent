@@ -4,17 +4,8 @@ App::uses('AppController', 'Controller');
  * Posts Controller
  *
  * @property Post $Post
- * @property SessionComponent $Session
- * @property AuthComponent $Auth
  */
 class PostsController extends AppController {
-
-/**
- * Components
- *
- * @var array
- */
-	public $components = array('Session', 'Auth');
 
 /**
  * index method

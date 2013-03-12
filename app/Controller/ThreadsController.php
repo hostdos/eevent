@@ -4,17 +4,8 @@ App::uses('AppController', 'Controller');
  * Threads Controller
  *
  * @property Thread $Thread
- * @property SessionComponent $Session
- * @property AuthComponent $Auth
  */
 class ThreadsController extends AppController {
-
-/**
- * Components
- *
- * @var array
- */
-	public $components = array('Session', 'Auth');
 
 /**
  * index method
