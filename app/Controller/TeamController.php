@@ -14,7 +14,7 @@ class TeamController extends AppController {
  *
  * @var array
  */
-	public $components = array('Session', 'Auth', 'Newss');
+	public $components = array('Session', 'Newss');
 
 /**
  * index method
@@ -23,8 +23,6 @@ class TeamController extends AppController {
  */
 	public function index() {
 		$this->layout = 'content_only';
-		$dat = $this->Newss->getNewsBig(8);
-		$this->set('newsposts',$dat);
 		
 	}
 

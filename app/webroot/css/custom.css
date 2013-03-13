@@ -6,7 +6,11 @@ div.hero-unit.awesome.flat {
 border-radius: 0px;
 	
 }
+}
+article footer a {
+  color: teal;
 
+}
 
 .glass-pill input {
   width: 80%;
@@ -32,6 +36,13 @@ border-radius: 0px;
   padding-top: 1px;
   padding-left: 3px;
   margin-bottom: 22px;
+  padding-bottom: 5px;
+}
+
+.fullnews {
+    float: left;
+    padding-bottom: 10px;
+    width: 100%;
 }
 
 .news h1 {
@@ -39,7 +50,19 @@ border-radius: 0px;
   color: #228;
   padding-left: 5px;
 }
-article p{
+.fullnews h1{
+    float: left;
+    clear: both;
+}
+.fullnews p {
+  clear: both;
+    float: left;
+    margin-top: 12px;
+    margin-left: 8px;
+
+}
+
+.news p{
   color: #4545A5;
   margin-left: 6px;
   padding-left: 4px;
@@ -47,7 +70,38 @@ article p{
   border-left: 1px dashed #99B;
 }
 
- .nav {
+article footer {
+  margin-left: 6px;
+}
+.fullnews .author {
+  clear: both; 
+  margin-top: -5px;
+
+
+}
+.author {
+    float: left;
+  width: 650px;
+  margin-left: 8px;
+}
+
+.comment {
+  background-color: #C4C4FF;
+  float: left;
+  width: 600px;
+  margin-left: 50px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+.comment h5 {
+  font-size: 11pt;
+  margin-bottom: 0px;
+  border-bottom: 1px dashed #33F;
+  width: 120px;
+}
+
+
+.nav {
     margin-left:auto;
     margin-right:auto;
     width: 40%;

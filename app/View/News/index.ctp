@@ -1,3 +1,3 @@
 <?php
-echo $newsposts;
+echo $this->News->getNewsBig(2);
 ?>

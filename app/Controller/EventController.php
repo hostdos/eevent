@@ -14,7 +14,7 @@ class EventController extends AppController {
  *
  * @var array
  */
-	public $components = array('Session', 'Auth', 'Newss');
+	public $helpers = array('News');
 
 /**
  * index method
@@ -23,8 +23,6 @@ class EventController extends AppController {
  */
 	public function index() {
 		$this->layout = 'bootstrap';
-		$dat = $this->Newss->getNewsBig(8);
-		$this->set('newsposts',$dat);
 		
 	}
 

@@ -5,7 +5,31 @@ App::uses('AppController', 'Controller');
  *
  * @property News $News
  */
+
+
 class NewsController extends AppController {
+
+
+	public $helpers = array('News','Comments');
+
+
+	public function index() {
+
+		$this->layout = 'bootstrap';
+	}
+
+	public function view($id = null)	{
+				if (!$this->News->exists($id)) {
+			throw new NotFoundException(__('Invalid news'));
+		}
+		$this->set('id',$id);
+		$this->set('newsid',$id);
+		
+	}
+
+
+
+
 
 /**
  * admin_index method
@@ -39,15 +63,18 @@ class NewsController extends AppController {
  */
 	public function admin_add() {
 		if ($this->request->is('post')) {
+			//$this->loadModel('Comments');
 			$this->News->create();
 			if ($this->News->save($this->request->data)) {
+			//	$this->Comments->create();
+			//	$commentvars['id'] = $this->News->getLastInsertId();
 				$this->Session->setFlash(__('The news has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The news could not be saved. Please, try again.'));
 			}
 		}
-		$users = $this->News->User->find('list');
+		$users = $this->News->Users->find('list');
 		$this->set(compact('users'));
 	}
 
@@ -73,7 +100,7 @@ class NewsController extends AppController {
 			$options = array('conditions' => array('News.' . $this->News->primaryKey => $id));
 			$this->request->data = $this->News->find('first', $options);
 		}
-		$users = $this->News->User->find('list');
+		$users = $this->News->Users->find('list');
 		$this->set(compact('users'));
 	}
 

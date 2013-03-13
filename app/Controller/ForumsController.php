@@ -7,6 +7,13 @@ App::uses('AppController', 'Controller');
  */
 class ForumsController extends AppController {
 
+
+	public function index() {
+
+		$this->set('forums',$this->paginate());
+	}
+
+
 /**
  * admin_index method
  *
