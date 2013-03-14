@@ -7,15 +7,74 @@ App::uses('AppController', 'Controller');
  */
 class UsersController extends AppController {
 
+
+public $components = array('Auth');
+
+
+	public function beforeFilter(){
+		parent::beforeFilter();
+		$this->Auth->allow('login','logout','add');
+		//Configure::write('Config.language', $this->Session->read('Config.language'));
+		//$this->Auth->authenticate = array(
+		// AuthComponent::ALL => array(
+		// 'scope' => array('is_disabled' => 0)
+		// )
+	}
+
+
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
-		$this->User->recursive = 0;
+		$this->Users->recursive = 0;
 		$this->set('users', $this->paginate());
 	}
+
+		public function login() {
+
+
+		$this->layout = 'bootstrap';
+		// $this->loadModel('Users');
+		 	if($this->request->is('post')){
+		
+					$this->Auth->login();
+
+		 	}
+		// 		$logindata = $this->data;
+		// 			$userid = $this->Users->find('first', array(
+		// 			'conditions' => array(
+		// 			'Users.username' => $logindata['username'],
+		// 			'Users.password' => AuthComponent::password($logindata['password'])
+		// 			)));
+		// 			var_dump($userid);
+		// 		if(isset($userid['Users']['id'])){
+		// 		$logindata['Users']['id'] = $userid['Users']['id'];
+		// 		}else{
+		// 			$this->Session->setFlash(__('Falscher Name oder Passwort'));
+		// 		}
+				
+		// 	if(isset($userid['Users']) && $this->Auth->login($logindata)) {
+	 //  				$this->Session->setFlash(__('Login erfolgreich!'));
+		// 			$this->redirect($this->Auth->redirect());
+		// 	} else {
+		// 		$this->Session->setFlash(__('Falscher Name oder Passwort'));
+		// 	}
+		// }
+		
+	}
+
+		public function logout() {
+		
+		$this->Session->SetFlash(__('Sie sind Ausgeloggt!'),'flash_success');
+		$this->redirect($this->Auth->Logout());
+		
+	}
+
+
+
+
 
 /**
  * view method

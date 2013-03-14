@@ -11,6 +11,13 @@ class NewsController extends AppController {
 
 
 	public $helpers = array('News','Comments');
+	public $components = array('Auth');
+
+
+	public function beforeFilter(){
+		parent::beforeFilter();
+		$this->Auth->allow('index');
+	}
 
 
 	public function index() {
