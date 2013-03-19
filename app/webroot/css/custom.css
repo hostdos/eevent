@@ -12,6 +12,20 @@ article footer a {
 
 }
 
+#flashMessage {
+  width: 400px;
+  text-align: center;
+  vertical-align: center;
+  margin-left: 300px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #8787BB;
+  border-radius: 2px;
+}
+
+
+
+
 .glass-pill input {
   width: 80%;
 }
@@ -116,6 +130,14 @@ article footer {
  width:25%;   
 }
 
+.sidelogin{
+  margin-left: 20px;
+  font-size: 16px;
+}
+.sidelogin a{
+  font-weight: bold;
+}
+
 .pinnedcontent {
  height: auto;   
 }
@@ -127,6 +149,10 @@ article footer {
     margin-left:40%;
     width:20%;    
 }
+.commentfield {
+    width: 400px;
+}
+
 
 .hero-unit h1 {
 	
@@ -155,6 +181,7 @@ padding: 0px;
 
     background-color:#DDDDFF;
 }
+
 
 .container,
 .navbar-static-top .container,

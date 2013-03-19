@@ -8,6 +8,8 @@ App::uses('AppController', 'Controller');
 class ForumsController extends AppController {
 
 
+	public $components = array('Auth');
+
 	public function index() {
 
 		$this->set('forums',$this->paginate());

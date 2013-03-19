@@ -24,6 +24,27 @@ public $helpers = array('Html');
 		}
 		return $_output;
 	}
+
+
+	public function getAdminComments($newsid){
+	$_output = null;
+	$this->Users = ClassRegistry::init('Users');
+	$this->Comments = ClassRegistry::init('Comments');
+	$allcomments = $this->Comments->findByNewsId($newsid);
+	foreach ($allcomments as $cmnt) {
+	$usr = $this->Users->findById($cmnt['users_id']);
+
+	$_output .= '<div class="comment">';
+	$_output .= '<h5>' .$usr['Users']['username']. '</h4>';
+	$_output .= '<p>';
+	$_output .= $cmnt['content'];
+	$_output .= '</p>';
+	$_output .= $this->Html->link('Editieren', array('controller' => 'comments', 'action' => 'edit',$cmnt['id'], 'admin' => true));
+	$_output .= '</div>';
+		}
+		return $_output;
+	}
+
 }
 
 

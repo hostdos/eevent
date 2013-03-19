@@ -9,7 +9,7 @@
 		echo $this->Form->input('content', array('type' => 'textarea', 'class' => 'commentfield'));
 		//echo $this->Form->input('news_id');
 		//echo $this->Form->input('users_id');
-		//echo $this->Form->input('isdisabled');
+		echo $this->Form->input('isdisabled');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

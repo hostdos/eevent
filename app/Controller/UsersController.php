@@ -8,11 +8,13 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
 
 
-public $components = array('Auth');
+public $components = array('Auth','Session');
+public $helpers = array('Html');
 
 
 	public function beforeFilter(){
 		parent::beforeFilter();
+		//	Secur ity::hash($password, 'md5', false);
 		$this->Auth->allow('login','logout','add');
 		//Configure::write('Config.language', $this->Session->read('Config.language'));
 		//$this->Auth->authenticate = array(
@@ -28,53 +30,69 @@ public $components = array('Auth');
  * @return void
  */
 	public function index() {
-		$this->Users->recursive = 0;
+		$this->User->recursive = 0;
 		$this->set('users', $this->paginate());
 	}
 
-		public function login() {
 
 
-		$this->layout = 'bootstrap';
-		// $this->loadModel('Users');
-		 	if($this->request->is('post')){
+
+	public function login() {
+
+
+		if($this->request->is('post')){
 		
-					$this->Auth->login();
+			
+			$logindata = $this->data;
+				$userid = $this->User->find('first', array(
+				'conditions' => array(
+				'User.username' => $logindata['User']['username'],
+				'User.password' => Security::hash(($logindata['User']['password']), 'md5',false)
+				)
+			));
+			if(isset($userid['User']['id'])){
+				var_dump($logindata);
+			$logindata['User']['id'] = $userid['User']['id'];
+			$logindata['User']['status'] = $userid['User']['status'];
 
-		 	}
-		// 		$logindata = $this->data;
-		// 			$userid = $this->Users->find('first', array(
-		// 			'conditions' => array(
-		// 			'Users.username' => $logindata['username'],
-		// 			'Users.password' => AuthComponent::password($logindata['password'])
-		// 			)));
-		// 			var_dump($userid);
-		// 		if(isset($userid['Users']['id'])){
-		// 		$logindata['Users']['id'] = $userid['Users']['id'];
-		// 		}else{
-		// 			$this->Session->setFlash(__('Falscher Name oder Passwort'));
-		// 		}
-				
-		// 	if(isset($userid['Users']) && $this->Auth->login($logindata)) {
-	 //  				$this->Session->setFlash(__('Login erfolgreich!'));
-		// 			$this->redirect($this->Auth->redirect());
-		// 	} else {
-		// 		$this->Session->setFlash(__('Falscher Name oder Passwort'));
-		// 	}
-		// }
-		
+			}else{
+				$this->Session->setFlash(__('Falscher Name oder Passwort'));
+			}
+			
+		if(isset($userid['User']) && $this->Auth->login($logindata)) {
+  				$this->Session->setFlash(__('Login erfolgreich!'));
+				$this->redirect($this->Auth->redirect());
+		} else {
+			$this->Session->setFlash(__('Falscher Name oder Passwort'));
+		}
 	}
-
-		public function logout() {
 		
-		$this->Session->SetFlash(__('Sie sind Ausgeloggt!'),'flash_success');
+}
+
+
+
+
+public function oldlogin() {
+    if ($this->request->is('post')) {
+
+    	//Security::setHash('md5');
+    	//Security::hash('md5', false);
+
+        if ($this->Auth->login()) {
+            $this->redirect($this->Auth->redirect());
+        } else {
+            $this->Session->setFlash(__('Invalid username or password, try again'));
+        }
+    }
+}
+
+
+	public function logout() {
+		
+		$this->Session->SetFlash(__('Sie sind Ausgeloggt!'));
 		$this->redirect($this->Auth->Logout());
 		
 	}
-
-
-
-
 
 /**
  * view method
@@ -91,22 +109,27 @@ public $components = array('Auth');
 		$this->set('user', $this->User->find('first', $options));
 	}
 
-/**
- * add method
- *
- * @return void
- */
-	public function add() {
-		if ($this->request->is('post')) {
-			$this->User->create();
-			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
-			}
-		}
-	}
+
+
+
+	public function beforeSave() { 
+        $this->data['User']['password'] = md5($this->data['User'] 
+		['password']);
+    return true; 
+}  
+
+    public function add() {
+        if ($this->request->is('post')) {
+            $this->User->create();
+            Security::setHash('md5');
+            if ($this->User->save($this->request->data)) {
+                $this->Session->setFlash(__('The user has been saved'));
+                $this->redirect(array('action' => 'index'));
+            } else {
+                $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+            }
+        }
+    }
 
 /**
  * edit method
@@ -120,9 +143,15 @@ public $components = array('Auth');
 			throw new NotFoundException(__('Invalid user'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->User->save($this->request->data)) {
+			$user = $this->data['User'];
+			if($user['password1'] == $user['password2'] && $user['password1'] != null && $user['password1'] != ''
+			&& $user['password2'] != null && $user['password2'] != ''){
+				$this->request->data['User']['password'] = Security::hash($user['password1'], 'md5',false);
+			}
+
+			if ($this->User->save($this->request->data['User'])) {
 				$this->Session->setFlash(__('The user has been saved'));
-				$this->redirect(array('action' => 'index'));
+				//$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}

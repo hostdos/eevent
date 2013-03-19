@@ -33,7 +33,12 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+	public $components = array('Auth','Session'); 
+
+
 	public function beforefilter(){
 		$this->layout = 'bootstrap_basic';
+
+		$this->set('authUser', $this->Auth->user('User'));
 	}
 }
