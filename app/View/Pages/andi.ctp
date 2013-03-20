@@ -96,13 +96,13 @@ Die Voraussetzungen sind einfach nur genial! Wir haben eine super Location, ein 
                         <?php 
                               echo $this->Html->link(
           $this->Html->image('welcome/facebook.png', array('alt' => __('Facebook'), 'border' => '0', 'data-original-title' => "Facebook", 'class' => 'tip')),
-          'http://www.facebook.com/',
+          'http://www.facebook.com/eeventlan/',
           array('target' => '_blank', 'escape' => false)
         );
 
                               echo $this->Html->link(
           $this->Html->image('welcome/twitter.png', array('alt' => __('Twitter'), 'border' => '0', 'data-original-title' => "Twitter", 'class' => 'tip')),
-          'http://www.twitter.com/',
+          'http://twitter.com/eeventlan/',
           array('target' => '_blank', 'escape' => false)
         );
                         ?>
