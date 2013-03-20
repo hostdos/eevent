@@ -37,8 +37,7 @@ class AppController extends Controller {
 
 
 	public function beforefilter(){
-		$this->layout = 'bootstrap_basic';
-
+		$this->layout = 'core';
 		$this->set('authUser', $this->Auth->user('User'));
 	}
 }

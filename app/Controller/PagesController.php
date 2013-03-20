@@ -43,6 +43,8 @@ class PagesController extends AppController {
  * @param string What page to display
  */
 	public function display() {
+		$this->layout = 'core';
+
 		$path = func_get_args();
 
 		$count = count($path);
@@ -63,6 +65,9 @@ class PagesController extends AppController {
 		$this->set(compact('page', 'subpage'));
 		$this->set('title_for_layout', $title);
 		$this->render(implode('/', $path));
+	}
+	public function andi() {
+
 	}
 
 }

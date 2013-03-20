@@ -1,0 +1,26 @@
+/* Blue Color */
+
+a,a:visited{
+color:#00b7b1;
+}
+
+a:hover{
+color:#00a09a;
+}
+
+.tops{
+background:#00d1d9;
+}
+
+.subscribe{
+background:#00a09a;
+}
+
+.cols h3{
+color:#00b7b1;
+}
+
+.cols .widget ul li
+{
+background-image: url('../img/list-b.png');
+}
