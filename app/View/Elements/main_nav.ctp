@@ -8,9 +8,7 @@
 foreach ($menupoints as $point) {
   if((in_array($point['controller'], explode('/', $this->request->here))) == true) {
   echo '<li class="main_nav_bar active">';
-} elseif(in_array('',explode('/', $this->request->here)) && $point['controller'] == 'news') {
-echo '<li class="main_nav_bar active">';
-} else {
+}else{
   echo '<li class="main_nav_bar">';
 } 
   echo $this->Html->link($menubar[$num],$point);  

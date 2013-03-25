@@ -37,7 +37,17 @@ class AppController extends Controller {
 
 
 	public function beforefilter(){
-		$this->layout = 'core';
+		$this->layout = 'bootstrap_basic';
 		$this->set('authUser', $this->Auth->user('User'));
-	}
+		$this->allowAccess();
+			}
+
+
+	private function allowAccess() {
+
+   if (in_array($this->name, array('News','Event','Team'))) {
+     $this->Auth->allow(array('index','display','view','add','edit'));
+   }
+ }
+
 }

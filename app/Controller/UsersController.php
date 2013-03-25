@@ -12,8 +12,10 @@ public $components = array('Auth','Session');
 public $helpers = array('Html');
 
 
+
 	public function beforeFilter(){
 		parent::beforeFilter();
+		App::uses('CakeTime', 'Utility');
 		//	Secur ity::hash($password, 'md5', false);
 		$this->Auth->allow('login','logout','add');
 		//Configure::write('Config.language', $this->Session->read('Config.language'));
@@ -118,18 +120,22 @@ public function oldlogin() {
     return true; 
 }  
 
-    public function add() {
-        if ($this->request->is('post')) {
-            $this->User->create();
-            Security::setHash('md5');
-            if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash(__('The user has been saved'));
-                $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
-            }
-        }
-    }
+	public function add() {
+		if ($this->request->is('post')) {
+			$this->User->create();
+			$this->request->data['User']['status'] = 0;
+			$this->request->data['User']['isdisabled'] = 0;
+			$this->request->data['User']['password'] = Security::hash($this->request->data['User']['password'], 'md5',false);
+			$this->request->data['User']['birthdate'] = CakeTime::format('Y-m-d H:i:s',$this->request->data['User']['birthdate']);			
+			if ($this->User->save($this->request->data)) {
+				$this->Session->setFlash(__('The user has been saved'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				var_dump($this->request->data);
+				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+			}
+		}
+	}
 
 /**
  * edit method

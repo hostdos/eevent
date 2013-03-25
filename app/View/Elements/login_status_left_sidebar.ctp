@@ -11,7 +11,9 @@
         } else {
           echo '<span>';
           echo 'Nicht eingeloggt, '; 
-          echo $this->Html->link('Einloggen?', array('controller' => 'users','action'=>'login','admin'=> null));
+          echo $this->Html->link('Einloggen', array('controller' => 'users','action'=>'login','admin'=> null));
+          echo '</br>';
+          echo $this->Html->link('Registrieren', array('controller' => 'users','action'=>'add','admin'=> null));
           echo '</span>';
         }
         ?>
