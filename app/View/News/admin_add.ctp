@@ -1,7 +1,7 @@
 <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
 <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
 <div class="news form">
-<?php echo $this->Form->create('News', array('class' => 'glass-pill')); ?>
+<?php echo $this->Form->create('news'); ?>
 	<fieldset>
 		<legend><?php echo __('Add News'); ?></legend>
 	<?php

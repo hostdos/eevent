@@ -76,7 +76,7 @@ class NewsController extends AppController {
 			//	$this->Comments->create();
 			//	$commentvars['id'] = $this->News->getLastInsertId();
 				$this->Session->setFlash(__('The news has been saved'));
-				$this->redirect(array('action' => 'index'));
+				$this->redirect(array('action' => 'index' ,'admin' => null));
 			} else {
 				$this->Session->setFlash(__('The news could not be saved. Please, try again.'));
 			}
@@ -99,7 +99,7 @@ class NewsController extends AppController {
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->News->save($this->request->data)) {
 				$this->Session->setFlash(__('The news has been saved'));
-				$this->redirect(array('action' => 'index'));
+				$this->redirect(array('action' => 'index' ,'admin' => null));
 			} else {
 				$this->Session->setFlash(__('The news could not be saved. Please, try again.'));
 			}
