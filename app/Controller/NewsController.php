@@ -21,7 +21,7 @@ class NewsController extends AppController {
 
 
 	public function index() {
-
+		$this->set('amount', 2);
 		$this->layout = 'bootstrap';
 	}
 
@@ -32,6 +32,12 @@ class NewsController extends AppController {
 		$this->set('id',$id);
 		$this->set('newsid',$id);
 		
+	}
+
+	public function full() {
+	//	$this->layout = 
+		$this->set('amount', 999999999);
+		$this->render('index');
 	}
 
 

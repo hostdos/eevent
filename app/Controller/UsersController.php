@@ -1,4 +1,5 @@
 <?php
+App::uses('CakeEmail', 'Network/Email');
 App::uses('AppController', 'Controller');
 /**
  * Users Controller
@@ -8,7 +9,7 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
 
 
-public $components = array('Auth','Session');
+public $components = array('Auth','Session','Email');
 public $helpers = array('Html');
 
 
@@ -17,7 +18,7 @@ public $helpers = array('Html');
 		parent::beforeFilter();
 		App::uses('CakeTime', 'Utility');
 		//	Secur ity::hash($password, 'md5', false);
-		$this->Auth->allow('login','logout','add');
+		$this->Auth->allow('login','logout','add','forgotpass');
 		//Configure::write('Config.language', $this->Session->read('Config.language'));
 		//$this->Auth->authenticate = array(
 		// AuthComponent::ALL => array(
@@ -71,6 +72,49 @@ public $helpers = array('Html');
 		
 }
 
+public function forgotpass(){
+
+    if ($this->request->is('post') && $this->data['User']) {
+
+    	//Security::hash('md5', false);
+        
+    	$conditions = array('conditions' => array('User.username' => $this->data['User']['username']));
+
+
+        $usr = $this->User->find('first', $conditions);
+
+        if (!empty($usr)) {
+
+		  //Initialize the random password
+		  $password = '';
+
+		  //Initialize a random desired length
+		  $desired_length = rand(8, 12);
+
+		  for($length = 0; $length < $desired_length; $length++) {
+		    //Append a random ASCII character (including symbols)
+		    $password .= chr(rand(32, 126));
+		  }
+
+        	$Email = new CakeEmail();
+			$Email->from(array('info@eevent.ch' => 'Eevent info'));
+			$Email->to(array( $usr['User']['email'] => $usr['User']['username']));
+			$Email->subject(__('Passwort reset'));
+			$Email->send(__('Dein neues Passwort: ') . $password );
+
+			//set pw and id in user thing
+			$user['id'] = $usr['User']['id'];
+			$user['password'] = Security::hash($password, 'md5', false);
+			//save new pw in db	
+			if($this->User->save($user)){
+            $this->redirect(array('controller' => 'news', 'action' => 'index'));
+			}
+
+        } else {
+            $this->Session->setFlash(__('Invalid username or password, try again'));
+        }
+    }
+}
 
 
 

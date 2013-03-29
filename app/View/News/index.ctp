@@ -1,7 +1,7 @@
 <?php
 if($authUser != null && $authUser['status'] == 1){
-echo $this->News->getAdminNewsBig(2);
+echo $this->News->getAdminNewsBig($amount);
 }else{
-echo $this->News->getNewsBig(2);
+echo $this->News->getNewsBig($amount);
 }
 ?>

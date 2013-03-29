@@ -106,12 +106,22 @@ article footer {
   margin-left: 50px;
   padding-bottom: 5px;
   padding-left: 10px;
+  margin-bottom: 12px;
 }
 .comment h5 {
   font-size: 11pt;
   margin-bottom: 0px;
   border-bottom: 1px dashed #33F;
   width: 120px;
+}
+
+.commentaddlink {
+  float: left;
+clear: both;
+vertical-align: middle;
+text-align: center;
+margin-left: 50px;
+margin-top: 5px;
 }
 
 
