@@ -14,12 +14,12 @@ public $helpers = array('Html');
 		$options = array('conditions' => array('Comments.isdisabled' => 0, 'Comments.news_id' => $newsid));
 		$allcomments = $this->Comments->find('all', $options);
 		foreach ($allcomments as $cmnt) {
-		$usr = $this->Users->findById($cmnt['users_id']);
+		$usr = $this->Users->findById($cmnt['Comments']['users_id']);
 
 	$_output .= '<div class="comment">';
 	$_output .= '<h5>' .$usr['Users']['username']. '</h4>';
 	$_output .= '<p>';
-	$_output .= $cmnt['content'];
+	$_output .= $cmnt['Comments']['content'];
 	$_output .= '</p>';
 	/*if($authUser['id'] == $usr['Users']['id']){
 		$_output .= $this->Html->link('Editieren', array('controller' => 'comments', 'action' => 'edit',$cmnt['id']));

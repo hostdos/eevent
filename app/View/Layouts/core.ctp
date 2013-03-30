@@ -46,4 +46,5 @@ echo $this->fetch('script');
 
 echo '</head>';
 echo $this->fetch('content');
+echo $this->element('footer');
 ?>

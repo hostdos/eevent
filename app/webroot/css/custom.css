@@ -23,6 +23,14 @@ article footer a {
   border-radius: 2px;
 }
 
+.fpadd{
+  height: 20px;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-size: 10px;
+}
 
 
 

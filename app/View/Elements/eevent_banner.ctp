@@ -10,9 +10,7 @@
           das super das könnt Ihr mir glauben ja ja.&nbsp;
         </p>
       </div>
-      <a class="btn btn-primary btn-large middlebutton" href="#">
-        <div style="text-align: center;">
-          Jetzt für den EEvent&nbsp;anmelden!
-        </div>
-      </a>
-    </div>
+
+      <?php echo $this->Html->link('Jetzt für den EEvent anmelden!', 
+      array('controller' => 'registrations','action'=>'register','admin' => null), array('class' => 'btn btn-primary btn-large middlebutton')); ?>
+     </div>
