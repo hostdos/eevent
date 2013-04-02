@@ -1,4 +1,5 @@
 <?php
+App::uses('CakeEmail', 'Network/Email');
 App::uses('AppController', 'Controller');
 /**
  * Registrations Controller
@@ -7,7 +8,7 @@ App::uses('AppController', 'Controller');
  */
 class RegistrationsController extends AppController {
 
-public $components = array('Auth');
+public $components = array('Auth','Email');
 
 
 
@@ -20,6 +21,8 @@ public $components = array('Auth');
 
 	public function register() {
 	$user = $this->Auth->user('User');
+	$usermail = $this->User->findById($user['id']);
+	$usermail = $usermail['User']['email'];
 
 	//check if register entry exists, if yes then set it to 1
 	//$options = array('conditions' => 'registrations.user_id' => $user['id'])
@@ -33,7 +36,7 @@ public $components = array('Auth');
 		if($this->Registration->save($regist)){
 			$Email = new CakeEmail();
 			$Email->from(array('info@eevent.ch' => 'Eevent info'));
-			$Email->to(array( $usr['User']['email'] => $usr['User']['username']));
+			$Email->to(array( $usermail => $user['username']));
 			$Email->subject(__('Registrierung für EEvent 2.0'));
 			$Email->send(__('Du hast dich für die EEvent 2.0 angemeldet!'));
 
@@ -51,7 +54,7 @@ public $components = array('Auth');
 
 			$Email = new CakeEmail();
 			$Email->from(array('info@eevent.ch' => 'Eevent info'));
-			$Email->to(array( $usr['User']['email'] => $usr['User']['username']));
+			$Email->to(array( $usermail => $user['username']));
 			$Email->subject(__('Anmeldung für EEvent 2.0'));
 			$Email->send(__('Du hast dich für die EEvent 2.0 angemeldet!'));
 
@@ -73,6 +76,8 @@ public $components = array('Auth');
 
 	public function unregister() {
 		$user = $this->Auth->user('User');
+	$usermail = $this->User->findById($user['id']);
+	$usermail = $usermail['User']['email'];
 
 	$registr = $this->Registration->findByUserId($user['id']);
 	if(empty ($registr)) {
@@ -84,7 +89,7 @@ public $components = array('Auth');
 		if($this->Registration->save($regist)){
 			$Email = new CakeEmail();
 			$Email->from(array('info@eevent.ch' => 'Eevent info'));
-			$Email->to(array( $usr['User']['email'] => $usr['User']['username']));
+			$Email->to(array( $usermail => $user['username']));
 			$Email->subject(__('Abmeldung für EEvent 2.0'));
 			$Email->send(__('Du hast dich von der EEvent 2.0 Abgemeldet, schade :('));
 			$this->Session->setFlash(__('You are now unregistered'));
@@ -100,7 +105,7 @@ public $components = array('Auth');
 		if($this->Registration->save($regist)){
 			$Email = new CakeEmail();
 			$Email->from(array('info@eevent.ch' => 'Eevent info'));
-			$Email->to(array( $usr['User']['email'] => $usr['User']['username']));
+			$Email->to(array( $usermail => $user['username']));
 			$Email->subject(__('Abmeldung für EEvent 2.0'));
 			$Email->send(__('Du hast dich von der EEvent 2.0 Abgemeldet, schade :('));
 
