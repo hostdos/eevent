@@ -20,7 +20,8 @@
 		echo $this->Form->input('email', array('placeholder' => 'Email','type' => 'email','label'=>''));
 		echo $this->Form->input('prename', array('placeholder' => 'Vorname','label'=> ''));
 		echo $this->Form->input('surname', array('placeholder' => 'Nachname','label'=> ''));
-		echo $this->Form->input('birthdate', array('type' => 'text', 'label'=>'Geburtsdatum', 'id' => 'datepicker'));
+		echo $this->Form->input('birthdate', array('type' => 'date', 'minYear' => date('Y') - 70,
+    'maxYear' => date('Y') - 0));
 		echo $this->Form->input('clan', array('label' => '', 'placeholder' => 'Clan'));
 		echo $this->Form->input('website', array('label' => '', 'placeholder' => 'Website'));
 	?>

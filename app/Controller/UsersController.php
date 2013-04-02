@@ -176,7 +176,9 @@ public function oldlogin() {
 			$this->request->data['User']['status'] = 0;
 			$this->request->data['User']['isdisabled'] = 0;
 			$this->request->data['User']['password'] = Security::hash($this->request->data['User']['password'], 'md5',false);
-			$this->request->data['User']['birthdate'] = CakeTime::format('Y-m-d H:i:s',$this->request->data['User']['birthdate']);			
+			$datestring = $this->request->data['User']['birthdate']['year'] . '-' .$this->request->data['User']['birthdate']['month'] . '-' . $this->request->data['User']['birthdate']['day'];
+         	$datestring = DateTime::createFromFormat('Y-m-d', $datestring);
+			$this->request->data['User']['birthdate'] = CakeTime::format('Y-m-d H:i:s',$datestring);			
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
