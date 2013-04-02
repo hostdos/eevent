@@ -54,7 +54,6 @@ public $helpers = array('Html');
 				)
 			));
 			if(isset($userid['User']['id'])){
-				var_dump($logindata);
 			$logindata['User']['id'] = $userid['User']['id'];
 			$logindata['User']['status'] = $userid['User']['status'];
 
@@ -166,6 +165,13 @@ public function oldlogin() {
 
 	public function add() {
 		if ($this->request->is('post')) {
+			$condoptions = array('conditions' => array(
+				'OR' => array(
+				array('user.username' => $this->request->data['User']['username']),
+				array('user.email' => $this->request->data['User']['email']),
+				)));
+			$userexist = $this->User->find('first', $condoptions);
+			if(empty($userexist)){
 			$this->User->create();
 			$this->request->data['User']['status'] = 0;
 			$this->request->data['User']['isdisabled'] = 0;
@@ -175,8 +181,11 @@ public function oldlogin() {
 				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				var_dump($this->request->data);
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+			}
+			} else {
+				$this->Session->setFlash(__('The user already exists. Please, try again.'));
+
 			}
 		}
 	}

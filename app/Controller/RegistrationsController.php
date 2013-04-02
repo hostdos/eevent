@@ -31,6 +31,12 @@ public $components = array('Auth');
 
 
 		if($this->Registration->save($regist)){
+			$Email = new CakeEmail();
+			$Email->from(array('info@eevent.ch' => 'Eevent info'));
+			$Email->to(array( $usr['User']['email'] => $usr['User']['username']));
+			$Email->subject(__('Registrierung für EEvent 2.0'));
+			$Email->send(__('Du hast dich für die EEvent 2.0 angemeldet!'));
+
 			$this->Session->setFlash(__('You are now registered'));
 			$this->redirect(array('controller' => 'news', 'action' => 'index'));
 		}else{
@@ -42,8 +48,18 @@ public $components = array('Auth');
 		$regist['registered'] = 1;
 
 		if($this->Registration->save($regist)){
+
+			$Email = new CakeEmail();
+			$Email->from(array('info@eevent.ch' => 'Eevent info'));
+			$Email->to(array( $usr['User']['email'] => $usr['User']['username']));
+			$Email->subject(__('Anmeldung für EEvent 2.0'));
+			$Email->send(__('Du hast dich für die EEvent 2.0 angemeldet!'));
+
 			$this->Session->setFlash(__('You are now registered'));
 			$this->redirect(array('controller' => 'news', 'action' => 'index'));
+
+
+
 		}else{
 			$this->Session->setFlash(__('The registration could not be saved. Please, try again.'));
 		}
@@ -66,6 +82,11 @@ public $components = array('Auth');
 
 
 		if($this->Registration->save($regist)){
+			$Email = new CakeEmail();
+			$Email->from(array('info@eevent.ch' => 'Eevent info'));
+			$Email->to(array( $usr['User']['email'] => $usr['User']['username']));
+			$Email->subject(__('Abmeldung für EEvent 2.0'));
+			$Email->send(__('Du hast dich von der EEvent 2.0 Abgemeldet, schade :('));
 			$this->Session->setFlash(__('You are now unregistered'));
 			$this->redirect(array('controller' => 'news', 'action' => 'index'));
 		}else{
@@ -77,6 +98,12 @@ public $components = array('Auth');
 		$regist['registered'] = 0;
 
 		if($this->Registration->save($regist)){
+			$Email = new CakeEmail();
+			$Email->from(array('info@eevent.ch' => 'Eevent info'));
+			$Email->to(array( $usr['User']['email'] => $usr['User']['username']));
+			$Email->subject(__('Abmeldung für EEvent 2.0'));
+			$Email->send(__('Du hast dich von der EEvent 2.0 Abgemeldet, schade :('));
+
 			$this->Session->setFlash(__('You are now unregistered'));
 			$this->redirect(array('controller' => 'news', 'action' => 'index'));
 		}else{
