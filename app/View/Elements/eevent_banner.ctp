@@ -1,4 +1,7 @@
-       <div class="hero-unit awesome flat">
+       <div class="hero-unit awesome flat headerawesome">
+        <div class="bannerdiv">
+        <?php echo $this->Html->image('welcome/logo.png', array('class'=>'bannerimg')); ?>
+        </div>
       <div>
         <h1 style="text-align: center;">
           EEvent 2.0 ist am stylen
