@@ -32,6 +32,27 @@ article footer a {
   font-size: 10px;
 }
 
+.headerawesome {
+  padding-left: 245px !important
+}
+
+.hero-unit h1, p{
+  z-index: 5;
+}
+
+.bannerdiv {
+  float: left;
+  position: relative;
+top: -62px;
+left: -258px;
+width: 320px;
+}
+.bannerimg {
+  position: absolute;
+  height: 280px;
+  z-index: 2;
+
+}
 
 
 .glass-pill input {
@@ -98,9 +119,28 @@ article footer {
 .fullnews .author {
   clear: both; 
   margin-top: -5px;
-
-
 }
+
+.sidesponsors {
+  margin-top: 40px;
+}
+
+.sidesponsors img {
+width: 170px;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.sidesponsors h4 {
+text-align: center;
+}
+
+.sidesponsors h5 {
+text-align: center;
+margin-right: 20px;
+}
+
+
 .author {
     float: left;
   width: 650px;
