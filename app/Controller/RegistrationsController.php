@@ -20,9 +20,10 @@ public $components = array('Auth','Email');
 
 
 	public function register() {
-	$user = $this->Auth->user('User');
-	$usermail = $this->User->findById($user['id']);
-	$usermail = $usermail['User']['email'];
+		$user = $this->Auth->user('User');
+		$this->loadModel('User');
+		$usermail = $this->User->findById($user['id']);
+		$usermail = $usermail['User']['email'];
 
 	//check if register entry exists, if yes then set it to 1
 	//$options = array('conditions' => 'registrations.user_id' => $user['id'])
@@ -76,8 +77,9 @@ public $components = array('Auth','Email');
 
 	public function unregister() {
 		$user = $this->Auth->user('User');
-	$usermail = $this->User->findById($user['id']);
-	$usermail = $usermail['User']['email'];
+		$this->loadModel('User');
+		$usermail = $this->User->findById($user['id']);
+		$usermail = $usermail['User']['email'];
 
 	$registr = $this->Registration->findByUserId($user['id']);
 	if(empty ($registr)) {
