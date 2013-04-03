@@ -39,7 +39,6 @@ class CommentsController extends AppController {
  */
 	public function add($id = null) {
 		if ($this->request->is('post')) {
-			var_dump($this->request->data);
 			$this->Comment->create();
 			if ($this->Comment->save($this->request->data['Comment'])) {
 				$this->Session->setFlash(__('The comment has been saved'));

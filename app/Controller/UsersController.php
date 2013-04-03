@@ -63,7 +63,7 @@ public $helpers = array('Html');
 			
 		if(isset($userid['User']) && $this->Auth->login($logindata)) {
   				$this->Session->setFlash(__('Login erfolgreich!'));
-				$this->redirect($this->Auth->redirect());
+				$this->redirect(array('controller' => 'news', 'action' => 'index'));
 		} else {
 			$this->Session->setFlash(__('Falscher Name oder Passwort'));
 		}
