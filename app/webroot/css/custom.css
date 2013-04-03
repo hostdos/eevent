@@ -32,9 +32,12 @@ article footer a {
   font-size: 10px;
 }
 
-.headerawesome {
-  padding-left: 245px !important
-}
+
+.hero-unit .awesome .flat .headerawesome div{
+width: 140%;
+float: left;
+margin-left: -500px;
+overflow: hidden;}
 
 .hero-unit h1, p{
   z-index: 5;
@@ -43,8 +46,8 @@ article footer a {
 .bannerdiv {
   float: left;
   position: relative;
-top: -62px;
-left: -258px;
+top: -66px;
+left: -71px;
 width: 320px;
 }
 .bannerimg {
@@ -185,7 +188,8 @@ margin-top: 5px;
 }
 
 .nav li {
- width:25%;   
+ width: 33%;  
+ text-align: center;
 }
 
 .sidelogin{

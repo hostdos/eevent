@@ -10,7 +10,7 @@
       <div>
         <p style="text-align: center;">
           Die EEvent 2.0 Startet bald! mit 200 Sitzplätzen und guter laune wird
-          das super das könnt Ihr mir glauben ja ja.&nbsp;
+          das super.&nbsp;
         </p>
       </div>
 

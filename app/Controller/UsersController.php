@@ -167,8 +167,8 @@ public function oldlogin() {
 		if ($this->request->is('post')) {
 			$condoptions = array('conditions' => array(
 				'OR' => array(
-				array('user.username' => $this->request->data['User']['username']),
-				array('user.email' => $this->request->data['User']['email']),
+				array('User.username' => $this->request->data['User']['username']),
+				array('User.email' => $this->request->data['User']['email']),
 				)));
 			$userexist = $this->User->find('first', $condoptions);
 			if(empty($userexist)){

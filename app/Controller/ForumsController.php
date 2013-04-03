@@ -10,6 +10,10 @@ class ForumsController extends AppController {
 
 	public $components = array('Auth');
 
+	public function prepage() {
+		
+	}
+
 	public function index() {
 
 		$this->set('forums',$this->paginate());
