@@ -38,6 +38,7 @@ class AppController extends Controller {
 
 	public function beforefilter(){
 		$this->layout = 'bootstrap_basic';
+		CakeSession::write('Config.language', 'deu');
 		$this->set('authUser', $this->Auth->user('User'));
 		$this->allowAccess();
 			}
