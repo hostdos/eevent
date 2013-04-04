@@ -39,7 +39,31 @@ public $components = array('Auth','Email');
 			$Email->from(array('info@eevent.ch' => 'Eevent info'));
 			$Email->to(array( $usermail => $user['username']));
 			$Email->subject(__('Registrierung für EEvent 2.0'));
-			$Email->send(__('Du hast dich für die EEvent 2.0 angemeldet!'));
+
+			$emailstring = "Hallo ". $user['username'] .",
+Deine Anmeldung für die eevent LAN-Party 2.0 war erfolgreich!
+Damit du einen Sitzplatz auswählen kannst und du definitiv einen Platz hast, musst du nun nur noch den Unkostenbeitrag von CHF 45.00 auf folgendes Konto überweisen.
+
+Zahlungsdetails:
+Filmsoft Verein
+Weingartstrasse 11
+3014 Bern
+CH41 0630 0016 9466 1000 6
+Valiant Bank
+3001 Bern
+
+Betreff: Nickname, eevent 2.0
+
+Bei Zahlungen für mehrere Personen einfach alle Nicknamen angeben.
+
+Vielen Dank. Wir freuen uns sehr, dich vom 03-05 Mai in Subingen begrüssen zu dürfen.
+
+Liebe Grüsse
+Dein Eevent Team
+";
+
+
+			$Email->send($emailstring);
 
 			$this->Session->setFlash(__('You are now registered'));
 			$this->redirect(array('controller' => 'news', 'action' => 'index'));
@@ -57,7 +81,29 @@ public $components = array('Auth','Email');
 			$Email->from(array('info@eevent.ch' => 'Eevent info'));
 			$Email->to(array( $usermail => $user['username']));
 			$Email->subject(__('Anmeldung für EEvent 2.0'));
-			$Email->send(__('Du hast dich für die EEvent 2.0 angemeldet!'));
+
+		$emailstring = "Hallo ". $user['username'] .",
+Deine Anmeldung für die eevent LAN-Party 2.0 war erfolgreich!
+Damit du einen Sitzplatz auswählen kannst und du definitiv einen Platz hast, musst du nun nur noch den Unkostenbeitrag von CHF 45.00 auf folgendes Konto überweisen.
+
+Zahlungsdetails:
+Filmsoft Verein
+Weingartstrasse 11
+3014 Bern
+CH41 0630 0016 9466 1000 6
+Valiant Bank
+3001 Bern
+
+Betreff: Nickname, eevent 2.0
+
+Bei Zahlungen für mehrere Personen einfach alle Nicknamen angeben.
+
+Vielen Dank. Wir freuen uns sehr, dich vom 03-05 Mai in Subingen begrüssen zu dürfen.
+
+Liebe Grüsse
+Dein Eevent Team
+";
+			$Email->send($emailstring);
 
 			$this->Session->setFlash(__('You are now registered'));
 			$this->redirect(array('controller' => 'news', 'action' => 'index'));

@@ -33,27 +33,41 @@ article footer a {
 }
 
 
-.hero-unit .awesome .flat .headerawesome div{
-width: 140%;
+.hero-unit.awesome.flat.headerawesome{
+padding-top: 60px;
+padding-left: 0px;
+padding-right: 0px;
+margin-top: -140px;
+width: 100%;
 float: left;
-margin-left: -500px;
-overflow: hidden;}
+z-index: 5;
+overflow: hidden;
+background-color: #113585;
+box-shadow: 2px 0px 4px;
+}
 
 .hero-unit h1, p{
   z-index: 5;
+  color: #CFCFCF;
 }
 
 .bannerdiv {
   float: left;
-  position: relative;
-top: -66px;
-left: -71px;
-width: 320px;
+  width: 100%;
+  z-index: 1;
+
 }
 .bannerimg {
-  position: absolute;
-  height: 280px;
-  z-index: 2;
+  float: left;
+  display: block;
+    margin:0 auto !important;
+width: 20% !important;
+margin-left: 41% !important;
+margin-right: 39% !important;
+z-index: 2;
+min-height: 160px;
+min-width: 180px;
+
 
 }
 
@@ -95,6 +109,7 @@ width: 320px;
   font-weight: bolder;
   color: #228;
   padding-left: 5px;
+  margin: 0px auto;
 }
 .fullnews h1{
     float: left;
@@ -214,16 +229,19 @@ margin-top: 5px;
 .commentfield {
     width: 400px;
 }
+.turnierliste {
+  list-style: none;
+}
 
 
 .hero-unit h1 {
 	
-text-shadow: 1px 1px 0px rgb(73, 124, 255);
+text-shadow: 1px 1px 0px #5555AA;
 }
 
 .hero-unit p{
-	color:#338;
-	text-shadow: 1px 1px 0px rgb(60, 100, 255);
+	color:#CFCFCF;
+	text-shadow: 1px 1px 0px #000033;
 }
 
 body {
@@ -249,7 +267,7 @@ padding: 0px;
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 1280px;
+  width: 1250px;
 }
 .span12 {
   width: 1200px;

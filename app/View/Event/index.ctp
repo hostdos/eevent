@@ -2,22 +2,32 @@
 </br></br>
 Vom 03. - 05. Mai 2013 erwartet die Crew rund um den eevent, 228 Teilnehmer in Subingen im Kanton Solothurn, wo um sagenhafte CHF 2100 Preisgeld, so wie diverse andere Überraschungen, gespielt wird! 
 </br></br>
-Die Voraussetzungen sind einfach nur genial! Wir haben eine super Location, ein sensationelles Internet, ein unumstössliches Netzwerk, tolle Preisgelder, erfahrene LAN-Organisatoren sowie eine riesen Motivation! Diese LAN wird zu einem E-Sport Spektakel, lässt jedoch auch die eher gemütlichen Gamer-Herzen nicht kalt. Ein grosses Chill Out mit Bar und Spielekonsolen werden für die nötige Abwechslung sorgen. Mehr Details zur Anmeldung und zu den Turnierpreisen, werden in den nächsten Wochen folgen.
+Die Voraussetzungen sind einfach nur genial! Wir haben eine super Location, ein sensationelles Internet, ein unumstössliches Netzwerk, tolle Preisgelder, erfahrene LAN-Organisatoren sowie eine riesen Motivation! Diese LAN wird zu einem E-Sport Spektakel, lässt jedoch auch die eher gemütlichen Gamer-Herzen nicht kalt. Ein grosses Chill Out mit Bar und Spielekonsolen werden für die nötige Abwechslung sorgen.
 </br></br></br>
 Die Turnieranmeldungen werden zwei Wochen vor der LAN eröffnet werden!
 </br></br>
-Die Crew rund um den eevent ist stolz, einen weiteren E-Sport Event zu präsentieren.
-</br></br>
-
-Datum: 03-05. Mai 2013
-Ort: Mehrzweckhalle Subingen (SO)
-Teilnehmerzahl: 228 Gamer
-Turniere: 5 Turniere in folgenden Spielen und die bisher sicherstehenden Preisgelder:
-</br></br>
-<ul>
-<li>Starcraft 2 Heart of the Swarm –> ~ CHF 2000 Preisgeld</li>
-<li>League of Legends –> ~ CHF 2000 Preisgeld</li>
-<li>Counter-Strike: Global Offensive –> Sachpreise</li>
-<li>Call of Duty 4 –> Sachpreise?</li>
+<h4>Infos</h4>
+<b>Datum:</b> 03-05. Mai 2013</br>
+<b>Ort:</b> Mehrzweckhalle Subingen (SO)</br>
+<b>Teilnehmerzahl:</b> 228 Gamer</br>
+<b>Turniere:</b>  3 Turniere in folgenden Spielen:
+<ul class="turnierliste">
+<li>Starcraft 2 Heart of the Swarm</li>
+<li>League of Legends</li>
+<li>Counter-Strike: Global Offensive</li>
 </ul>
+</br></br>
+<h4>Zahlungsdetails:</h4>
+</br>Filmsoft Verein</br>
+Weingartstrasse 11	</br>
+3014 Bern</br>
+CH41 0630 0016 9466 1000 6</br>
+Valiant Bank</br>
+3001 Bern</br>
+</br>
+Betreff: Nickname, eevent 2.0</br>
+</br>
+Bei Zahlungen für mehrere Personen einfach alle Nicknamen angeben.</br>
+
+
 </p>

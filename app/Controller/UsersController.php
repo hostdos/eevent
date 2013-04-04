@@ -180,6 +180,30 @@ public function oldlogin() {
          	$datestring = DateTime::createFromFormat('Y-m-d', $datestring);
 			$this->request->data['User']['birthdate'] = CakeTime::format('Y-m-d H:i:s',$datestring);			
 			if ($this->User->save($this->request->data)) {
+
+
+
+				$emailstring = "E-mail bei Registrierung auf Webseite:
+
+				Hallo" . $this->request->data['User']['prename'] ." ". $this->request->data['User']['surname'] .",
+				Vielen Dank für Ihre Registrierung auf eevent.ch. Damit ist die Anmeldung für die eevent LAN-Party jedoch noch nicht ganz abgeschlossen.
+				Um definitiv angemeldet zu sein, klicke bitte auf der http://www.eevent.ch auf die Schaltfläche “Jetzt für den eevent anmelden”
+				oder klicke auf folgenden Link:
+				www.eevent.ch/registrations/register
+	
+				Vielen Dank für deine Teilnahme, wir freuen uns, dich vom 03-05 Mai in Subingen begrüssen zu dürfen.
+
+
+				Liebe Grüsse
+				Dein eevent Team
+				";
+
+				$Email = new CakeEmail();
+				$Email->from(array('info@eevent.ch' => 'Eevent info'));
+				$Email->to(array( $this->request->data['User']['email'] => $usr['User']['username']));
+				$Email->subject(__('Registrierung auf Eevent.ch'));
+				$Email->send($emailstring);
+
 				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
@@ -187,7 +211,6 @@ public function oldlogin() {
 			}
 			} else {
 				$this->Session->setFlash(__('The user already exists. Please, try again.'));
-
 			}
 		}
 	}
@@ -200,7 +223,7 @@ public function oldlogin() {
  * @return void
  */
 	public function edit($id = null) {
-		if (!$this->User->exists($id)) {
+		if (!$this->User->exists($id)) { 
 			throw new NotFoundException(__('Invalid user'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {

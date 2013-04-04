@@ -43,9 +43,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <body>
 
 
+  <?php echo $this->element('eevent_banner'); ?>
 
         <div class="container">
-  <?php echo $this->element('eevent_banner'); ?>
   <?php //echo $this->element('eevent_banner_small'); ?>
 
     <div class="row">

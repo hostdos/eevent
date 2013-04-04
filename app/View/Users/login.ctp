@@ -7,4 +7,7 @@ echo $this->Form->submit('login');
 echo $this->Form->end();
 
 echo $this->Html->link('Passwort vergessen?', array('controller' => 'users', 'action' => 'forgotpass'));
+echo "</br>";
+echo $this->Html->link('Registrieren', array('controller' => 'users','action'=>'add','admin'=> null));
+
 ?>
