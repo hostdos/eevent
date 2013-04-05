@@ -43,12 +43,15 @@ float: left;
 z-index: 5;
 overflow: hidden;
 background-color: #113585;
-box-shadow: 2px 0px 4px;
+box-shadow: 2px 0px 49px;
 }
 
-.hero-unit h1, p{
+.hero-unit h1,p{
   z-index: 5;
   color: #CFCFCF;
+}
+p{
+  color: #173675;
 }
 
 .bannerdiv {
@@ -203,7 +206,7 @@ margin-top: 5px;
 }
 
 .nav li {
- width: 33%;  
+ width: 50%;  
  text-align: center;
 }
 
