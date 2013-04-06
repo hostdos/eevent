@@ -193,6 +193,10 @@ margin-left: 50px;
 margin-top: 5px;
 }
 
+.newscontent {
+  float: left;
+margin-top: 20px;
+}
 
 .nav {
     margin-left:auto;
@@ -206,7 +210,7 @@ margin-top: 5px;
 }
 
 .nav li {
- width: 50%;  
+ width: 33%;  
  text-align: center;
 }
 

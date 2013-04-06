@@ -1,25 +1,18 @@
-<h1>Throw it, Cake! </h1>
-<p>Eyahh! These jelly kinders arent... alive, are they? What? No, they cant even talk. Kick it! Thanks for helping me out guys. What are these buggers for, anyway? Oh, theyre decorations for my Biennial Gumball Ball. Tonight!</p>
-<p>Sounds like it gonna be large. Yes! So very large. Id like you to be there as my special guest. You want me to go with you to the ball? Heck yes. As my pal! Oh. Right. It starts at seven, so dont be late! Fionna, we got trouble! My tail is totally frizzin out! Ill check it out.</p>
-<h2>Its Ice Queen!</h2>
-<ol>
-<li>No! No retreat, girl.</li>
-<li>Hello, Fionna.</li>
-<li>And I see you brought Cake.</li>
-<li>Thats cool, right?</li>
-<li>Only if its cool that I brought... Lord Monochromicorn!</li>
-</ol>
-<p>The Prince shall be mine! Back inside! Outta my way, tomboy! Ice Queen, why are you always predatoring on dudes? Ha! You should to talk! Keeping all the babes to yourself, totally ice-blocking my game! What? Not this time! Gah! Slush Beast!</p>
-<h3>Cake! Morning-star mode!</h3>
-<p>You saved me from the Ice Queen! Oh, uh, yeah I guess. Is she gone? She must have fled. Fionna, youre so strong. And you look so beautiful in the snow. What are you doing later? I was just going to go home, I... Come with me. Lets go out. Go... out? Yeah. Lets go somewhere. What? Wed love to! Great! Meet me in the castle gardens in an hour! Yes, well be there!</p>
-<ul>
-<li>Hiya, gorgeous.</li>
-<li>H-E-Y.</li>
-<li>Accept these tokens of our esteem.</li>
-<li>Hey you didnt have to, guy...</li>
-<li>Nonsense. For you, Cake, a satchel of nepetalactone. Mo-Chro picked it himself.</li>
-</ul>
-<h4>Oh, its a date!</h4>
-<p>No, its not. Im sure when he said go out, he meant go out, not go out! Shut up, hes into you! Come on, you heard what he said. Im like his guy-friend. Well, that could change tonight. If its a date, why are you coming? Im coming to help you! Hold on, Im bringing my dulcimer. Man.</p>
-<h5>Its a conversation starter.</h5>
-<p>Fine, Ill do this if only to prove you wrong. Mm... Lets just bail, I changed my mind.</p>
+<h1>Unsere Sponsoren</h1>
+<p>Ohne die unterstützung unserer Sponsoren wäre die Eevent LAN niemals möglich,</br> das gesamte Eevent team dankt Ihnen von vollem Herzen.<p>
+</br>
+<h2><a href="http://www.lanforge.ch" target="blank">Lanforge</a></h2>
+<h4>"Wir lieben esports"</h4>
+<p>In der Schweizer E-Sport und Gaming Szene besteht ein Mangel an Shops, welche genau für sie ausgerichtet ist. Ein solcher Shop sollte Peripherie und Hardware, welche genau für diese Szene erstellt wurde, anbieten. DAS ist lanforge.ch.</p> 
+</br>
+
+<h2><a href="http://www.tesorotec.com/" target="blank">Tesoro</a></h2>	
+<h4>"Break The Rules"</h4>
+</p>Tesoro Technology USA Inc. wurde im Jahr 2011 von Games-Enthusiasten mit dem Ziel gegründet,</br> einzigartige Produkte speziell für Gamer zu entwickeln. Heute bietet Tesoro hochwertige und formschöne Peripherie,</br>optimiert für Spitzenleistungen, für das Spielen am PC, an. Um sich in der hart umkämpften Gaming-Branche</br> mit den Besten der Besten messen und behaupten zu können, investiert Tesoro</br> kontinuierlich in die Entwicklung und Verbesserung der Produkte.</p> 	
+</br>
+<h2><a href="http://www.swisslife.com/" target="blank">Swiss Life Select</a></h2>
+<h4>"Vorsorge- und Finanzlösungen"</h4>
+</br>
+<p>Seit über 150 Jahren ist Swiss Life in der Schweiz führend in der finanziellen Vorsorge und verfügt damit über eine einzigartige Expertise. Das Unternehmen bietet Firmen und Privatpersonen optimale Lösungen für alle Vorsorgebedürfnisse und jede Risikosituation. Swiss Life will als Dienstleisterin der Top-Klasse Massstäbe setzen für die Qualität in der Beratung, bei den Produkten und im Service. Dazu orientieren sich alle Mitarbeitenden an gemeinsamen Wertvorstellungen.</p>
+</br>
+Sie sind jung, geniessen das Leben und verfolgen Ihre eigenen Ziele. Sie möchten sich noch nicht zu fest binden und geniessen Ihre Freiheit. Trotzdem ist es auch in Ihrer Situation empfehlenswert, über die Vorsorge nachzudenken und erste Weichen für eine finanziell sorgenfreie Zukunft zu stellen.</p>

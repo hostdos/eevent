@@ -30,9 +30,11 @@ public $helpers = array('Html');
 	$_output .= '</div>';
 
 	$_output .= '</header>';
+	$_output .= '<div class="newscontent">';
 	$_output .= '<p>';
 	$_output .= $nws['News']['content'];
 	$_output .= '</p>';
+	$_output .= '</div>';
 	$_output .= '<footer>';
 	$_output .= '</footer>';
 	$_output .= '</article>';
@@ -59,9 +61,13 @@ public $helpers = array('Html');
 	$_output .= '</div>';
 
 	$_output .= '</header>';
-	$_output .= '<p>';
+		$_output .= '<div class="newscontent">';
+
+	//$_output .= '<p>';
 	$_output .= $nws['News']['content'];
-	$_output .= '</p>';
+	//$_output .= '</p>';
+		$_output .= '</div>';
+
 	$_output .= '<footer>';
 	$_output .= '</footer>';
 	$_output .= $this->Html->link('Editieren', array('controller' => 'news', 'action' => 'edit',$nws['News']['id'], 'admin' => true));
@@ -91,9 +97,12 @@ public $helpers = array('Html');
 	$_output .= '<h1>' .$this->Html->link($nws['News']['title'], array('controller' => 'news',
 		'action'=>'view',$nws['News']['id'])). '</h1>';
 	$_output .= '</header>';
+	$_output .= '<div class="newscontent">';
 	$_output .= '<p>';
 	$_output .= $nws['News']['content'];
 	$_output .= '</p>';
+			$_output .= '</div>';
+
 	$_output .= '<footer>';
 	$_output .= '<div class="author">';
 	$_output .= 'geschrieben von: ';
