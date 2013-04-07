@@ -1,0 +1,80 @@
+.room{
+	position: absolute;
+	margin-bottom: 100px;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+#room{
+	width: 620px;
+	height: 1200px;
+}
+
+.roomLoading{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 15000;
+}
+
+.roomLoading img{
+	position: fixed;
+	margin-left: 240px;
+	margin-top: 110px;
+}
+
+.seatGroup{
+	position: absolute;
+	z-index: 5000;
+}
+
+.seat{
+	float: left;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin: 1px;
+	text-align: center;
+}
+
+.seatGroup:hover{
+	z-index: 40000;
+}
+
+.seatLabel{
+	display: none;
+	position: relative;
+	top: -2px;
+	left: 20px;
+	height: 60px;
+	width: 180px;
+	text-align: center;
+	padding-top: 5px;
+	z-index: 50000;
+}
+
+.seat.occupied:hover .seatLabel{
+	display: inline-block;
+}
+
+.roomArea{
+	position: absolute;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

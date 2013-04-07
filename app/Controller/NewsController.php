@@ -22,7 +22,7 @@ class NewsController extends AppController {
 
 	public function index() {
 		$this->set('amount', 2);
-		$this->layout = 'bootstrap';
+		$this->layout = 'bootstrap_basic';
 	}
 
 	public function view($id = null)	{

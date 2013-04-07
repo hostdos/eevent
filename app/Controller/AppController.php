@@ -40,15 +40,35 @@ class AppController extends Controller {
 		$this->layout = 'bootstrap_basic';
 		CakeSession::write('Config.language', 'deu');
 		$this->set('authUser', $this->Auth->user('User'));
-		$this->allowAccess();
+		$this->loadModel('Registrations');
+		$all = 238;
+		$bezahlt = 0;
+		$angemeldet = $this->Registrations->find('count', array(
+        'conditions' => array('Registrations.registered' => 1)));
+		$progressbar['angemeldet']['num'] = $angemeldet;
+		$progressbar['angemeldet']['perc'] = $this->percentage($angemeldet);
+		$progressbar['bezahlt']['num'] = $bezahlt;
+		$progressbar['bezahlt']['perc'] = $this->percentage($bezahlt);
+		$tempnum = $all - ($bezahlt + $angemeldet);
+
+		$progressbar['frei']['num'] = $tempnum;
+		$progressbar['frei']['perc'] = $this->percentage($tempnum);
+		$this->set('progressbar', $progressbar);
+		$this->allowAccess(); 
 			}
 
 
 	private function allowAccess() {
 
-   if (in_array($this->name, array('News','Event','Team'))) {
-     $this->Auth->allow(array('index','display','view','add','edit', 'forgotpass'));
+   if (in_array($this->name, array('News','Event','Team','Pages'))) {
+     $this->Auth->allow(array('index','display','view','add','edit', 'forgotpass','liste'));
    }
  }
+ 	private function percentage($num = null){
+ 		$count1 = $num / 238;
+		$count2 = $count1 * 100;
+		$count = number_format($count2, 0);
+		return $count;
+ 	}
 
 }

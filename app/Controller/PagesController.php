@@ -37,13 +37,19 @@ class PagesController extends AppController {
  */
 	public $uses = array();
 
+	public function beforeFilter(){
+		parent::beforeFilter();
+		$this->Auth->allow('teilnehmer','andi');
+	}
+
+
 /**
  * Displays a view
  *
  * @param string What page to display
  */
 	public function display() {
-		$this->layout = 'core';
+		$this->layout = 'bootstrap_basic';
 
 		$path = func_get_args();
 
@@ -67,7 +73,10 @@ class PagesController extends AppController {
 		$this->render(implode('/', $path));
 	}
 	public function andi() {
-
+$this->layout = 'core';
+	}
+	public function sitzplan() {
+		$this->layout = "bootstrap_basic";
 	}
 
 }

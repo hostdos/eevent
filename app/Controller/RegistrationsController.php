@@ -14,7 +14,7 @@ public $components = array('Auth','Email');
 
 	public function beforeFilter(){
 		parent::beforeFilter();
-		
+		$this->Auth->allow('liste');
 	}
 
 
@@ -257,4 +257,32 @@ Dein Eevent Team
 		$this->Session->setFlash(__('Registration was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+
+	public function liste() {
+		$this->loadModel('Registrations');
+		$this->loadModel('Users');
+		$this->loadModel('UserRegistrations');
+		$this->UserRegistrations->bindModel(array('belongsTo' => array('Users')));
+		$angemeldet = $this->Registrations->find('list', array(
+        'conditions' => array('Registrations.registered' => 1),
+        'fields' => 'Registrations.user_id',
+        'recursive' => 1
+        ));
+
+        $users = $this->Users->find('list', array(
+        	'conditions' => array('Users.id' => $angemeldet),
+        	'fields' => 'Users.username'
+        	));
+
+        $this->set('users', $users);
+      //  var_dump($test);
+        var_dump($users);
+/*        foreach ($angemeldet as $a) {
+        	$user = $this->Users->findById($a['user_id']);
+        	var_dump($a);
+        }
+*/
+
+	}
+
 }

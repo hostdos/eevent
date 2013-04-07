@@ -22,7 +22,7 @@ class EventController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->layout = 'bootstrap';
+		$this->layout = 'bootstrap_basic';
 		
 	}
 
