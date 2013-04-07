@@ -104,6 +104,14 @@ $(document).ready(function(){
 			x: 0,
 			y: 100
 		},
+				{
+			type: 'area',
+			label: 'Catering',
+			width: 60,
+			height: 160,
+			x: 0,
+			y: 200
+		},
 		{
 			type: 'area',
 			label: 'Eingangsbereich',

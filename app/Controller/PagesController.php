@@ -75,7 +75,7 @@ class PagesController extends AppController {
 	public function andi() {
 $this->layout = 'core';
 	}
-	public function sitzplan() {
+	public function agb() {
 		$this->layout = "bootstrap_basic";
 	}
 

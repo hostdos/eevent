@@ -1,5 +1,5 @@
     <ul class="nav nav-tabs">
-<?php $menupoints = array('News' => array('controller' => 'news', 'action' => 'index'), 'Event' => array( 'controller' => 'event', 'action' => 'index'), 'Sponsoren' => array('controller' => 'team', 'action' => 'index'),'Sitzplan' => array('controller' => 'pages', 'action' => 'sitzplan'));?>
+<?php $menupoints = array('News' => array('controller' => 'news', 'action' => 'index', 'admin' => null), 'Event' => array( 'controller' => 'event', 'action' => 'index', 'admin' => null ), 'Sponsoren' => array('controller' => 'team', 'action' => 'index', 'admin' => null ),'Sitzplan' => array('controller' => 'pages', 'action' => 'sitzplan', 'admin' => null ));?>
 
 <?php 
  $num = 0;
