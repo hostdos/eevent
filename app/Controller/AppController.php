@@ -61,7 +61,7 @@ class AppController extends Controller {
 	private function allowAccess() {
 
    if (in_array($this->name, array('News','Event','Team','Pages'))) {
-     $this->Auth->allow(array('index','display','view','add','edit', 'forgotpass','liste'));
+     $this->Auth->allow(array('index','display','view','add','edit', 'forgotpass','liste','full'));
    }
  }
  	private function percentage($num = null){

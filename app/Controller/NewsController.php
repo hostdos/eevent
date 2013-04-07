@@ -16,7 +16,7 @@ class NewsController extends AppController {
 
 	public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('news');
+		$this->Auth->allow('news','full');
 	}
 
 
