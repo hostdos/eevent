@@ -11,8 +11,8 @@
                <div class="padd">
                   <div class="logo-pic">
                      <!-- eevent logo -->
-                     <?php echo $this->Html->image('welcome/logo.png'); ?>
-                  </div>
+                     <?php echo $this->Html->image('welcome/logo.png'); ?> 
+                   </div>
                   <div class="logo-text">
                      <!-- Add company name in below line. Replace # with your site url. -->
                      <!-- <h1><a href="#">Company Logo</a></h1> -->

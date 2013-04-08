@@ -152,9 +152,8 @@ min-width: 180px;
 .news p{
   color: #4545A5;
   margin-left: 6px;
-  padding-left: 4px;
+  padding-left: 6px;
   padding-top: 5px;
-  border-left: 1px dashed #99B;
 }
 
 article footer {

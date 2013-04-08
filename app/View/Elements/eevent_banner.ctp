@@ -11,7 +11,7 @@
       </div>
       <div>
         <p style="text-align: center;">
-          Die EEvent 2.0 Startet bald! mit 238 Sitzplätzen und guter laune wird
+          Die EEvent 2.0 startet bald! mit 228 Sitzplätzen und guter Laune wird
           das super.&nbsp;
         </p>
       </div>

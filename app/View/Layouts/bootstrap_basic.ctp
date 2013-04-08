@@ -1,5 +1,5 @@
 <?php
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeDescription = __d('eevent', 'eevent');
 
 
 ?>
@@ -9,22 +9,17 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 
 <head>
-    <meta charset="utf-8">
-    <title>
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="dominique hostettler @ myinsanity.eu">
-
-
-  
-  <?php echo $this->Html->charset(); ?>
-  <title>
-    <?php echo $cakeDescription ?>:
-    <?php echo $title_for_layout; ?>
-  </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Titel -->
+  <title>eevent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Beschreibung -->
+  <meta name="description" content="eevent lan website">
+  <meta name="keywords" content="lan switzerland eevent myinsanity">
+  <meta name="author" content="Dominique Hostettler">
   <?php
-    echo $this->Html->meta('icon');
+    echo $this->Html->meta('favicon.ico');
 
     //echo $this->Html->css('cake.generic');
   //      echo $this->Html->css('bootstrap-responsive');
