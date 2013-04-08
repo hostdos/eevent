@@ -15,6 +15,8 @@ public $components = array('Auth','Email');
 	public function beforeFilter(){
 		parent::beforeFilter();
 		$this->Auth->allow('liste');
+				$this->layout = 'bootstrap_basic';
+
 	}
 
 
@@ -259,6 +261,7 @@ Dein Eevent Team
 	}
 
 	public function liste() {
+		$this->layout = 'bootstrap_basic';
 		$this->loadModel('Registrations');
 		$this->loadModel('Users');
 		$this->loadModel('UserRegistrations');
@@ -276,7 +279,6 @@ Dein Eevent Team
 
         $this->set('users', $users);
       //  var_dump($test);
-        var_dump($users);
 /*        foreach ($angemeldet as $a) {
         	$user = $this->Users->findById($a['user_id']);
         	var_dump($a);

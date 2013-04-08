@@ -1,4 +1,3 @@
-
 <h1>Liste aller Eevent Teilnehmer</h1>
 </br>
 <h3>Angemeldete User</h3>
@@ -9,14 +8,11 @@ foreach ($users as $u) {
 echo '<li class="angemeldetlist">';
 echo $u;
 echo '</li>';
-}
-}else{
+}}else{
 echo '<li class="angemeldetlist">';
 echo 'Es hat sich noch kein User für die Eevent angemeldet';
 echo '</li>';
-  
-}
-?>
+}?>
 </ul>
 </br>
 <h3>Bezahlte User</h3>
@@ -25,4 +21,3 @@ echo '</li>';
 Es hat noch kein User für die Eevent bezahlt
 </li>
 </ul>
-
