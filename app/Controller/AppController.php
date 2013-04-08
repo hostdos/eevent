@@ -41,7 +41,7 @@ class AppController extends Controller {
 		CakeSession::write('Config.language', 'deu');
 		$this->set('authUser', $this->Auth->user('User'));
 		$this->loadModel('Registrations');
-		$all = 238;
+		$all = 228;
 		$bezahlt = 0;
 		$angemeldet = $this->Registrations->find('count', array(
         'conditions' => array('Registrations.registered' => 1)));
@@ -65,7 +65,7 @@ class AppController extends Controller {
    }
  }
  	private function percentage($num = null){
- 		$count1 = $num / 238;
+ 		$count1 = $num / 228;
 		$count2 = $count1 * 100;
 		$count = number_format($count2, 0);
 		return $count;

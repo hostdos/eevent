@@ -23,6 +23,10 @@ article footer a {
   border-radius: 2px;
 }
 
+footer {
+  margin-bottom: 14px;
+}
+
 .fpadd{
   height: 20px;
   width: 500px;
@@ -30,6 +34,12 @@ article footer a {
   text-align: center;
   vertical-align: text-bottom;
   font-size: 10px;
+  margin-bottom: 7px;
+}
+
+.fpadd img {
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 
@@ -238,11 +248,11 @@ margin-top: 20px;
       
 .nav {
     margin-left: 35% !important;
-    width: 30%;    
+    width: 35%;    
 }
 
 .nav li {
- width: 25%;  
+ width: 20%;  
  text-align: center;
 }
 

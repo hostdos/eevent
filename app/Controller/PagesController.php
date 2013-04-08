@@ -78,5 +78,9 @@ $this->layout = 'core';
 	public function agb() {
 		$this->layout = "bootstrap_basic";
 	}
+	public function faq() {
+		$this->layout = "bootstrap_basic";
+	}
+
 
 }

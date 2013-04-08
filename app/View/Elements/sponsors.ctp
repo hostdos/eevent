@@ -15,8 +15,8 @@
           array('target' => '_blank', 'escape' => false)); ?>
                   <?php  
           echo  $this->Html->link(
-                $this->Html->image('TESORO_box.jpg'),
-          'http://www.drinkenergy.ch',
+                $this->Html->image('tesoro.png'),
+          'http://www.lanforge.ch',
           array('target' => '_blank', 'escape' => false)); ?>
 
         <?php  
@@ -27,7 +27,7 @@
 
         <?php  
           echo  $this->Html->link(
-                $this->Html->image('lanforge_box_240x150.jpg'),
+                $this->Html->image('lanforge_box_240x150.png'),
           'http://www.lanforge.ch/',
           array('target' => '_blank', 'escape' => false)); ?>
 

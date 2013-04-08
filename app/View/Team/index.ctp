@@ -1,6 +1,11 @@
 <h1>Unsere Sponsoren</h1>
 <p>Ohne die unterstützung unserer Sponsoren wäre die Eevent LAN niemals möglich,</br> das gesamte Eevent team dankt Ihnen von vollem Herzen.<p>
 </br>
+<h2><a href="http://www.bison-group.com/" target="blank">Bison</a></h2>
+Bison gehört zu den führenden Schweizer IT-Unternehmen.</br> 
+Unsere Kunden profitieren von 30 Jahren Erfahrung in Entwicklung und Einführung von betriebswirtschaftlicher Software.</br>
+ Zusammen mit der Bison IT Services AGbieten wir unseren Kunden ein Gesamtangebot an Informatikleistungen.</br>
+</br>
 <h2><a href="http://www.tesorotec.com/" target="blank">Tesoro</a></h2>	
 <h4>"Break The Rules"</h4>
 </p>Tesoro Technology USA Inc. wurde im Jahr 2011 von Games-Enthusiasten mit dem Ziel gegründet,</br> einzigartige Produkte speziell für Gamer zu entwickeln. Heute bietet Tesoro hochwertige und formschöne Peripherie,</br>optimiert für Spitzenleistungen, für das Spielen am PC, an. Um sich in der hart umkämpften Gaming-Branche</br> mit den Besten der Besten messen und behaupten zu können, investiert Tesoro</br> kontinuierlich in die Entwicklung und Verbesserung der Produkte.</p> 	
