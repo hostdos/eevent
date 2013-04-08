@@ -184,20 +184,19 @@ public function oldlogin() {
 
 
 				$emailstring = 
-				"Hallo " . $this->request->data['User']['prename'] ." ". $this->request->data['User']['surname'] .",
+				'Hallo ' . $this->request->data["User"]["prename"] .' '. $this->request->data["User"]["surname"] .',
 				Vielen Dank für Ihre Registrierung auf eevent.ch. Damit ist die Anmeldung für die eevent LAN-Party jedoch noch nicht ganz abgeschlossen.
 				Um definitiv angemeldet zu sein, klicke bitte auf der http://www.eevent.ch auf die Schaltfläche “Jetzt für den eevent anmelden”
 				oder klicke auf folgenden Link:
-				www.eevent.ch/registrations/register
-	
+				<a href="www.eevent.ch/registrations/register" link </a>
 				Vielen Dank für deine Teilnahme, wir freuen uns, dich vom 03-05 Mai in Subingen begrüssen zu dürfen.
 
 
 				Liebe Grüsse
 				Dein eevent Team
-				";
-
+				';
 				$Email = new CakeEmail();
+				$Email->emailFormat('both');
 				$Email->from(array('info@eevent.ch' => 'Eevent info'));
 				$Email->to(array( $this->request->data['User']['email'] => $this->request->data['User']['username']));
 				$Email->subject(__('Registrierung auf Eevent.ch'));

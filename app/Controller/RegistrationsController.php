@@ -73,13 +73,13 @@ Dein Eevent Team
 			$this->Session->setFlash(__('The registration could not be saved. Please, try again.'));
 		}
 	}else{
-	//if not exists then create and put 1
+	//if exists then set to 1
 		$regist['id'] = $registr['Registration']['id'];
 		$regist['registered'] = 1;
 
 		if($this->Registration->save($regist)){
 
-			$Email = new CakeEmail();
+/*			$Email = new CakeEmail();
 			$Email->from(array('info@eevent.ch' => 'Eevent info'));
 			$Email->to(array( $usermail => $user['username']));
 			$Email->subject(__('Anmeldung für EEvent 2.0'));
@@ -106,7 +106,7 @@ Liebe Grüsse
 Dein Eevent Team
 ";
 			$Email->send($emailstring);
-
+*/
 			$this->Session->setFlash(__('You are now registered'));
 			$this->redirect(array('controller' => 'news', 'action' => 'index'));
 

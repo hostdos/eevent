@@ -15,6 +15,11 @@
           array('target' => '_blank', 'escape' => false)); ?>
                   <?php  
           echo  $this->Html->link(
+                $this->Html->image('lanforge_box_240x150.png'),
+          'http://www.lanforge.ch/',
+          array('target' => '_blank', 'escape' => false)); ?>
+                  <?php  
+          echo  $this->Html->link(
                 $this->Html->image('tesoro.png'),
           'http://www.lanforge.ch',
           array('target' => '_blank', 'escape' => false)); ?>
@@ -23,12 +28,6 @@
           echo  $this->Html->link(
                 $this->Html->image('SL_S_RGB_p.jpg'),
           'http://www.swisslife.com/',
-          array('target' => '_blank', 'escape' => false)); ?>
-
-        <?php  
-          echo  $this->Html->link(
-                $this->Html->image('lanforge_box_240x150.png'),
-          'http://www.lanforge.ch/',
           array('target' => '_blank', 'escape' => false)); ?>
 
         </div>

@@ -31,7 +31,7 @@ $(document).ready(function(){
             x: 450,
             y: 158
         },
-                {
+        {
             type: 'seatGroup',
             startingId: 41,
             width: 2,
@@ -39,7 +39,7 @@ $(document).ready(function(){
             x: 325,
             y: 158
         },
-                {
+        {
             type: 'seatGroup',
             startingId: 51,
             width: 2,
@@ -55,7 +55,6 @@ $(document).ready(function(){
             x: 75,
             y: 158
         },
-
         {
             type: 'seatGroup',
             startingId: 71,
@@ -64,7 +63,7 @@ $(document).ready(function(){
             x: 450,
             y: 558
         },
-                {
+        {
             type: 'seatGroup',
             startingId: 81,
             width: 2,
@@ -72,7 +71,7 @@ $(document).ready(function(){
             x: 325,
             y: 558
         },
-                {
+        {
             type: 'seatGroup',
             startingId: 91,
             width: 2,
@@ -80,7 +79,7 @@ $(document).ready(function(){
             x: 200,
             y: 558
         },
-                {
+        {
             type: 'seatGroup',
             startingId: 101,
             width: 2,
@@ -104,7 +103,7 @@ $(document).ready(function(){
 			x: 0,
 			y: 100
 		},
-				{
+		{
 			type: 'area',
 			label: 'Catering',
 			width: 60,
@@ -281,8 +280,8 @@ $(document).ready(function(){
 		}
 		
 		function fetchSeatList(){
-			return [ //Get this from the server
-			];
+			//return [ //Get this from the server
+			//];
 		}
 		
 		function sendSeatList(){
