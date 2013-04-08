@@ -185,15 +185,15 @@ public function oldlogin() {
 
 				$emailstring = 
 				'Hallo ' . $this->request->data["User"]["prename"] .' '. $this->request->data["User"]["surname"] .',
-				Vielen Dank für Ihre Registrierung auf eevent.ch. Damit ist die Anmeldung für die eevent LAN-Party jedoch noch nicht ganz abgeschlossen.
-				Um definitiv angemeldet zu sein, klicke bitte auf der http://www.eevent.ch auf die Schaltfläche “Jetzt für den eevent anmelden”
-				oder klicke auf folgenden Link:
-				<a href="www.eevent.ch/registrations/register" link </a>
-				Vielen Dank für deine Teilnahme, wir freuen uns, dich vom 03-05 Mai in Subingen begrüssen zu dürfen.
-
-
-				Liebe Grüsse
-				Dein eevent Team
+				Vielen Dank für Ihre Registrierung auf eevent.ch. Damit ist die Anmeldung für die eevent LAN-Party jedoch noch nicht ganz abgeschlossen.</br>
+				Um definitiv angemeldet zu sein, klicke bitte auf der http://www.eevent.ch auf die Schaltfläche “Jetzt für den eevent anmelden”</br>
+				oder klicke auf folgenden Link:</br>
+				<a href="www.eevent.ch/registrations/register" link </a></br>
+				Vielen Dank für deine Teilnahme, wir freuen uns, dich vom 03-05 Mai in Subingen begrüssen zu dürfen.</br>
+</br>
+</br>
+				Liebe Grüsse</br>
+				Dein eevent Team</br>
 				';
 				$Email = new CakeEmail();
 				$Email->emailFormat('both');

@@ -44,7 +44,8 @@ public $components = array('Auth','Email');
 
 			$emailstring = "Hallo ". $user['username'] .",
 Deine Anmeldung für die eevent LAN-Party 2.0 war erfolgreich!
-Damit du einen Sitzplatz auswählen kannst und du definitiv einen Platz hast, musst du nun nur noch den Unkostenbeitrag von CHF 45.00 auf folgendes Konto überweisen.
+Damit du einen Sitzplatz auswählen kannst und du definitiv einen Platz hast, musst du nun nur noch den Unkostenbeitrag
+von CHF 45.00 auf folgendes Konto überweisen.
 
 Zahlungsdetails:
 Filmsoft Verein
