@@ -1,4 +1,4 @@
-# Copyright YEAR NAME <EMAIL@ADDRESS>
+﻿# Copyright YEAR NAME <EMAIL@ADDRESS>
 #
 msgid ""
 msgstr ""
@@ -100,11 +100,11 @@ msgid "Post was not deleted"
 msgstr "Post konnte nicht gelöscht werden"
 
 #: Controller/RegistrationsController.php:41
-msgid "Registrierung fÃ¼r EEvent 2.0"
+msgid "Registrierung für EEvent 2.0"
 msgstr "Anmeldung für den Eevent 2.0"
 
 #: Controller/RegistrationsController.php:42;60
-msgid "Du hast dich fÃ¼r die EEvent 2.0 angemeldet!"
+msgid "Du hast dich für die EEvent 2.0 angemeldet!"
 msgstr "Du hast dich erfolgreich für den Eevent 2.0 angemeldet!"
 
 #: Controller/RegistrationsController.php:44;62
@@ -116,11 +116,11 @@ msgid "The registration could not be saved. Please, try again."
 msgstr "Die Anmeldunge konnte nicht gespeichert werden"
 
 #: Controller/RegistrationsController.php:59
-msgid "Anmeldung fÃ¼r EEvent 2.0"
+msgid "Anmeldung für EEvent 2.0"
 msgstr "Anmeldung für den Eevent 2.0"
 
 #: Controller/RegistrationsController.php:95;111
-msgid "Abmeldung fÃ¼r EEvent 2.0"
+msgid "Abmeldung für EEvent 2.0"
 msgstr "Abmeldung für den Eevent 2.0"
 
 #: Controller/RegistrationsController.php:96;112
@@ -897,3 +897,23 @@ msgstr "E-Mail"
 #: Model/User.php:validation for field birthdate
 msgid "datetime"
 msgstr ""
+
+#: Controller/UsersController.php:65
+msgid "You are not allowed to edit this User."
+msgstr "Du hast keine berechtigungen diesen User zu editieren."
+
+#: Controller/UsersController.php:65
+msgid "You are registered"
+msgstr "Du bist für die Eevent 2.0 angemeldet"
+
+#: Controller/UsersController.php:65
+msgid "You are not registered"
+msgstr "Du bist nicht für die Eevent 2.0 angemeldet"
+
+#: Controller/UsersController.php:65
+msgid "Unregister?"
+msgstr "Abmelden?"
+
+#: Controller/UsersController.php:65
+msgid "Register?"
+msgstr "Anmelden?"

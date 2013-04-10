@@ -7,6 +7,8 @@ border-radius: 0px;
 	
 }
 }
+
+
 article footer a {
   color: teal;
 
@@ -25,6 +27,10 @@ article footer a {
 
 footer {
   margin-bottom: 14px;
+}
+
+.actions {
+  list-style: none;
 }
 
 .fpadd{

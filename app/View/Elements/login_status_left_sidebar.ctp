@@ -3,7 +3,7 @@
         if ($authUser){
          echo '<span>';
          echo 'Eingeloggt als ';
-         echo $this->Html->link($authUser['username'], array('controller' => 'users', 'action' => 'edit', 
+         echo $this->Html->link($authUser['username'], array('controller' => 'users', 'action' => 'view', 
           $authUser['id']));
          echo '</br>';
          echo $this->Html->link('Ausloggen?', array('controller' => 'users','action'=>'logout','admin' => null));

@@ -147,6 +147,17 @@ public function oldlogin() {
  * @return void
  */
 	public function view($id = null) {
+		$usr = $this->Auth->user('User');
+		if ($usr['id'] == $id) {
+			$this->set('isowner', true);
+		}else{
+			$this->set('isowner', false);
+		}
+
+		$this->loadModel('Registrations');
+		$registration = $this->Registrations->findByUserId($id);
+		$this->set('isregistered', $registration['Registrations']['registered']);
+
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
@@ -176,8 +187,8 @@ public function oldlogin() {
 			$this->request->data['User']['status'] = 0;
 			$this->request->data['User']['isdisabled'] = 0;
 			$this->request->data['User']['password'] = Security::hash($this->request->data['User']['password'], 'md5',false);
-			$datestring = $this->request->data['User']['birthdate']['year'] . '-' .$this->request->data['User']['birthdate']['month'] . '-' . $this->request->data['User']['birthdate']['day'];
-         	$datestring = DateTime::createFromFormat('Y-m-d', $datestring);
+			$datestring = $this->request->data['User']['birthdate']['year'] . '/' .$this->request->data['User']['birthdate']['month'] . '/' . $this->request->data['User']['birthdate']['day'];
+         	$datestring = date('Y-m-d', strtotime($datestring));
 			$this->request->data['User']['birthdate'] = CakeTime::format('Y-m-d H:i:s',$datestring);			
 			if ($this->User->save($this->request->data)) {
 
@@ -221,6 +232,11 @@ public function oldlogin() {
  * @return void
  */
 	public function edit($id = null) {
+		$usr = $this->Auth->user('User');
+		var_dump($usr['id']);
+		var_dump($id);
+		if ($usr['id'] === $id){
+
 		if (!$this->User->exists($id)) { 
 			throw new NotFoundException(__('Invalid user'));
 		}
@@ -240,6 +256,10 @@ public function oldlogin() {
 		} else {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 			$this->request->data = $this->User->find('first', $options);
+		}
+		} else {
+			$this->Session->setFlash(__('You are not allowed to edit this User.'));
+			$this->redirect(array('controller' => 'news', 'action' => 'index'));
 		}
 	}
 
