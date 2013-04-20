@@ -25,8 +25,9 @@ public $helpers = array('Html');
 		'action'=>'view',$nws['News']['id'])). '</h1>';
 			$_output .= '<div class="author">';
 	$_output .= 'geschrieben von: ';
-	$_output .=  $this->Html->link($user['Users']['username'], array('controller' => 'users', 'action' => 'view'
-		,$user['Users']['id']));
+	//$_output .=  $this->Html->link($user['Users']['username'], array('controller' => 'users', 'action' => 'view'
+//		,$user['Users']['id']));
+	$_output .= $user['Users']['username'];
 	$_output .= '</div>';
 
 	$_output .= '</header>';
@@ -56,8 +57,9 @@ public $helpers = array('Html');
 		'action'=>'view',$nws['News']['id'])). '</h1>';
 			$_output .= '<div class="author">';
 	$_output .= 'geschrieben von: ';
-	$_output .=  $this->Html->link($user['Users']['username'], array('controller' => 'users', 'action' => 'view'
-		,$user['Users']['id']));
+//	$_output .=  $this->Html->link($user['Users']['username'], array('controller' => 'users', 'action' => 'view'
+//		,$user['Users']['id']));
+	$_output .= $user['Users']['username'];
 	$_output .= '</div>';
 
 	$_output .= '</header>';
@@ -82,7 +84,7 @@ public $helpers = array('Html');
 		$this->Comments = ClassRegistry::init('Comments');
 
 		$options = array( 'fields' => array('News.id', 'News.title', 'News.content', 'News.users_id'),
-		 'limit' => ($count) , 'conditions' => array('News.isdisabled' => 0) );
+		 'limit' => ($count) , 'conditions' => array('News.isdisabled' => 0),'order' => array('News.id DESC') );
 		$News = $this->News->find('all', $options);
 		foreach ($News as $nws) {
 
@@ -97,17 +99,17 @@ public $helpers = array('Html');
 	$_output .= '<h1>' .$this->Html->link($nws['News']['title'], array('controller' => 'news',
 		'action'=>'view',$nws['News']['id'])). '</h1>';
 	$_output .= '</header>';
-	$_output .= '<div class="newscontent">';
 	$_output .= '<p>';
 	$_output .= $nws['News']['content'];
 	$_output .= '</p>';
-			$_output .= '</div>';
 
 	$_output .= '<footer>';
 	$_output .= '<div class="author">';
 	$_output .= 'geschrieben von: ';
-	$_output .=  $this->Html->link($user['Users']['username'], array('controller' => 'users', 'action' => 'view'
-		,$user['Users']['id']));
+	//$_output .=  $this->Html->link($user['Users']['username'], array('controller' => 'users', 'action' => 'view'
+//		,$user['Users']['id']));
+			$_output .= $user['Users']['username'];
+
 	$_output .= '</div>';
 	if($commentnum == 1){$_output .= $this->Html->link( $commentnum .' '. __('Kommentar'), array('controller' => 'news', 'action' => 'view'
 		,$nws['News']['id']), array('class' => 'news-comments')); }else{$_output .= $this->Html->link( $commentnum .' '. __('Kommentare'), array('controller' => 'news', 'action' => 'view'
@@ -127,7 +129,7 @@ public $helpers = array('Html');
 		$this->Comments = ClassRegistry::init('Comments');
 
 		$options = array( 'fields' => array('News.id', 'News.title', 'News.content', 'News.users_id'),
-		 'limit' => ($count) , 'conditions' => array('News.isdisabled' => 0) );
+		 'limit' => ($count) , 'conditions' => array('News.isdisabled' => 0),'order' => array('News.id DESC') );
 		$News = $this->News->find('all', $options);
 		foreach ($News as $nws) {
 

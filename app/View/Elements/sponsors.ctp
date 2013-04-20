@@ -7,13 +7,18 @@
           array('target' => '_blank', 'escape' => false)); ?>
         <?php  
           echo  $this->Html->link(
-                $this->Html->image('lanforge_box_240x150.png'),
+                $this->Html->image('banner_170x96_white.png'),
           'http://www.lanforge.ch/',
           array('target' => '_blank', 'escape' => false)); ?>
         <?php  
           echo  $this->Html->link(
-                $this->Html->image('SL_S_RGB_p.jpg'),
-          'http://www.swisslife.com/',
+                $this->Html->image('swisslife_select.png'),
+          'http://www.swisslife-select.ch/',
+          array('target' => '_blank', 'escape' => false)); ?>
+                          <?php  
+          echo  $this->Html->link(
+                $this->Html->image('logo_gaw.png'),
+          'http://www.ga-weissenstein.ch/',
           array('target' => '_blank', 'escape' => false)); ?>
         <?php  
           echo  $this->Html->link(
@@ -22,7 +27,11 @@
           array('target' => '_blank', 'escape' => false)); ?>
                   <?php  
           echo  $this->Html->link(
-                $this->Html->image('tesoro.png'),
+                $this->Html->image('TESORO_banner_170x96_white.png'),
           'http://www.lanforge.ch',
           array('target' => '_blank', 'escape' => false)); ?>
         </div>
+
+
+
+        

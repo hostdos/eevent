@@ -1,5 +1,11 @@
     <ul class="nav nav-tabs">
-<?php $menupoints = array('News' => array('controller' => 'news', 'action' => 'index', 'admin' => null), 'Event' => array( 'controller' => 'event', 'action' => 'index', 'admin' => null ), 'Sponsoren' => array('controller' => 'team', 'action' => 'index', 'admin' => null ),'Sitzplan' => array('controller' => 'pages', 'action' => 'sitzplan', 'admin' => null ),'FAQ' => array('controller' => 'pages', 'action' => 'faq', 'admin' => null ));?>
+      <a id="menu" href="#menu"></a>
+<?php $menupoints = array(
+'News' => array('controller' => 'news', 'action' => 'index', 'admin' => null, '#' => 'menu'),
+ 'Event' => array( 'controller' => 'event', 'action' => 'index', 'admin' => null , '#' => 'menu'),
+  'Sponsoren' => array('controller' => 'team', 'action' => 'index', 'admin' => null , '#' => 'menu'),
+  'Sitzplan' => array('controller' => 'registrations', 'action' => 'sitzplan', 'admin' => null , '#' => 'menu'),
+  'FAQ' => array('controller' => 'pages', 'action' => 'faq', 'admin' => null , '#' => 'menu'));?>
 
 <?php 
  $num = 0;

@@ -39,12 +39,15 @@ class AppController extends Controller {
 	public function beforefilter(){
 		$this->layout = 'bootstrap_basic';
 		CakeSession::write('Config.language', 'deu');
+		Configure::write('Config.language','de');
 		$this->set('authUser', $this->Auth->user('User'));
 		$this->loadModel('Registrations');
 		$all = 228;
-		$bezahlt = 0;
 		$angemeldet = $this->Registrations->find('count', array(
         'conditions' => array('Registrations.registered' => 1)));
+   		$bezahlt = $this->Registrations->find('count', array(
+        'conditions' => array('Registrations.registered' => 1, 'Registrations.paid' => 1)));
+
 		$progressbar['angemeldet']['num'] = $angemeldet;
 		$progressbar['angemeldet']['perc'] = $this->percentage($angemeldet);
 		$progressbar['bezahlt']['num'] = $bezahlt;
@@ -52,7 +55,7 @@ class AppController extends Controller {
 		$tempnum = $all - ($bezahlt + $angemeldet);
 
 		$progressbar['frei']['num'] = $tempnum;
-		$progressbar['frei']['perc'] = $this->percentage($tempnum);
+		$progressbar['frei']['perc'] = $this->percentage_floor($tempnum);
 		$this->set('progressbar', $progressbar);
 		$this->allowAccess(); 
 			}
@@ -70,5 +73,12 @@ class AppController extends Controller {
 		$count = number_format($count2, 0);
 		return $count;
  	}
+	 	private function percentage_floor($num = null){
+ 		$count1 = $num / 228;
+		$count2 = $count1 * 100;
+		$count = floor($count2);
+		return $count;
+ 	}
+
 
 }

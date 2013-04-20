@@ -8,13 +8,14 @@ App::uses('AppController', 'Controller');
  */
 class RegistrationsController extends AppController {
 
-public $components = array('Auth','Email');
+public $helpers = array('Js');
+public $components = array('Auth','Email','RequestHandler');
 
 
 
 	public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('liste');
+		$this->Auth->allow('liste', 'sitzplan');
 				$this->layout = 'bootstrap_basic';
 
 	}
@@ -44,8 +45,7 @@ public $components = array('Auth','Email');
 
 			$emailstring = "Hallo ". $user['username'] .",
 Deine Anmeldung für die eevent LAN-Party 2.0 war erfolgreich!
-Damit du einen Sitzplatz auswählen kannst und du definitiv einen Platz hast, musst du nun nur noch den Unkostenbeitrag
-von CHF 45.00 auf folgendes Konto überweisen.
+Damit du einen Sitzplatz auswählen kannst und du definitiv einen Platz hast, musst du nun nur noch den Unkostenbeitrag von CHF 45.00 auf folgendes Konto überweisen.
 
 Zahlungsdetails:
 Filmsoft Verein
@@ -268,17 +268,34 @@ Dein Eevent Team
 		$this->loadModel('UserRegistrations');
 		$this->UserRegistrations->bindModel(array('belongsTo' => array('Users')));
 		$angemeldet = $this->Registrations->find('list', array(
-        'conditions' => array('Registrations.registered' => 1),
+        'conditions' => array('Registrations.registered' => 1, 'Registrations.paid' => 0),
         'fields' => 'Registrations.user_id',
+        'order' => 'Registrations.created',
+        'recursive' => 1
+        ));
+        
+   		$paid = $this->Registrations->find('list', array(
+        'conditions' => array('Registrations.registered' => 1, 'Registrations.paid' => 1),
+        'fields' => 'Registrations.user_id',
+        'order' => 'Registrations.created',
         'recursive' => 1
         ));
 
-        $users = $this->Users->find('list', array(
+
+        
+
+        $usersangemeldet = $this->Users->find('list', array(
         	'conditions' => array('Users.id' => $angemeldet),
         	'fields' => 'Users.username'
         	));
 
-        $this->set('users', $users);
+        $userspaid = $this->Users->find('list', array(
+        	'conditions' => array('Users.id' => $paid),
+        	'fields' => 'Users.username'
+        	));
+
+        $this->set('usersa', $usersangemeldet);
+        $this->set('usersp', $userspaid);
       //  var_dump($test);
 /*        foreach ($angemeldet as $a) {
         	$user = $this->Users->findById($a['user_id']);
@@ -287,5 +304,71 @@ Dein Eevent Team
 */
 
 	}
+	
+	public function sitzplan() {
 
+		$this->loadModel('Users');
+		if($this->Auth->loggedin()){
+		$user = $this->Auth->user('User');
+		$userreg = $this->Registrations->findByUserId($user['id']);
+		$this->set('userreg', $userreg);
+		}
+		$userreservations = $this->Registrations->find('all',array(
+		'conditions' => array('Registrations.seat !=' => 'NULL'),
+		'fields' => array('Registrations.user_id','Registrations.seat')));
+		$seatarray = array();
+		foreach($userreservations as $reg){
+		$seat['seatId'] = $reg['Registrations']['seat'];
+		
+		$thisuser = $this->Users->findById($reg['Registrations']['user_id'], array(
+		'fields' => 'Users.id', 'Users.username', 'Users.clan'));
+		$seat['username'] = $thisuser['Users']['username'];
+		$seat['clan'] = $thisuser['Users']['clan'];
+		array_push($seatarray, $seat);
+		}
+		$this->set('seats', $seatarray);
+	}
+
+
+	public function reserveSeat($seatid = null) {
+	if($seatid != null && $this->Auth->loggedin() ){
+		$user = $this->Auth->user('User');
+		$reg = $this->Registrations->findByUserId($user['id']);
+		
+		$newseatreg['id'] = $reg['Registrations']['id'];
+		$newseatreg['seat'] = $seatid;
+		if($this->Registrations->save($newseatreg)){
+		$this->Session->setFlash(__('seat reserved'));
+		$this->redirect(array('controller' => 'registrations', 'action' => 'sitzplan'));
+			}else{
+		$this->Session->setFlash(__('could not reserve seat'));
+		$this->redirect(array('controller' => 'registrations', 'action' => 'sitzplan'));
+		
+			}
+		}else{
+		$this->Session->setFlash(__('fuck off'));
+		$this->redirect(array('controller' => 'registrations', 'action' => 'sitzplan'));
+		}
+	}
+	
+	public function removereservation() {
+		if($this->Auth->loggedin() ){
+		$user = $this->Auth->user('User');
+		$reg = $this->Registrations->findByUserId($user['id']);
+		
+		$newseatreg['id'] = $reg['Registrations']['id'];
+		$newseatreg['seat'] = Null;
+		if($this->Registrations->save($newseatreg)){
+		$this->Session->setFlash(__('seat reservation deleted'));
+		$this->redirect(array('controller' => 'registrations', 'action' => 'sitzplan'));
+			}else{
+		$this->Session->setFlash(__('could not delete seat reservation'));
+		$this->redirect(array('controller' => 'registrations', 'action' => 'sitzplan'));
+		}
+		}else{
+		$this->Session->setFlash(__('fuck off'));
+		$this->redirect(array('controller' => 'registrations', 'action' => 'sitzplan'));
+
+		}
+	}
 }

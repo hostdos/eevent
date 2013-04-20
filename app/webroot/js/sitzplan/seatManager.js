@@ -7,84 +7,166 @@ $(document).ready(function(){
 	
 	var seatLayout = [
         {
+        //very right row
             type: 'seatGroup',
-            startingId: 11,
+            startingId: 205,
             width: 1,
             seatAmount: 24,
             x: 580,
-            y: 100
+            y: 110
         },
 		{
+		//very top row
 			type: 'seatGroup',
-			startingId: 21,
+			startingId: 193,
 			width: 12,
 			seatAmount: 12,
 			x: 150,
-			y: 100
+			y: 103
 		},
 
         {
+        //top right left row
             type: 'seatGroup',
-            startingId: 31,
-            width: 2,
-            seatAmount: 24,
+            startingId: 145,
+            width: 1,
+            seatAmount: 12,
             x: 450,
             y: 158
         },
         {
+        //top right right row
             type: 'seatGroup',
-            startingId: 41,
-            width: 2,
-            seatAmount: 24,
+            startingId: 169,
+            width: 1,
+            seatAmount: 12,
+            x: 479,
+            y: 158
+        },
+        {
+        	//middle right left row
+            type: 'seatGroup',
+            startingId: 97,
+            width: 1,
+            seatAmount: 12,
             x: 325,
             y: 158
         },
         {
+        	//middle right right row
             type: 'seatGroup',
-            startingId: 51,
-            width: 2,
-            seatAmount: 24,
+            startingId: 121,
+            width: 1,
+            seatAmount: 12,
+            x: 354,
+            y: 158
+        },
+        {
+        //top middle left left row
+            type: 'seatGroup',
+            startingId: 49,
+            width: 1,
+            seatAmount: 12,
             x: 200,
             y: 158
         },
         {
+        //top middle left right row
+            type: 'seatGroup',
+            startingId: 73,
+            width: 1,
+            seatAmount: 12,
+            x: 229,
+            y: 158
+        },
+        {
+        //top left group row a
+            type: 'seatGroup',
+            startingId: 1,
+            width: 1,
+            seatAmount: 12,
+            x: 75,
+            y: 158
+        },
+             {
+             //top left group row 
+            type: 'seatGroup',
+            startingId: 25,
+            width: 1,
+            seatAmount: 12,
+            x: 104,
+            y: 158
+        },
+        {
+        //bottom right left row
+            type: 'seatGroup',
+            startingId: 157,
+            width: 1,
+            seatAmount: 12,
+            x: 450,
+            y: 558
+        },
+        {
+        //bottom right right row
+            type: 'seatGroup',
+            startingId: 181,
+            width: 1,
+            seatAmount: 12,
+            x: 479,
+            y: 558
+        },
+        {
+        //bottom middle right left row
+            type: 'seatGroup',
+            startingId: 109,
+            width: 1,
+            seatAmount: 12,
+            x: 325,
+            y: 558
+        },
+        {
+        //bottom middle right right row
+            type: 'seatGroup',
+            startingId: 133,
+            width: 1,
+            seatAmount: 12,
+            x: 354,
+            y: 558
+        },
+        {
+        //bottom middle left left row
             type: 'seatGroup',
             startingId: 61,
-            width: 2,
-            seatAmount: 24,
-            x: 75,
-            y: 158
-        },
-        {
-            type: 'seatGroup',
-            startingId: 71,
-            width: 2,
-            seatAmount: 24,
-            x: 450,
-            y: 558
-        },
-        {
-            type: 'seatGroup',
-            startingId: 81,
-            width: 2,
-            seatAmount: 24,
-            x: 325,
-            y: 558
-        },
-        {
-            type: 'seatGroup',
-            startingId: 91,
-            width: 2,
-            seatAmount: 24,
+            width: 1,
+            seatAmount: 12,
             x: 200,
             y: 558
         },
         {
+        //bottom middle left right row
             type: 'seatGroup',
-            startingId: 101,
-            width: 2,
-            seatAmount: 24,
+            startingId: 85,
+            width: 1,
+            seatAmount: 12,
+            x: 229,
+            y: 558
+        },
+        {
+           //bottom left group
+            type: 'seatGroup',
+            startingId: 13,
+            width: 1,
+            seatAmount: 12,
             x: 75,
+            y: 558
+        },
+        {
+        //bottom left group
+            type: 'seatGroup',
+            startingId: 37,
+            width: 1,
+            seatAmount: 12,
+            x: 104,
             y: 558
         },
 		{
@@ -152,14 +234,16 @@ $(document).ready(function(){
 			y: 1000
 		}
 	];
+	//set occupiedSeats list so it exists
+	//var occupiedSeats = [];
 	
-	var occupiedSeats = [];
-	
+	//sets the look of a single seat
 	var config = {
 		seatSize: 25,
 		seatMargin: 1
 	};
 	
+	//sets the seatManager
 	var seatManager = new SeatManager(
 		seatLayout,
 		occupiedSeats,
@@ -211,6 +295,7 @@ $(document).ready(function(){
 				seatElement.css('width', config.seatSize);
 				seatElement.css('height', config.seatSize);
 				seatElement.css('margin', config.seatMargin);
+				seatElement.html(seatId);
 				var seatLabel = $('<div></div>');
 				seatLabel.addClass('seatLabel');
 				seatElement.append(seatLabel);
@@ -233,7 +318,8 @@ $(document).ready(function(){
 		}
 		
 		function initSeats(){
-			occupiedSeats = fetchSeatList();
+			//occupiedSeats = fetchSeatList();
+			occupiedSeats = occupiedSeats;
 			applySeatList();
 		}
 		
@@ -244,6 +330,7 @@ $(document).ready(function(){
 				var seatElement = $('#seat'+currentElement.seatId);
 				
 				seatElement.addClass('occupied');
+				seatElement.removeClass('free');
 				seatElement.children('.seatLabel').html(currentElement.username+'<br />'+currentElement.clan);
 			}
 			
@@ -253,12 +340,13 @@ $(document).ready(function(){
 		
 		function clearSeatElements(){
 			$('.seat').removeClass('occupied');
+			$('.seat').addClass('free');
 		}
 		
 		function occupySeat(id){
-			//console.log(occupiedSeats);
+			console.log(occupiedSeats);
 			removeOccupant(user.username);
-			//console.log(occupiedSeats);
+			console.log(occupiedSeats);
 			var newSeat = {
 				seatId: id,
 				username: user.username,
@@ -266,7 +354,7 @@ $(document).ready(function(){
 			};
 			occupiedSeats.push(newSeat);
 			applySeatList(occupiedSeats);
-			//console.log(occupiedSeats);
+			console.log(occupiedSeats);
 		}
 		
 		function removeOccupant(username){
@@ -280,14 +368,46 @@ $(document).ready(function(){
 		}
 		
 		function fetchSeatList(){
-			//return [ //Get this from the server
-			//];
+
+/*
+		  			$.post("app/registration/getSeats", console.log(data));
+
+                        return [ //Get this from the server
+                                {
+                                        seatId: 4,
+                                        username: 'JanitorMaster',
+                                        clan: 'Eevent Staff'
+                                },
+                                {
+                                        seatId: 60,
+                                        username: 'Dude',
+                                        clan: 'DudeClan'
+                                }
+                        ];
+*/
 		}
 		
 		function sendSeatList(){
 			var toSend = occupiedSeats;
 			//Send new seat occupant list to the server
 		}
+		
+
+        $('.seat.free').click(function(){
+	        if(login == 1){
+	        window.location = 'http://www.eevent.ch/index.php/registrations/reserveSeat/' + $(this).attr("seatid");
+	        return false;
+	        }
+	    });
+
+/*
+               loadingOverlayElement.css('display', 'block');
+               var clickedSeat = $(this);
+               occupySeat(clickedSeat.attr('seatId'));
+        });
+*/
+
+
 	}
 	
 });

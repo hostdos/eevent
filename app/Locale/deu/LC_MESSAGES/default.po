@@ -100,11 +100,11 @@ msgid "Post was not deleted"
 msgstr "Post konnte nicht gelöscht werden"
 
 #: Controller/RegistrationsController.php:41
-msgid "Registrierung für EEvent 2.0"
+msgid "Registrierung fÃ¼r EEvent 2.0"
 msgstr "Anmeldung für den Eevent 2.0"
 
 #: Controller/RegistrationsController.php:42;60
-msgid "Du hast dich für die EEvent 2.0 angemeldet!"
+msgid "Du hast dich fÃ¼r die EEvent 2.0 angemeldet!"
 msgstr "Du hast dich erfolgreich für den Eevent 2.0 angemeldet!"
 
 #: Controller/RegistrationsController.php:44;62
@@ -116,11 +116,11 @@ msgid "The registration could not be saved. Please, try again."
 msgstr "Die Anmeldunge konnte nicht gespeichert werden"
 
 #: Controller/RegistrationsController.php:59
-msgid "Anmeldung für EEvent 2.0"
+msgid "Anmeldung fÃ¼r EEvent 2.0"
 msgstr "Anmeldung für den Eevent 2.0"
 
 #: Controller/RegistrationsController.php:95;111
-msgid "Abmeldung für EEvent 2.0"
+msgid "Abmeldung fÃ¼r EEvent 2.0"
 msgstr "Abmeldung für den Eevent 2.0"
 
 #: Controller/RegistrationsController.php:96;112
@@ -917,3 +917,30 @@ msgstr "Abmelden?"
 #: Controller/UsersController.php:65
 msgid "Register?"
 msgstr "Anmelden?"
+
+msgid "seat reserved"
+msgstr "Sitzplatz erfolgreich reserviert"
+
+msgid "could not reserve seat"
+msgstr "Sitzplatz konnte nicht reserviert werden, bitte versuchen sie es erneut"
+
+msgid "fuck off"
+msgstr "gooby pls no"
+
+msgid "seat reservation deleted"
+msgstr "Sitzplatzreservation gelöscht"
+
+msgid "could not delete seat reservation"
+msgstr "Sitzplatzreservation konnte nicht gelöscht werden
+
+msgid "you can reserve a seat as soon as we recieve your payment"
+msgstr "Sie können Ihren Sitzplatz reservieren sobald wir Ihre Zahlung erhalten haben.
+
+msgid "you reserved seat"
+msgstr "Sie haben folgenden Sitz reserviert"
+
+msgid "delete reservation"
+msgstr "Reservation löschen"
+
+msgid "payment info"
+msgstr "Zahlungsinfos"

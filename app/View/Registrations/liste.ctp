@@ -3,8 +3,8 @@
 <h3>Angemeldete User</h3>
 <ul>
 <?php
-if(!empty($users)){
-foreach ($users as $u) {
+if(!empty($usersa)){
+foreach ($usersa as $u) {
 echo '<li class="angemeldetlist">';
 echo $u;
 echo '</li>';
@@ -17,7 +17,15 @@ echo '</li>';
 </br>
 <h3>Bezahlte User</h3>
 <ul>
-<li class="angemeldetlist">
-Es hat noch kein User für die Eevent bezahlt
-</li>
+<?php
+if(!empty($usersp)){
+foreach ($usersp as $u) {
+echo '<li class="angemeldetlist">';
+echo $u;
+echo '</li>';
+}}else{
+echo '<li class="angemeldetlist">';
+echo 'Es hat noch kein User für die Eevent Bezahlt';
+echo '</li>';
+}?>
 </ul>

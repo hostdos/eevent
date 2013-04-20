@@ -12,6 +12,7 @@ Die Voraussetzungen sind einfach nur genial! Wir haben eine super Location, ein 
 <b>Datum:</b> 03-05. Mai 2013</br>
 <b>Ort:</b> Mehrzweckhalle Subingen (SO)</br>
 <b>Teilnehmerzahl:</b> 228 Gamer</br>
+<b>Eintritt:</b> CHF 45.00 Vorkasse , CHF 50.00 Abendkasse</br>
 <b>Turniere:</b>
 <ul class="turnierliste">
 <li>Starcraft 2 Heart of the Swarm:	CHF 600.00</li>

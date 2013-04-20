@@ -175,6 +175,12 @@ public function oldlogin() {
 }  
 
 	public function add() {
+	 $clanoptions = array(
+                    'fields'=>array('User.clan'),
+                    'group' => '`User`.`clan`',
+                );
+	$clanlist = $this->User->find('list',$clanoptions);
+	$this->set('clanlist', $clanlist);
 		if ($this->request->is('post')) {
 			$condoptions = array('conditions' => array(
 				'OR' => array(

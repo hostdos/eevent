@@ -8,10 +8,10 @@ Unsere Kunden profitieren von 30 Jahren Erfahrung in Entwicklung und Einführung
  Besuche <a href="http://www.bison-group.com/jobs">bison-group.com/jobs</a> und finde die richtige Stelle für deine IT-Karriere!
 </br>
 <h2><a href="http://www.lanforge.ch" target="blank">Lanforge</a></h2>
-<h4>"Wir lieben esports"</h4>
+<h4>"gamers essentials"</h4>
 <p>In der Schweizer E-Sport und Gaming Szene besteht ein Mangel an Shops, welche genau für sie ausgerichtet ist. Ein solcher Shop sollte Peripherie und Hardware, welche genau für diese Szene erstellt wurde, anbieten. DAS ist lanforge.ch.</p> 
 </br>
-<h2><a href="http://www.swisslife.com/" target="blank">Swiss Life Select</a></h2>
+<h2><a href="http://www.swisslife-select.ch/" target="blank">Swiss Life Select</a></h2>
 <h4>"Vorsorge- und Finanzlösungen"</h4>
 </br>
 <p>Seit über 150 Jahren ist Swiss Life in der Schweiz führend in der finanziellen Vorsorge und verfügt damit über eine einzigartige Expertise. Das Unternehmen bietet Firmen und Privatpersonen optimale Lösungen für alle Vorsorgebedürfnisse und jede Risikosituation. Swiss Life will als Dienstleisterin der Top-Klasse Massstäbe setzen für die Qualität in der Beratung, bei den Produkten und im Service. Dazu orientieren sich alle Mitarbeitenden an gemeinsamen Wertvorstellungen.</p>

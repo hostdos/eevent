@@ -14,6 +14,10 @@ article footer a {
 
 }
 
+.ui-autocomplete{
+list-style: none !important;
+}
+
 #flashMessage {
   width: 400px;
   text-align: center;
@@ -129,6 +133,15 @@ min-width: 180px;
   padding-left: 3px;
   margin-bottom: 22px;
   padding-bottom: 5px;
+}
+
+.news ul {
+float: left;
+clear: both;
+}
+
+.news p {
+
 }
 
 .fullnews {

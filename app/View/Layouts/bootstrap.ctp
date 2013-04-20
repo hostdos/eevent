@@ -34,10 +34,22 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
     echo $this->Html->script('jquery-1.9.1.min');
     echo $this->Html->script('bootstrap.min');
 
+    echo $scripts_for_layout;
+    echo $this->Js->writeBuffer(array('cache' => TRUE));
     echo $this->fetch('meta');
     echo $this->fetch('css');
     echo $this->fetch('script');
   ?>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39987210-1', 'eevent.ch');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>

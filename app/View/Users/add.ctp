@@ -4,9 +4,17 @@
 <?php 	echo $this->Html->css('smoothness/jquery-ui-1.10.2.custom.min');
 		echo $this->Html->script('jquery-ui-1.10.2.custom.min');
 ?>
-  <script>
+    <script>
   $(function() {
-    $( "#datepicker" ).datepicker({ dateFormat: 'dd-mm-yy' });
+    var availableTags =
+    <?php foreach ($clanlist as $clan){
+           $data[] = $clan;
+    }
+        echo json_encode($data); ?>
+    
+    $( "#clan" ).autocomplete({
+      source: availableTags
+    });
   });
   </script>
 
@@ -29,7 +37,7 @@
    			 'year' => '1994',
    			 'label' => _('birthdate'),
 )));
-		echo $this->Form->input('clan', array('label' => 'Clan', 'placeholder' => 'Clan'));
+		echo $this->Form->input('clan', array('label' => 'Clan', 'placeholder' => 'Clan', 'id' => 'clan'));
 		echo $this->Form->input('website', array('label' => 'Website', 'placeholder' => 'Website'));
 	?>
 	</fieldset>

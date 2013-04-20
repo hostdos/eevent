@@ -11,7 +11,7 @@
             <b>§1 Bezahlung und Warteliste</b> Die Anmeldung wird am 08.04.2012 ab ca. 18.00Uhr
             Uhr freigeschaltet. Alle persönlichen Angaben sind wahrheitsgemäss auszufüllen.
             Mit der Anmeldung ist ein Eintrag auf der Teilnehmerliste verbunden. Bis zur Überweisung
-            (spätestens bis eine Woche vor der Lanparty) des Unkostenbeitrags von 40.00 CHF
+            (spätestens bis eine Woche vor der Lanparty) des Unkostenbeitrags von 45.00 CHF
             ist noch kein Platz reserviert. Erst nach Bezahlung erhält man den Status "Bezahlt"
             und hat Anspruch auf einen Sitzplatz.</p>
         <b>§2 Teilnahme minderjähriger Personen</b>
