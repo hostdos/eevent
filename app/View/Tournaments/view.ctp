@@ -1,49 +1,29 @@
 <div class="tournaments view">
 <h2><?php  echo __('Tournament'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($tournament['Tournament']['id']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Name'); ?></dt>
 		<dd>
 			<?php echo h($tournament['Tournament']['name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Maxsize'); ?></dt>
+		<dt><?php echo __('Teamgrösse'); ?></dt>
 		<dd>
 			<?php echo h($tournament['Tournament']['maxsize']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Isdisabled'); ?></dt>
-		<dd>
-			<?php echo h($tournament['Tournament']['isdisabled']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Created'); ?></dt>
-		<dd>
-			<?php echo h($tournament['Tournament']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Updated'); ?></dt>
-		<dd>
-			<?php echo h($tournament['Tournament']['updated']); ?>
-			&nbsp;
-		</dd>
 	</dl>
 </div>
+
+<?php 
+if($tournament['Tournament']['maxsize'] == NULL || $tournament['Tournament']['maxsize'] == 1){ ?>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Tournament'), array('action' => 'edit', $tournament['Tournament']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Tournament'), array('action' => 'delete', $tournament['Tournament']['id']), null, __('Are you sure you want to delete # %s?', $tournament['Tournament']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Tournaments'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Tournament'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Participants'), array('controller' => 'participants', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Participant'), array('controller' => 'participants', 'action' => 'add')); ?> </li>
-	</ul>
+		<?php echo $this->Html->link(__('an Turnier Teilnehmen'), array('controller' => 'participants', 'action' => 'addSingle')); ?>
 </div>
+<?php }else{
+			echo $this->Html->link(__('einem Team Beitreten'), array('controller' => 'participants', 'action' => 'joinTeam', $tournament['Tournament']['id']));
+			echo '</br>';
+			echo $this->Html->link(__('Team Erstellen'), array('controller' => 'participants', 'action' => 'addTeam', $tournament['Tournament']['id']));
+} ?>
 <div class="related">
 	<h3><?php echo __('Related Participants'); ?></h3>
 	<?php if (!empty($tournament['Participant'])): ?>
@@ -55,10 +35,6 @@
 		<th><?php echo __('Tournament Id'); ?></th>
 		<th><?php echo __('Type'); ?></th>
 		<th><?php echo __('Name'); ?></th>
-		<th><?php echo __('Password'); ?></th>
-		<th><?php echo __('Isdisabled'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Updated'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
@@ -71,23 +47,18 @@
 			<td><?php echo $participant['tournament_id']; ?></td>
 			<td><?php echo $participant['type']; ?></td>
 			<td><?php echo $participant['name']; ?></td>
-			<td><?php echo $participant['password']; ?></td>
-			<td><?php echo $participant['isdisabled']; ?></td>
-			<td><?php echo $participant['created']; ?></td>
-			<td><?php echo $participant['updated']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'participants', 'action' => 'view', $participant['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'participants', 'action' => 'edit', $participant['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'participants', 'action' => 'delete', $participant['id']), null, __('Are you sure you want to delete # %s?', $participant['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
-
+<?php if($tournament['Participant']){ ?>
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Participant'), array('controller' => 'participants', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('New Participant'), array('controller' => 'participants', 'action' => 'joinTeam', $participant['tournament_id'])); ?> </li>
 		</ul>
 	</div>
+	<?php } ?>
 </div>

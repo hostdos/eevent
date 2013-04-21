@@ -8,6 +8,7 @@
 			<th><?php echo $this->Paginator->sort('tournament_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('type'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
+			<th><?php echo $this->Paginator->sort('comment'); ?></th>
 			<th><?php echo $this->Paginator->sort('password'); ?></th>
 			<th><?php echo $this->Paginator->sort('isdisabled'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
@@ -28,6 +29,7 @@
 		</td>
 		<td><?php echo h($participant['Participant']['type']); ?>&nbsp;</td>
 		<td><?php echo h($participant['Participant']['name']); ?>&nbsp;</td>
+		<td><?php echo h($participant['Participant']['comment']); ?>&nbsp;</td>
 		<td><?php echo h($participant['Participant']['password']); ?>&nbsp;</td>
 		<td><?php echo h($participant['Participant']['isdisabled']); ?>&nbsp;</td>
 		<td><?php echo h($participant['Participant']['created']); ?>&nbsp;</td>

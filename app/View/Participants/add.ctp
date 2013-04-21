@@ -8,6 +8,7 @@
 		echo $this->Form->input('tournament_id');
 		echo $this->Form->input('type');
 		echo $this->Form->input('name');
+		echo $this->Form->input('comment');
 		echo $this->Form->input('password');
 		echo $this->Form->input('isdisabled');
 	?>

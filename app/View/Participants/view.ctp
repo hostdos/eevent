@@ -31,6 +31,11 @@
 			<?php echo h($participant['Participant']['name']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Comment'); ?></dt>
+		<dd>
+			<?php echo h($participant['Participant']['comment']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Password'); ?></dt>
 		<dd>
 			<?php echo h($participant['Participant']['password']); ?>
@@ -79,6 +84,7 @@
 		<th><?php echo __('Tournament Id'); ?></th>
 		<th><?php echo __('Type'); ?></th>
 		<th><?php echo __('Name'); ?></th>
+		<th><?php echo __('Comment'); ?></th>
 		<th><?php echo __('Password'); ?></th>
 		<th><?php echo __('Isdisabled'); ?></th>
 		<th><?php echo __('Created'); ?></th>
@@ -95,6 +101,7 @@
 			<td><?php echo $childParticipant['tournament_id']; ?></td>
 			<td><?php echo $childParticipant['type']; ?></td>
 			<td><?php echo $childParticipant['name']; ?></td>
+			<td><?php echo $childParticipant['comment']; ?></td>
 			<td><?php echo $childParticipant['password']; ?></td>
 			<td><?php echo $childParticipant['isdisabled']; ?></td>
 			<td><?php echo $childParticipant['created']; ?></td>

@@ -61,6 +61,71 @@ class ParticipantsController extends AppController {
 		$this->set(compact('users', 'parentParticipants', 'tournaments'));
 	}
 
+	public function addSingle() {
+		if ($this->request->is('post')) {
+			$this->Participant->create();
+
+			$user = $this->Auth->user('User');
+			$this->request->data['Participant']['user_id'] = $user['id'];
+
+			if ($this->Participant->save($this->request->data)) {
+				$this->Session->setFlash(__('Deine Anmeldung wurde gespeichert'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('Deine Anmeldung konnte nicht gespeichert werden'));
+			}
+		}
+		$users = $this->Participant->User->find('list');
+		$parentParticipants = $this->Participant->ParentParticipant->find('list');
+		$tournaments = $this->Participant->Tournament->find('list');
+		$this->set(compact('users', 'parentParticipants', 'tournaments'));
+	}
+
+	public function joinTeam($parentid = null) {
+		if ($this->request->is('post')) {
+			$parent = $this->Participant->findById($parentid);
+			$self = $this->Participant->findByUserId('all',array('conditions' => array('parent_id' => $parentid)));
+			$parentpw = $parent['Participant']['password'];
+			if($this->request->data['Participant']['password'] == $parentpw && empty($self)){
+			$this->Participant->create();
+			$user = $this->Auth->user('User');
+			$this->request->data['Participant']['user_id'] = $user['id'];
+			$this->request->data['Participant']['parent_id'] = $parentid;
+
+			if ($this->Participant->save($this->request->data)) {
+				$this->Session->setFlash(__('Du dem Team beigetreten'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('Du konntest dem Team nicht beitreten'));
+			}
+		}else{
+				$this->Session->setFlash(__('Du konntest dem Team nicht beitreten'));
+		}
+		}
+		$parentParticipants = $this->Participant->ParentParticipant->find('list', array('conditions' => array('type' => 2)));
+		$this->set(compact('users', 'parentParticipants', 'tournaments'));
+	}
+	public function addTeam() {
+		if ($this->request->is('post')) {
+			$this->Participant->create();
+			$this->request->data['Participant']['type'] = 2;
+			if ($this->Participant->save($this->request->data)) {
+				$this->Session->setFlash(__('Das Team wurde gespeichert'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('Das Team konnte nicht gespeichert werden'));
+			}
+		}
+		$users = $this->Participant->User->find('list');
+		$parentParticipants = $this->Participant->ParentParticipant->find('list');
+		$tournaments = $this->Participant->Tournament->find('list');
+		$this->set(compact('users', 'parentParticipants', 'tournaments'));
+	}
+
+
+
+
+
 /**
  * edit method
  *
