@@ -37,8 +37,11 @@ if($tournament['Tournament']['maxsize'] == NULL || $tournament['Tournament']['ma
 <div class="actions">
 		<?php echo $this->Html->link(__('an Turnier Teilnehmen'), array('controller' => 'participants', 'action' => 'addSingle')); ?>
 </div>
-<?php }else{
+<?php }elseif(!empty($spieler['Participants'])){
 			echo $this->Html->link(__('einem Team Beitreten'), array('controller' => 'participants', 'action' => 'joinTeam', $tournament['Tournament']['id']));
+						echo '</br>';
+						echo $this->Html->link(__('Team Erstellen'), array('controller' => 'participants', 'action' => 'addTeam', $tournament['Tournament']['id']));
+			}else{
 			echo '</br>';
 						echo $this->Html->link(__('Team Erstellen'), array('controller' => 'participants', 'action' => 'addTeam', $tournament['Tournament']['id']));
 

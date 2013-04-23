@@ -31,7 +31,9 @@ if($participant['Participant']['type'] != NULL || $participant['Participant']['t
 	<table cellpadding = "0" cellspacing = "0">
 	
 
-	<?php if(!empty($participant['ChildParticipant'])){?>
+	<?php 
+var_dump($ChildParticipants);
+	if(!empty($ChildParticipants)){?>
 
 	<?php
 

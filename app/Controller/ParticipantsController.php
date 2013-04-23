@@ -27,13 +27,13 @@ class ParticipantsController extends AppController {
 
 	public function checkPaid($id = null){
 		$userreg = null;
-		if($id == null){
-			$userreg = $this->Auth->user('User');
-			$userreg = $this->Registrations->findById($userreg['id']);
-		}
 		$this->loadModel('Registrations');
+				if($id == null){
+			$userreg = $this->Auth->user('User');
+			$userreg = $this->Registrations->findByUserId($userreg['id']);
+		}else{
 		$userreg = $this->Registrations->findById($id);
-
+		}
 		if($userreg['Registrations']['paid'] != 1){
 			$this->Session->setFlash(__('Leider hast du noch nicht einbezahlt, deshalb kannst du dich nicht für ein Turnier anmelden.'));
 			$this->redirect(array('controller' => 'tournaments', 'action' => 'index'));
@@ -60,6 +60,9 @@ class ParticipantsController extends AppController {
 		$this->set('Users', $this->Users->find('list', array('fields' => array('id','username'))));
 		$self = $this->Participant->findById($id);
 		$this->set('tournamentid', $self['Participant']['tournament_id']);
+		$this->loadModel('ChildParticipant');
+		$ChildParticipants = $this->Participant->ChildParticipant->find('list');
+		$this->set('ChildParticipants', $ChildParticipant);
 	}
 
 /**
@@ -77,6 +80,10 @@ class ParticipantsController extends AppController {
 				$this->Session->setFlash(__('The participant could not be saved. Please, try again.'));
 			}
 		}
+				$this->loadModel('Users');
+		$this->loadModel('ParentParticipant');
+		$this->loadModel('Tournament');
+
 		$users = $this->Participant->User->find('list');
 		$parentParticipants = $this->Participant->ParentParticipant->find('list');
 		$tournaments = $this->Participant->Tournament->find('list');
@@ -92,7 +99,7 @@ class ParticipantsController extends AppController {
 
 			$user = $this->Auth->user('User');
 			$this->request->data['Participant']['user_id'] = $user['id'];
-			$this->checkPaid($user['id']);
+			$this->checkPaid();
 			if ($this->Participant->save($this->request->data)) {
 				$this->Session->setFlash(__('Deine Anmeldung wurde gespeichert'));
 				$this->redirect(array('action' => 'index'));
@@ -100,6 +107,10 @@ class ParticipantsController extends AppController {
 				$this->Session->setFlash(__('Deine Anmeldung konnte nicht gespeichert werden'));
 			}
 		}
+		$this->loadModel('Users');
+		$this->loadModel('ParentParticipant');
+		$this->loadModel('Tournament');
+
 		$users = $this->Participant->User->find('list');
 		$tournaments = $this->Participant->Tournament->find('list', array('conditions' => array('maxsize' => NULL)));
 		$this->set(compact('users', 'tournaments'));
@@ -116,7 +127,7 @@ class ParticipantsController extends AppController {
 			$user = $this->Auth->user('User');
 			$this->request->data['Participant']['user_id'] = $user['id'];
 			$this->request->data['Participant']['parent_id'] = $parentid;
-			$this->checkPaid($user['id']);
+			$this->checkPaid();
 			if ($this->Participant->save($this->request->data)) {
 				$this->Session->setFlash(__('Du dem Team beigetreten'));
 				$this->redirect(array('action' => 'index'));
@@ -143,6 +154,10 @@ class ParticipantsController extends AppController {
 				$this->Session->setFlash(__('Das Team konnte nicht gespeichert werden'));
 			}
 		}
+		$this->loadModel('Users');
+		$this->loadModel('ParentParticipant');
+		$this->loadModel('Tournament');
+
 		$users = $this->Participant->User->find('list');
 		$parentParticipants = $this->Participant->ParentParticipant->find('list');
 		$tournaments = $this->Participant->Tournament->find('list', array('conditions' => array('maxsize' => '5')));
@@ -175,6 +190,10 @@ class ParticipantsController extends AppController {
 			$options = array('conditions' => array('Participant.' . $this->Participant->primaryKey => $id));
 			$this->request->data = $this->Participant->find('first', $options);
 		}
+				$this->loadModel('Users');
+		$this->loadModel('ParentParticipant');
+		$this->loadModel('Tournament');
+
 		$users = $this->Participant->User->find('list');
 		$parentParticipants = $this->Participant->ParentParticipant->find('list');
 		$tournaments = $this->Participant->Tournament->find('list');
