@@ -1,19 +1,37 @@
 <div class="tournaments view">
-<h2><?php  echo __('Tournament'); ?></h2>
+	<?php echo $this->Html->image($tournament['Tournament']['image'], array('fullBase' => true, 'class' => 'tournamentlogo')); ?>
+<h2><?php  echo h($tournament['Tournament']['name']); ?></h2>
 	<dl>
-		<dt><?php echo __('Name'); ?></dt>
-		<dd>
-			<?php echo h($tournament['Tournament']['name']); ?>
-			&nbsp;
-		</dd>
+		<?php if($tournament['Tournament']['maxsize'] != NULL){ ?>
 		<dt><?php echo __('Teamgrösse'); ?></dt>
 		<dd>
-			<?php echo h($tournament['Tournament']['maxsize']); ?>
+		
+		<?php echo h($tournament['Tournament']['maxsize']); ?>
 			&nbsp;
 		</dd>
+		<?php } ?>
 	</dl>
 </div>
 
+<ul>
+<?php 
+if(!empty($teilnehmer)){
+foreach($teilnehmer as $spieler){
+echo "<li>";
+if($tournament['Tournament']['maxsize'] == NULL || $tournament['Tournament']['maxsize'] == 1){
+echo $this->html->link($users[$spieler['Participants']['user_id']], array('controller' => 'participants', 'action' => 'view', $spieler['Participants']['id']));
+}else{
+echo $this->html->link($spieler['Participants']['name'], array('controller' => 'participants', 'action' => 'view', $spieler['Participants']['id']));
+}
+echo "</li>";
+}
+}else{
+	echo "<li>";
+	echo "keine Teilnehmer eingetragen";
+	echo "</li>";
+}
+?>
+</ul>
 <?php 
 if($tournament['Tournament']['maxsize'] == NULL || $tournament['Tournament']['maxsize'] == 1){ ?>
 <div class="actions">
@@ -22,9 +40,23 @@ if($tournament['Tournament']['maxsize'] == NULL || $tournament['Tournament']['ma
 <?php }else{
 			echo $this->Html->link(__('einem Team Beitreten'), array('controller' => 'participants', 'action' => 'joinTeam', $tournament['Tournament']['id']));
 			echo '</br>';
-			echo $this->Html->link(__('Team Erstellen'), array('controller' => 'participants', 'action' => 'addTeam', $tournament['Tournament']['id']));
-} ?>
-<div class="related">
+						echo $this->Html->link(__('Team Erstellen'), array('controller' => 'participants', 'action' => 'addTeam', $tournament['Tournament']['id']));
+
+		}
+
+if(!empty($tournament['Tournament']['description'])){
+
+echo "</br>";
+echo "</br>";
+echo "</br>";
+echo "<h2>";
+echo __('Spielregeln');
+echo "</h2>";
+
+echo $tournament['Tournament']['description'];
+}
+ ?>
+<!-- <div class="related">
 	<h3><?php echo __('Related Participants'); ?></h3>
 	<?php if (!empty($tournament['Participant'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
@@ -62,3 +94,4 @@ if($tournament['Tournament']['maxsize'] == NULL || $tournament['Tournament']['ma
 	</div>
 	<?php } ?>
 </div>
+ -->

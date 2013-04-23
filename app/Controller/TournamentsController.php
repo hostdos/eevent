@@ -37,7 +37,16 @@ class TournamentsController extends AppController {
 			throw new NotFoundException(__('Invalid tournament'));
 		}
 		$options = array('conditions' => array('Tournament.' . $this->Tournament->primaryKey => $id));
+		$tournament = $this->Tournament->find('first', $options);
+		$this->loadModel('Participants');
+		$type = 0;
+		if($tournament['Tournament']['maxsize'] == 5){
+			$type = 2;
+		}
+		$this->loadModel('Users');
+		$this->set('teilnehmer', $this->Participants->find('all', array('conditions' => array('type' => $type, 'tournament_id' => $id))));
 		$this->set('tournament', $this->Tournament->find('first', $options));
+		$this->set('users', $this->Users->find('list', array('fields' => array('id','username'))));
 	}
 
 /**

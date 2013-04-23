@@ -3,7 +3,12 @@
 	<fieldset>
 		<legend><?php echo __('Add Participant'); ?></legend>
 	<?php
+
+	if(!empty($teamid)){
+		echo $this->Form->input('parentParticipants', array('value' => $teamid));
+	}else{
 		echo $this->Form->input('parentParticipants');
+	}
 		echo $this->Form->input('password');
 
 	?>

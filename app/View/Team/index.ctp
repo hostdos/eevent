@@ -12,12 +12,22 @@ Unsere Kunden profitieren von 30 Jahren Erfahrung in Entwicklung und Einführung
 <p>In der Schweizer E-Sport und Gaming Szene besteht ein Mangel an Shops, welche genau für sie ausgerichtet ist. Ein solcher Shop sollte Peripherie und Hardware, welche genau für diese Szene erstellt wurde, anbieten. DAS ist lanforge.ch.</p> 
 </br>
 <h2><a href="http://www.swisslife-select.ch/" target="blank">Swiss Life Select</a></h2>
-<h4>"Vorsorge- und Finanzlösungen"</h4>
-</br>
-<p>Seit über 150 Jahren ist Swiss Life in der Schweiz führend in der finanziellen Vorsorge und verfügt damit über eine einzigartige Expertise. Das Unternehmen bietet Firmen und Privatpersonen optimale Lösungen für alle Vorsorgebedürfnisse und jede Risikosituation. Swiss Life will als Dienstleisterin der Top-Klasse Massstäbe setzen für die Qualität in der Beratung, bei den Produkten und im Service. Dazu orientieren sich alle Mitarbeitenden an gemeinsamen Wertvorstellungen.</p>
-</br>
-Sie sind jung, geniessen das Leben und verfolgen Ihre eigenen Ziele. Sie möchten sich noch nicht zu fest binden und geniessen Ihre Freiheit. Trotzdem ist es auch in Ihrer Situation empfehlenswert, über die Vorsorge nachzudenken und erste Weichen für eine finanziell sorgenfreie Zukunft zu stellen.</p>
-</br>
+<h4>"Sorglos-Paket"</h4>
+<p>
+<b>Das erste und wichtigste Ziel ist, dass Sie sorglos sind.</b></br>	
+Das heisst, dass Sie in jeder Lebenssituation optimal abgedeckt sind. Dabei bilden Altersvorsorge,</br>
+Sach- und Vermögensversicherung, Einkommenssicherung und Gesundheitsvorsorge die Grundbausteine.</br>	
+Die Sorglos-Pakete sorgen dafür, dass Sie rundum und bestmöglich versichert sind.</br></br>
+Für alles, was Sie besitzen, gibt es eine Versicherung. Wenn Sie ein Auto besitzen,</br>	
+schützen Sie es mit der Motorfahrzeugversicherung, Ihr Mobiliar und alle anderen Gegenstände</br>	
+sind über die Hausratversicherung abgedeckt und wenn Sie sogar ein Eigenheim besitzen,</br>	
+ist es mit der Gebäudeversicherung geschützt. Ergänzend dazu sollten Sie sich für Zwischenfälle</br>	
+über die Privathaftpflicht versichern und seit Kurzem raten sogar die Konsumentenschützer dazu, sich eine Rechtsschutzversicherung zuzulegen.</br></br>
+Die Vielfalt bei den Versicherungsanbietern ist jedoch enorm und die Übersicht ist selbst für einen Profi mit viel Schulung verbunden.
+Oftmals sind wichtige Abdeckungen wie die Grobfahrlässigkeit oder eine Assistance-Versicherung (Reiseversicherung, Annullationskosten) nicht inbegriffen oder viel zu teuer.
+Falls Sie Ihre Versicherungen bei unterschiedlichen Anbietern haben, kann es sehr oft zu Unter- oder Doppeldeckungen kommen. Hier braucht es aufeinander abgestimmte Konzeptlösungen.</br>
+Swisslife select. unabhängig, neutral
+</p>
 <h2><a href="http://www.drinkenergy.ch/" target="blank">Drink-Energy</a></h2>
 Die Energy-Quelle für einzigartige Produkte über Drinks bis hin zu Snacks.
 Drink-Energy bietet Nischenprodukte welche auf dem Schweizer Markt nicht oder noch nicht erhältlich sind.

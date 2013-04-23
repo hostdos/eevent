@@ -63,7 +63,7 @@ class AppController extends Controller {
 
 	private function allowAccess() {
 
-   if (in_array($this->name, array('News','Event','Team','Pages'))) {
+   if (in_array($this->name, array('News','Event','Team','Pages','Tournaments','Participants'))) {
      $this->Auth->allow(array('index','display','view','add','edit', 'forgotpass','liste','full'));
    }
  }

@@ -15,10 +15,12 @@ Die Voraussetzungen sind einfach nur genial! Wir haben eine super Location, ein 
 <b>Eintritt:</b> CHF 45.00 Vorkasse , CHF 50.00 Abendkasse</br>
 <b>Turniere:</b>
 <ul class="turnierliste">
-<li>Starcraft 2 Heart of the Swarm:	CHF 600.00</li>
-<li>League of Legends:				CHF 1500.00</li>
-<li>Counter-Strike: GO:				Hardware Preise u. Forge Points </li>
-<li>Community Turnier</li>
+<li>Starcraft 2 HotS 1v1:			CHF 600.00</li>
+<li>League of Legends 5v5:			CHF 1500.00</li>
+<li>Counter-Strike: GO 5v5:			Hardware Preise sowie Forge Points </li>
+<li>Shootmania 1v1:					Hardware Preise</li>
+<li>AoE2HD 1v1:						Hardware Preise</li>
+<li>Überraschungsturnier ?v?:		Überraschungspreise</li>		
 
 </ul>
 </br>
