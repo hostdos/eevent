@@ -25,7 +25,30 @@ class ParticipantsController extends AppController {
 		$this->set('participants', $this->paginate());
 	}
 
-	public function checkPaid($id = null){
+	private function checkSingle($tournamentid){
+		$userp = $this->Auth->user('User');
+		$userp = $this->Participant->find('count', array('conditions' => array('participant.user_id' => $userp['id'], 'participant.tournament_id' =>  $tournamentid, 'participant.parent_id' => NULL)));
+		if($userp > 1){
+			$this->Session->setFlash(__('Du hast dich für das Turnier schon angemeldet!.'));
+			$this->redirect(array('controller' => 'tournaments', 'action' => 'index'));
+		}
+	}
+
+	private function checkTeam($tournamentid){
+		$userp = $this->Auth->user('User');
+		$userp = $this->Participant->find('count', array('conditions' => array('participants.user_id' => $userp['id'], 'tournament_id' =>  $tournamentid, 'parent_id !=' => NULL)));
+		
+		if($userp > 1){
+			$this->Session->setFlash(__('Du hast dich für das Turnier schon in einem andern Team angemeldet!.'));
+			$this->redirect(array('controller' => 'tournaments', 'action' => 'index'));
+		}
+
+	}
+
+
+
+
+	private function checkPaid($id = null){
 		$userreg = null;
 		$this->loadModel('Registrations');
 				if($id == null){
@@ -99,6 +122,7 @@ class ParticipantsController extends AppController {
 			$user = $this->Auth->user('User');
 			$this->request->data['Participant']['user_id'] = $user['id'];
 			$this->checkPaid();
+			$this->checkSingle($this->request->data['Participant']['tournament_id']);
 			if ($this->Participant->save($this->request->data)) {
 				$this->Session->setFlash(__('Deine Anmeldung wurde gespeichert'));
 				$this->redirect(array('action' => 'index'));
