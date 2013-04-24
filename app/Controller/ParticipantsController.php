@@ -60,10 +60,9 @@ class ParticipantsController extends AppController {
 		$this->set('Users', $this->Users->find('list', array('fields' => array('id','username'))));
 		$self = $this->Participant->findById($id);
 		$this->set('tournamentid', $self['Participant']['tournament_id']);
-		$this->loadModel('ChildParticipant');
-		$ChildParticipants = $this->Participant->ChildParticipant->find('list');
-		$this->set('ChildParticipants', $ChildParticipant);
-	}
+		$ChildParticipants = $this->Participant->findAllByParentId($id);
+		$this->set('ChildParticipants', $ChildParticipants);
+		}
 
 /**
  * add method
@@ -126,7 +125,7 @@ class ParticipantsController extends AppController {
 			$this->Participant->create();
 			$user = $this->Auth->user('User');
 			$this->request->data['Participant']['user_id'] = $user['id'];
-			$this->request->data['Participant']['parent_id'] = $parentid;
+			$this->request->data['Participant']['parent_id'] = $teamid;
 			$this->checkPaid();
 			if ($this->Participant->save($this->request->data)) {
 				$this->Session->setFlash(__('Du dem Team beigetreten'));
