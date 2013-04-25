@@ -48,7 +48,7 @@ class AppController extends Controller {
    		$bezahlt = $this->Registrations->find('count', array(
         'conditions' => array('Registrations.registered' => 1, 'Registrations.paid' => 1)));
 
-		$progressbar['angemeldet']['num'] = $angemeldet;
+		$progressbar['angemeldet']['num'] = $angemeldet - $bezahlt;
 		$progressbar['angemeldet']['perc'] = $this->percentage($angemeldet);
 		$progressbar['bezahlt']['num'] = $bezahlt;
 		$progressbar['bezahlt']['perc'] = $this->percentage($bezahlt);

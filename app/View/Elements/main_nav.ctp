@@ -7,6 +7,7 @@
   'Sitzplan' => array('controller' => 'registrations', 'action' => 'sitzplan', 'admin' => null , '#' => 'menu'),
   'FAQ' => array('controller' => 'pages', 'action' => 'faq', 'admin' => null , '#' => 'menu'),
   'Turniere' => array('controller' => 'tournaments', 'action' => 'index', 'admin' => null , '#' => 'menu'),
+  'Vorbestellen' => array('controller' => 'preorders', 'action' => 'index', 'admin' => null , '#' => 'menu'),
 );?>
 
 <?php 
