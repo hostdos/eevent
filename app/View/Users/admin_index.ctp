@@ -7,7 +7,6 @@
 			<th><?php echo $this->Paginator->sort('surname'); ?></th>
 			<th><?php echo $this->Paginator->sort('birthdate'); ?></th>
 			<th><?php echo $this->Paginator->sort('clan'); ?></th>
-			<th><?php echo $this->Paginator->sort('website'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 			<th><?php echo 'angemeldet'; ?></th>
 			<th><?php echo 'bezahlt'; ?></th>
@@ -21,7 +20,6 @@
 		<td><?php echo h($user['User']['surname']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['birthdate']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['clan']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['website']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('Bezahlen'), array('action' => 'admin_pay','controller' => 'registrations', $user['User']['id'])); ?>
 			<?php echo $this->Html->link(__('Einchecken'), array('action' => 'admin_checkin','controller' => 'registrations', $user['User']['id'])); ?>

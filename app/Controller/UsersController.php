@@ -312,6 +312,13 @@ public function oldlogin() {
 
 
 	public function admin_index() {
+/*
+	if($authUser == null || $authUser['status'] != 1){
+		$this->Session->setFlash(__('fuck off'));
+		$this->redirect(array('controller' => 'registrations', 'action' => 'sitzplan'));
+	}
+*/
+
 		$this->User->recursive = 0;
 		$this->paginate = array('limit' => 300,'order' => array('username' => 'asc'));
 		$this->set('users', $this->paginate());

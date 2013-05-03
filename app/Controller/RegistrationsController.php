@@ -374,6 +374,7 @@ Dein Eevent Team
 	public function admin_pay($userid){
 		$reg = $this->Registrations->findByUserId($userid);		
 		$newseatreg['id'] = $reg['Registrations']['id'];
+		$newseatreg['user_id'] = $userid;
 		$newseatreg['registered'] = 1;
 		$newseatreg['paid'] = 1;
 		if($this->Registrations->save($newseatreg)){
@@ -391,10 +392,13 @@ Dein Eevent Team
 		
 	public function admin_checkin($userid){
 		$reg = $this->Registrations->findByUserId($userid);		
+		$this->set('Registration', $reg['Registrations']);
+		if (isset($this->request->data['Registration'])) {
 		$newseatreg['id'] = $reg['Registrations']['id'];
 		$newseatreg['checkin'] = 1;
 		$newseatreg['registered'] = 1;
 		$newseatreg['paid'] = 1;
+		$newseatreg['seat'] = $this->request->data['Registration']['seat'];
 
 		if($this->Registrations->save($newseatreg)){
 		$this->Session->setFlash(__('user eingecheckt'));
@@ -406,7 +410,8 @@ Dein Eevent Team
 
 		
 		
-		$this->redirect(array('controller' => 'users', 'action' => 'index', 'admin' => true));
+		//$this->redirect(array('controller' => 'users', 'action' => 'index', 'admin' => true));
+	}
 	}
 
 }

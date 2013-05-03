@@ -8,9 +8,14 @@
   'FAQ' => array('controller' => 'pages', 'action' => 'faq', 'admin' => null , '#' => 'menu'),
   'Turniere' => array('controller' => 'tournaments', 'action' => 'index', 'admin' => null , '#' => 'menu'),
   'Vorbestellen' => array('controller' => 'preorders', 'action' => 'index', 'admin' => null , '#' => 'menu'),
-);?>
+);
+if($authUser != null && $authUser['status'] == 1){
+$menupoints1 = array(
+'checkin' => array('controller' => 'users', 'action' => 'index', 'admin' => true , '#' => 'menu')
+);
+$menupoints = array_merge($menupoints,$menupoints1);
 
-<?php 
+}
  $num = 0;
  $menubar = array_keys($menupoints);
 foreach ($menupoints as $point) {
