@@ -1,6 +1,7 @@
-/app/Config
+/app/Config/*
 /app/View/Elements/empty
 /app/tmp/cache/*
+/app/tmp/*
 /app/tmp
 /vendors
 /build
