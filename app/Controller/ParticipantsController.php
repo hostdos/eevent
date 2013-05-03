@@ -27,7 +27,7 @@ class ParticipantsController extends AppController {
 
 	private function checkSingle($tournamentid){
 		$userp = $this->Auth->user('User');
-		$userp = $this->Participant->find('count', array('conditions' => array('participant.user_id' => $userp['id'], 'participant.tournament_id' =>  $tournamentid, 'participant.parent_id' => NULL)));
+		$userp = $this->Participant->find('count', array('conditions' => array('Participant.user_id' => $userp['id'], 'Participant.tournament_id' =>  $tournamentid, 'Participant.parent_id' => NULL)));
 		if($userp > 1){
 			$this->Session->setFlash(__('Du hast dich für das Turnier schon angemeldet!.'));
 			$this->redirect(array('controller' => 'tournaments', 'action' => 'index'));
@@ -36,7 +36,7 @@ class ParticipantsController extends AppController {
 
 	private function checkTeam($tournamentid){
 		$userp = $this->Auth->user('User');
-		$userp = $this->Participant->find('count', array('conditions' => array('participants.user_id' => $userp['id'], 'tournament_id' =>  $tournamentid, 'parent_id !=' => NULL)));
+		$userp = $this->Participant->find('count', array('conditions' => array('Participant.user_id' => $userp['id'], 'tournament_id' =>  $tournamentid, 'parent_id !=' => NULL)));
 		
 		if($userp > 1){
 			$this->Session->setFlash(__('Du hast dich für das Turnier schon in einem andern Team angemeldet!.'));
@@ -152,7 +152,7 @@ class ParticipantsController extends AppController {
 			$this->request->data['Participant']['parent_id'] = $teamid;
 			$this->checkPaid();
 			if ($this->Participant->save($this->request->data)) {
-				$this->Session->setFlash(__('Du dem Team beigetreten'));
+				$this->Session->setFlash(__('Du bist dem Team beigetreten'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('Du konntest dem Team nicht beitreten'));

@@ -6,24 +6,24 @@ $(document).ready(function(){
 	};
 	
 	var seatLayout = [
-        {
+     //   {
         //very right row
-            type: 'seatGroup',
-            startingId: 205,
-            width: 1,
-            seatAmount: 24,
-            x: 580,
-            y: 110
-        },
-		{
+        //    type: 'seatGroup',
+       //     startingId: 205,
+         //   width: 1,
+         //   seatAmount: 24,
+        //    x: 580,
+        //    y: 110
+       // },
+		//{
 		//very top row
-			type: 'seatGroup',
-			startingId: 193,
-			width: 12,
-			seatAmount: 12,
-			x: 150,
-			y: 103
-		},
+			//type: 'seatGroup',
+		//	startingId: 193,
+		//	width: 12,
+		//	seatAmount: 12,
+		//	x: 150,
+		//	y: 103
+		//},
 
         {
         //top right left row

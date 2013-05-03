@@ -29,7 +29,7 @@
 
 <a id="alter" href="#alter"><h3>Ab welchem Alter darf ich an der Veranstaltung teilnehmen?</h3></a>
 Du musst das 14. Lebensjahr erreicht haben, zusätzlich müssen alle Teilnehmer unter 16 Jahren das U16-Anmeldungsformular ausfüllen und an die Lan-Party mitbringen. Dieses findest du 
-<?php echo $this->Html->link('Hier', '/files/u16.pdf'); ?>
+<?php echo $this->Html->link('Hier', 'http://eevent.ch/images/u16.pdf', true); ?>
 
 
 

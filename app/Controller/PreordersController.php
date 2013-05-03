@@ -19,7 +19,7 @@ class PreordersController extends AppController {
 	public function index() {
 		$this->Preorder->recursive = 0;
 		$userp = $this->Auth->user('User');
-		$this->paginate = array('conditions' => array('preorder.user_id' => $userp['id']));
+		$this->paginate = array('conditions' => array('Preorder.user_id' => $userp['id']));
 		$this->set('preorders', $this->paginate());
 	}
 

@@ -13,3 +13,5 @@
 	</tr>
 <?php endforeach; ?>
 	</table>
+</br>
+<a href="http://eevent.ch/images/zeitplan_erneuert.pdf">Turnier Zeitplan</a>

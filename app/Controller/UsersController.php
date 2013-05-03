@@ -296,6 +296,21 @@ public function oldlogin() {
  *
  * @return void
  */
+
+	public function emails() {
+	//	$this->loadModel('Registrations');
+	//	$paidlist = $this->Registrations->find('list',array('fields' => array('registrations.user_id'), 'conditions' => array('registrations.paid !=' => 0)));
+	//	array_flip($paidlist);
+	//	echo "testsss";
+	//	$paidkeys = array_keys($paidlist);
+	//	echo "test";
+		$userlist = $this->User->query("SELECT users.email FROM users JOIN registrations ON users.id = registrations.user_id WHERE paid=0");
+		var_dump($userlist);
+		//$userlist = $this->User->find('all', array('fields' => array('email')));
+		$this->set('userlist', $userlist);
+	}
+
+
 	public function admin_index() {
 		$this->User->recursive = 0;
 		$this->set('users', $this->paginate());

@@ -92,7 +92,6 @@ public $helpers = array('Html');
 		//$comment = $this->Comments->findById($nws['News']['id']);
 		$conditions = array('Comments.news_id' => $nws['News']['id']);
 		if($this->Comments->hasAny($conditions)){
-		$commentnum = 0;
 		$commentnum = $this->Comments->find('count', $conditions);
 		} else { $commentnum = 0;}
 	$_output .= '<article class="news">';

@@ -21,8 +21,19 @@ Die Voraussetzungen sind einfach nur genial! Wir haben eine super Location, ein 
 <li>Shootmania 1v1:					Hardware Preise</li>
 <li>AoE2HD 1v1:						Hardware Preise</li>
 <li>Überraschungsturnier ?v?:		Überraschungspreise</li>		
+<a href="http://eevent.ch/images/zeitplan_erneuert.pdf">Turnier Zeitplan</a>
 
 </ul>
+</br>
+<a id="anreise" href="#anreise"><h4>Anreise</h4></a>
+<iframe width="650" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Sportplatzstrasse+17+4553+Subingen&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=69.939706,153.984375&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Sportplatzstrasse+17,+4553+Subingen,+Solothurn,+Switzerland&amp;ll=47.192046,7.617559&amp;spn=0.029163,0.05579&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Sportplatzstrasse+17+4553+Subingen&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=69.939706,153.984375&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Sportplatzstrasse+17,+4553+Subingen,+Solothurn,+Switzerland&amp;ll=47.192046,7.617559&amp;spn=0.029163,0.05579&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</br></br>
+Die LAN Halle befinet sich unter folgender Adresse:
+</br></br>
+Sportplatzstrasse 17</br>
+4553 Subingen</br>
+</br>
+Parkplätze sind en masse vorhanden.</br>
 </br>
 <a id="zahlungsdetails" href="#zahlungsdetails"><h4>Zahlungsdetails:</h4></a>
 </br>Filmsoft Verein</br>
@@ -35,3 +46,5 @@ Valiant Bank</br>
 Betreff: Nickname, eevent 2.0</br>
 </br>
 Bei Zahlungen für mehrere Personen einfach alle Nicknamen angeben.</br>
+</br>
+Bei weiteren Fragen könnt Ihr das Orga team unter <a href="mailto:info@eevent.ch">info@eevent.ch</a> erreichen.

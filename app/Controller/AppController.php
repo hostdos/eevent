@@ -1,4 +1,4 @@
-<?php
+**<?php
 /**
  * Application level Controller
  *
@@ -47,8 +47,8 @@ class AppController extends Controller {
         'conditions' => array('Registrations.registered' => 1)));
    		$bezahlt = $this->Registrations->find('count', array(
         'conditions' => array('Registrations.registered' => 1, 'Registrations.paid' => 1)));
-
-		$progressbar['angemeldet']['num'] = $angemeldet - $bezahlt;
+        $angemeldet = $angemeldet - $bezahlt;
+		$progressbar['angemeldet']['num'] = $angemeldet;
 		$progressbar['angemeldet']['perc'] = $this->percentage($angemeldet);
 		$progressbar['bezahlt']['num'] = $bezahlt;
 		$progressbar['bezahlt']['perc'] = $this->percentage($bezahlt);
