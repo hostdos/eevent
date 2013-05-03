@@ -371,4 +371,42 @@ Dein Eevent Team
 
 		}
 	}
+	public function admin_pay($userid){
+		$reg = $this->Registrations->findByUserId($userid);		
+		$newseatreg['id'] = $reg['Registrations']['id'];
+		$newseatreg['registered'] = 1;
+		$newseatreg['paid'] = 1;
+		if($this->Registrations->save($newseatreg)){
+		$this->Session->setFlash(__('user bezahlt'));
+		$this->redirect(array('controller' => 'users', 'action' => 'index', 'admin' => true));
+			}else{
+		$this->Session->setFlash(__('user konnte nicht bezahlt werden'));
+		$this->redirect(array('controller' => 'users', 'action' => 'index', 'admin' => true));
+		}
+
+		
+		
+		$this->redirect(array('controller' => 'users', 'action' => 'index', 'admin' => true));
+	}
+		
+	public function admin_checkin($userid){
+		$reg = $this->Registrations->findByUserId($userid);		
+		$newseatreg['id'] = $reg['Registrations']['id'];
+		$newseatreg['checkin'] = 1;
+		$newseatreg['registered'] = 1;
+		$newseatreg['paid'] = 1;
+
+		if($this->Registrations->save($newseatreg)){
+		$this->Session->setFlash(__('user eingecheckt'));
+		$this->redirect(array('controller' => 'users', 'action' => 'index', 'admin' => true));
+			}else{
+		$this->Session->setFlash(__('user konnte nicht eingecheckt werden'));
+		$this->redirect(array('controller' => 'users', 'action' => 'index', 'admin' => true));
+		}
+
+		
+		
+		$this->redirect(array('controller' => 'users', 'action' => 'index', 'admin' => true));
+	}
+
 }

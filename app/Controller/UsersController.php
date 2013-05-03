@@ -313,7 +313,18 @@ public function oldlogin() {
 
 	public function admin_index() {
 		$this->User->recursive = 0;
+		$this->paginate = array('limit' => 300,'order' => array('username' => 'asc'));
 		$this->set('users', $this->paginate());
+		$this->loadModel('Registrations');
+		$registrations = $this->Registrations->find('all', array( 'fields' => array(
+		'Registrations.id','Registrations.user_id','Registrations.registered','Registrations.paid','Registrations.checkin')));
+		//print_r($registrations);
+		
+		$registrationslist = array();
+		foreach($registrations as $regs){
+			$registrationslist[$regs['Registrations']['user_id']] = $regs['Registrations'];
+		}
+		$this->set('registrations', $registrationslist);
 	}
 
 /**
