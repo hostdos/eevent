@@ -34,15 +34,7 @@ $(document).ready(function(){
             x: 450,
             y: 158
         },
-        {
-        //top right right row
-            type: 'seatGroup',
-            startingId: 169,
-            width: 1,
-            seatAmount: 12,
-            x: 479,
-            y: 158
-        },
+     
         {
         	//middle right left row
             type: 'seatGroup',
@@ -79,24 +71,8 @@ $(document).ready(function(){
             x: 229,
             y: 158
         },
-        {
-        //top left group row a
-            type: 'seatGroup',
-            startingId: 1,
-            width: 1,
-            seatAmount: 12,
-            x: 75,
-            y: 158
-        },
-             {
-             //top left group row 
-            type: 'seatGroup',
-            startingId: 25,
-            width: 1,
-            seatAmount: 12,
-            x: 104,
-            y: 158
-        },
+        
+
         {
         //bottom right left row
             type: 'seatGroup',

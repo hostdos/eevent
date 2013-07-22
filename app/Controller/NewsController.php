@@ -21,7 +21,7 @@ class NewsController extends AppController {
 
 
 	public function index() {
-		$this->set('amount', 2);
+		$this->set('amount', 4);
 		$this->layout = 'bootstrap_basic';
 	}
 
@@ -78,11 +78,12 @@ class NewsController extends AppController {
 		if ($this->request->is('post')) {
 			//$this->loadModel('Comments');
 			$this->News->create();
+var_dump($this->request->data);
 			if ($this->News->save($this->request->data)) {
 			//	$this->Comments->create();
 			//	$commentvars['id'] = $this->News->getLastInsertId();
 				$this->Session->setFlash(__('The news has been saved'));
-				$this->redirect(array('action' => 'index' ,'admin' => null));
+				$this->redirect(array('action' => 'index','controller' => 'news' ,'admin' => null));
 			} else {
 				$this->Session->setFlash(__('The news could not be saved. Please, try again.'));
 			}

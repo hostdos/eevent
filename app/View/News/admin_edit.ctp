@@ -7,7 +7,7 @@
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('title');
-		echo $this->Form->input('content', array('type' => 'textarea','class' => 'newsinput'));
+		echo $this->Form->input('content', array('type' => 'textarea','class' => 'newsinput', 'required' => 'false'));
 		echo $this->Form->input('users_id');
 		echo $this->Form->input('isdisabled');
 	?>

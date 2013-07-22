@@ -1,12 +1,12 @@
 <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
 <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
 <div class="news form">
-<?php echo $this->Form->create('news'); ?>
+<?php echo $this->Form->create('News'); ?>
 	<fieldset>
 		<legend><?php echo __('Add News'); ?></legend>
 	<?php
 		echo $this->Form->input('title');
-		echo $this->Form->input('content', array('type' => 'textarea','class' => 'newsinput'));
+		echo $this->Form->input('content', array('type' => 'textarea','class' => 'newsinput','required' => 'false'));
 		echo $this->Form->input('users_id');
 		echo $this->Form->input('isdisabled');
 	?>

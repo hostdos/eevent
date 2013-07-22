@@ -1,4 +1,4 @@
-<div class="tournaments view">
+﻿<div class="tournaments view">
 	<?php echo $this->Html->image($tournament['Tournament']['image'], array('fullBase' => true, 'class' => 'tournamentlogo')); ?>
 <h2><?php  echo h($tournament['Tournament']['name']); ?></h2>
 	<dl>
@@ -33,15 +33,15 @@ echo "</li>";
 ?>
 </ul>
 <?php 
-if($tournament['Tournament']['maxsize'] == NULL || $tournament['Tournament']['maxsize'] == 1){ ?>
+if($tournament['Tournament']['maxsize'] == NULL  && $tournament['Tournament']['isdisabled'] == 0|| $tournament['Tournament']['maxsize'] == 1  && $tournament['Tournament']['isdisabled'] == 0){ ?>
 <div class="actions">
 		<?php echo $this->Html->link(__('an Turnier Teilnehmen'), array('controller' => 'participants', 'action' => 'addSingle')); ?>
 </div>
-<?php }elseif(!empty($spieler['Participants'])){
+<?php }elseif(!empty($spieler['Participants'])  && $tournament['Tournament']['isdisabled'] == 0){
 			echo $this->Html->link(__('einem Team Beitreten'), array('controller' => 'participants', 'action' => 'joinTeam', $tournament['Tournament']['id']));
 						echo '</br>';
 						echo $this->Html->link(__('Team Erstellen'), array('controller' => 'participants', 'action' => 'addTeam', $tournament['Tournament']['id']));
-			}else{
+			}elseif($tournament['Tournament']['isdisabled'] == 0){
 			echo '</br>';
 						echo $this->Html->link(__('Team Erstellen'), array('controller' => 'participants', 'action' => 'addTeam', $tournament['Tournament']['id']));
 
@@ -89,6 +89,7 @@ echo $tournament['Tournament']['description'];
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
+<--
 <?php if($tournament['Participant']){ ?>
 	<div class="actions">
 		<ul>

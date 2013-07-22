@@ -1,0 +1,90 @@
+#content h1 {
+	font-size: 60px;
+	color: grey;
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#loginpanel {
+	padding-top: 200px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#loginpanel input[type="password"] {
+	width: 800px;
+	height: 50px;
+	font-size: 50px;
+}
+
+#tillselection {
+	display: none;
+	width: 800px;
+	height: 200px;
+}
+
+#tillselection .btn {
+	height: 180px;
+	width: 180px;
+	margin-left: 65px;
+}
+
+#till {
+	margin: 0 auto;
+	padding-top: 50px;
+	width: 1250px;
+	display: none;
+}
+
+#tillbuttons {
+	width: 1000px;
+	display: inline-block;
+}
+
+#tillbuttons button {
+	height: 180px;
+	width: 180px;
+	font-size: 30px;
+}
+
+.btn-primary {
+	margin-left: 56px;
+	margin-top: 56px;
+	white-space: normal;
+	line-height: 50px;
+} 
+
+#tilldisplay {
+	min-height: 400px;
+	width: 200px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.btn-success, #finish {
+	display: none;
+	margin-top: 5px;
+}
+
+#in, #calculate, #out {
+	margin-top: 5px;
+	display: none;
+}
+
+#in {
+	width: 100px;
+}
+
+.productentry:hover{
+	background-color: white;	
+	background-image: url('../media/minus.png');
+	background-repeat:no-repeat;
+	background-position:left;
+	background-size: 10px;
+	padding-left: 10px;
+}
+
+#reset {
+	margin-top: 10px;
+}
