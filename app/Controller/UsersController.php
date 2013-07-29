@@ -412,3 +412,26 @@ public function oldlogin() {
 		$this->redirect(array('action' => 'index'));
 	}
 }
+
+	public function admin_setpaid() {
+		$this->loadModel('Registrations');
+		
+		$allreg = $this->Registrations->find('list',array(
+		'fields' => 'user_id',
+		'conditions' => array('paid' => '1')));
+		
+
+		$users = $this->User->find('list', array(
+		'fields' => array('username','prename','surname'),
+		'conditions' => array('id' => $allreg)));
+
+		$this->set('userlist',$users);
+		
+		if(isset($this->data()) && $this->request->is('post')){
+			$userreg = $this->Registrations->findByUserId($userid);
+			
+			
+			
+		}
+
+	}
