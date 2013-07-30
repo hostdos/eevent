@@ -56,13 +56,21 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
   <?php echo $this->element('eevent_banner'); ?>
 
+<div class="navbar">
+          <div class="navbar-inner">
+              <div class="container">
+                  <div class="nav-collapse">
+        <?php echo $this->element('main_nav'); ?>
+
+                  </div><!-- /.nav-collapse -->
+              </div>
+          </div><!-- /navbar-inner -->
+      </div>
+
 
         <div class="container">
 
 		<div class="row">
-
-        <?php echo $this->element('main_nav'); ?>
-
 			<?php echo $this->Session->flash(); ?>
        <div class="span2">
         <?php echo $this->element('login_status_left_sidebar'); ?>

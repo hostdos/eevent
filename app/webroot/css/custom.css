@@ -61,7 +61,8 @@ footer {
 padding-top: 60px;
 padding-left: 0px;
 padding-right: 0px;
-margin-top: -140px;
+margin-top: -460px;
+margin-bottom: 0px;
 width: 100%;
 float: left;
 z-index: 5;
@@ -266,22 +267,6 @@ margin-top: 20px;
   float: none !important;
 }
 
-.nav {
-    margin-left:auto;
-    margin-right:auto;
-    width: 40%;
-}
-      
-.nav {
-    margin-left: 35% !important;
-    width: 35%;    
-}
-
-.nav li {
- width: 25%;  
- text-align: center;
-}
-
 .sidelogin{
   margin-left: 20px;
   font-size: 16px;
@@ -320,7 +305,8 @@ text-shadow: 1px 1px 0px #5555AA;
 }
 
 body {
-    background-color: #FFF;
+    background-color: #edeeef;
+    background-image: url('../img/pw_maze_white.png');
     padding-top:60px;
 }
 
@@ -331,10 +317,9 @@ margin: 0px;
 padding: 0px;
 }
 
-
-.nav-tabs > .active a{
-
-    background-color:#DDDDFF;
+.nav{
+  width: 800px;
+  margin: auto;
 }
 
 
@@ -417,4 +402,17 @@ padding: 0px;
 }
 .offset1 {
   margin-left: 140px;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-inner {
+  text-align:center;
 }
