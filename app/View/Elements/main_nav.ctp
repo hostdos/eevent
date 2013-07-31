@@ -1,5 +1,5 @@
-    <ul class="nav nav-tabs">
-      <a id="menu" href="#menu"></a>
+<ul class="nav nav-tabs">
+	<a id="menu" href="#menu"></a>
 <?php $menupoints = array(
 'News' => array('controller' => 'news', 'action' => 'index', 'admin' => null, '#' => 'menu'),
  'Event' => array( 'controller' => 'event', 'action' => 'index', 'admin' => null , '#' => 'menu'),
@@ -34,3 +34,23 @@ foreach ($menupoints as $point) {
 
  ?>
     </ul>
+
+<script>
+$(document).scroll(function(){
+    var elem = $('.navbar');
+    if (!elem.attr('data-top')) {
+        if (elem.hasClass('navbar-fixed-top'))
+            return;
+         var offset = elem.offset()
+        elem.attr('data-top', offset.top);
+    }
+    if (elem.attr('data-top') - elem.outerHeight() <= $(this).scrollTop() - $(elem).outerHeight()){
+        elem.addClass('navbar-fixed-top');
+        $('body').addClass('navbar-fixed-top-active');
+        }
+    else{
+        elem.removeClass('navbar-fixed-top');
+        $('body').removeClass('navbar-fixed-top-active');
+        }
+});
+</script>

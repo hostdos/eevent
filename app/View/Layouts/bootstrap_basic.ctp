@@ -51,7 +51,7 @@ $cakeDescription = __d('eevent', 'eevent');
 
   <?php echo $this->element('eevent_banner'); ?>
 
-<div class="navbar">
+<div class="navbar subnav">
           <div class="navbar-inner">
               <div class="container">
                   <div class="nav-collapse">
@@ -70,7 +70,6 @@ $cakeDescription = __d('eevent', 'eevent');
 
       <?php echo $this->Session->flash(); ?>
        <div class="span2">
-      <?php echo $this->element('login_status_left_sidebar'); ?>
       <?php echo $this->element('sponsors'); ?>
 
 
