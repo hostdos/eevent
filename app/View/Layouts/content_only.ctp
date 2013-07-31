@@ -50,17 +50,16 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 
   <?php echo $this->element('eevent_banner'); ?>
+        <?php echo $this->element('main_nav'); ?>
 
         <div class="container">
   <?php //echo $this->element('eevent_banner_small'); ?>
 
     <div class="row">
 
-        <?php echo $this->element('main_nav'); ?>
 
       <?php echo $this->Session->flash(); ?>
        <div class="span2">
-        <?php echo $this->element('login_status_left_sidebar'); ?>
         <?php echo $this->element('sponsors'); ?>
         </div>
 

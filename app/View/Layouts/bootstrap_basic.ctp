@@ -51,17 +51,7 @@ $cakeDescription = __d('eevent', 'eevent');
 
   <?php echo $this->element('eevent_banner'); ?>
 
-<div class="navbar subnav">
-          <div class="navbar-inner">
-              <div class="container">
-                  <div class="nav-collapse">
         <?php echo $this->element('main_nav'); ?>
-
-                  </div><!-- /.nav-collapse -->
-              </div>
-          </div><!-- /navbar-inner -->
-      </div>
-
 
         <div class="container">
 

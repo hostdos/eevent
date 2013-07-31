@@ -1,4 +1,7 @@
 
+body>.container {
+margin-top: 20px;	
+}
 
 div.hero-unit.awesome.flat {
 -webkit-border-radius: 0px;
@@ -311,6 +314,9 @@ body {
 	height: 3px;
 	margin: 0px;
 	padding: 0px;
+}
+.navbar {
+position: relative;
 }
 
 .nav{
