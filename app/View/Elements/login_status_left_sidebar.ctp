@@ -9,12 +9,12 @@
          echo $this->Html->link('Ausloggen?', array('controller' => 'users','action'=>'logout','admin' => null));
          echo '</span>';
         } else {
-          echo '<span>';
-          echo 'Nicht eingeloggt, '; 
-          echo $this->Html->link('Einloggen', array('controller' => 'users','action'=>'login','admin'=> null));
-          echo '</br>';
-          echo $this->Html->link('Registrieren', array('controller' => 'users','action'=>'add','admin'=> null));
-          echo '</span>';
+         
+          echo $this->Form->create('User', array('controller' => 'users','action' => 'login'));
+          echo $this->Form->input('username', array('placeholder' => 'username', 'label' => false));
+          echo $this->Form->password('password', array('placeholder' => 'passwort')); // No div, no label
+          echo $this->Form->submit('login');
+          echo $this->Form->end();
         }
         ?>
         </div>

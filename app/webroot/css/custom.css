@@ -24,7 +24,7 @@ article footer a {
 .ui-autocomplete{
 list-style: none !important;
 }
-
+ 
 #flashMessage {
   width: 400px;
   text-align: center;
@@ -59,11 +59,14 @@ footer {
   margin-right: 3px;
 }
 
+ .navbar-fixed-top .container {
+  width: auto;
+ }
 
 .hero-unit.awesome.flat.headerawesome{
 padding: 0px;
 margin-bottom: 0px;
-height: 240px;
+height: 200px;
 width: 100%;
 z-index: 5;
 overflow: hidden;
@@ -88,15 +91,10 @@ p{
 .bannerimg {
   float: left;
   display: block;
-    margin:0 auto !important;
-width: 20% !important;
-margin-left: 41% !important;
-margin-right: 39% !important;
-z-index: 2;
-min-height: 160px;
-min-width: 180px;
-
-
+  z-index: 2;
+  min-height: 160px;
+  max-height: 200px;
+  min-width: 180px;
 }
 
 
@@ -200,6 +198,12 @@ margin-bottom: 20px;
 
 .sidesponsors h4 {
 text-align: center;
+-webkit-box-shadow: 0px 1px 4px #113585;
+-moz-box-shadow:    0px 1px 4px #113585;
+box-shadow:         0px 1px 4px #113585;
+background-color: #113585;
+border-radius: 3px 3px 0px 0px;
+color: #cecece;
 }
 
 .sidesponsors h5 {
@@ -268,7 +272,6 @@ margin-top: 20px;
 }
 
 .sidelogin{
-  margin-left: 20px;
   font-size: 16px;
 }
 .sidelogin a{
@@ -342,4 +345,12 @@ position: relative;
 
 .navbar-fixed-top-active {
 padding-top: 45px
+}
+
+.sidelogin input {
+  width: 128px;
+}
+
+.sidelogin .submit input {
+  width: 142px;
 }

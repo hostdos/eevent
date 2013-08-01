@@ -60,8 +60,8 @@ $cakeDescription = __d('eevent', 'eevent');
 
       <?php echo $this->Session->flash(); ?>
        <div class="span2">
+      <?php echo $this->element('login_status_left_sidebar'); ?>
       <?php echo $this->element('sponsors'); ?>
-
 
         </div>
 
