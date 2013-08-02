@@ -411,7 +411,6 @@ public function oldlogin() {
 		$this->Session->setFlash(__('User was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
-}
 
 	public function admin_setpaid() {
 		$this->loadModel('Registrations');
@@ -427,11 +426,10 @@ public function oldlogin() {
 
 		$this->set('userlist',$users);
 		
+/*
 		if(isset($this->data()) && $this->request->is('post')){
 			$userreg = $this->Registrations->findByUserId($userid);
-			
-			
-			
+*/		
 		}
 
 	}

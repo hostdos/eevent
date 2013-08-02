@@ -221,12 +221,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);*/
 }
 
 .news {
-  background-color: rgba(82, 157, 255, 0.3);
+  background-color: #A9C1D9;
   border-radius: 1px;
   padding-top: 1px;
   padding-left: 3px;
   margin-bottom: 22px;
   padding-bottom: 5px;
+  color: #FBFCD0;
 }
 
 .news ul {
@@ -263,10 +264,10 @@ clear: both;
 }
 
 .news p{
-  color: #4545A5;
   margin-left: 6px;
   padding-left: 6px;
   padding-top: 5px;
+  color: inherit;
 }
 
 article footer {
