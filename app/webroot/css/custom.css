@@ -279,7 +279,7 @@ article footer {
 }
 
 .sidesponsors {
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 .sidesponsors img {
@@ -433,4 +433,11 @@ padding-top: 45px
 
 .sidelogin .submit input {
   width: 142px;
+}
+.sidelogin #UserLoginForm {
+  margin-bottom: 0px;
+}
+.sidelogin a {
+  font-weight: normal;
+  font-size: 14px;
 }
