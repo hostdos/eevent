@@ -190,6 +190,15 @@ public function oldlogin() {
 			$userexist = $this->User->find('first', $condoptions);
 			if(empty($userexist)){
 			$this->User->create();
+			
+			$pricemoney = array(); 
+			$pricemoney['lol'] = $this->request->data['User']['price_lol'];
+			$pricemoney['csgo'] = $this->request->data['User']['price_csgo'];
+			$pricemoney['hots'] = $this->request->data['User']['price_hots'];
+			unset($this->request->data['User']['price_lol']);
+			unset($this->request->data['User']['price_csgo']);
+			unset($this->request->data['User']['price_hots']);
+			
 			$this->request->data['User']['status'] = 0;
 			$this->request->data['User']['isdisabled'] = 0;
 			$this->request->data['User']['password'] = 
@@ -216,6 +225,20 @@ public function oldlogin() {
 				$Email->to(array( $this->request->data['User']['email'] => $this->request->data['User']['username']));
 				$Email->subject(__('Registrierung auf Eevent.ch'));
 				$Email->send($emailstring);
+				
+				//create registration and set the valuezzzz
+				
+				$this->loadModel('Registrations');
+				$reg['Registrations']['user_id'] = $this->User->getLastInsertId();
+				$reg['Registrations']['price_lol'] = $pricemoney['lol'];
+				$reg['Registrations']['price_csgp'] = $pricemoney['csgo'];
+				$reg['Registrations']['price_hots'] = $pricemoney['hots'];
+				$this->Registrations->create();
+				if($this->Registrations->save($reg)){
+					
+				}else{
+					$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+				}
 
 				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));

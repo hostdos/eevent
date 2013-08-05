@@ -24,8 +24,8 @@
 		
 		echo $this->Form->input('password', array('label' => 'Passwort','placeholder' => 'Passwort', 'type' => 'password'));
 		echo $this->Form->input('email', array('placeholder' => 'Email','type' => 'email','label'=>'E-Mail'));
-		echo $this->Form->input('gender', array('placeholder' => __('gender'),'type' => 'select',
-					'options' => array( '0' => __('Frau'), '1' => __('Mann'))));
+		echo $this->Form->input('gender', array('label' => __('Geschlecht'),'type' => 'select',
+					'options' => array( '1' => __('Mann'), '0' => __('Frau'))));
 		echo $this->Form->input('prename', array('placeholder' => 'Vorname','label'=> 'Vorname'));
 		echo $this->Form->input('surname', array('placeholder' => 'Nachname','	label'=> 'Nachname'));
 	?>
@@ -36,15 +36,21 @@
    			 'label' => __('birthdate'),
    			 'placeholder' => date('d.m.Y')));
    		
-		echo $this->Form->input('place',array('label' => __('Wohnort'), 'type' => 'text'));
-		echo $this->Form->input('zip', array('label' => __('PLZ')));
-		echo $this->Form->input('street', array('label' => __('Adresse')));
-		echo $this->Form->input('phone', array('label' => __('Tel.')));
-		echo $this->Form->input('clan', array('label' => 'Clan', 'placeholder' => 'Clan', 'id' => 'clan'));
-		echo $this->Form->input('website', array('label' => 'Website', 'placeholder' => 'Website'));
+		echo $this->Form->input('place',array('label' => __('Wohnort'), 'type' => 'text', 'placeholder' => 'bärn'));
+		echo $this->Form->input('zip', array('label' => __('PLZ'), 'placeholder' => '3005'));
+		echo $this->Form->input('street', array('label' => __('Adresse'), 'placeholder' => 'Bundesplatz 3'));
+		echo $this->Form->input('phone', array('label' => __('Tel.'), 'placeholder' => '031 322 87 90'));
+		echo $this->Form->input('clan', array('label' => 'Clan', 'placeholder' => 'Clan', 'id' => 'clan', 'placeholder' => 'Broken-Arrow'));
+		echo $this->Form->input('website', array('label' => 'Website', 'placeholder' => 'Website', 'placeholder' => 'www.retardmagnetgaming.ch.vu'));
 	?>
 	</fieldset>
-	
+	<fieldset class="pricemoneysliders">
+		<?php
+		echo $this->Form->input('price_lol', array('label' => __('LoL'), 'value' => '4'));
+		echo $this->Form->input('price_csgo', array('label' => __('CS:GO'), 'value' => '3'));
+		echo $this->Form->input('price_hots', array('label' => __('SC2:HotS'), 'value' => '3'));
+		?>
+	</fieldset>
 <?php 
 		echo $this->Form->submit(__('Registrieren'), array('class' => 'btn btn-large btn-primary'));
 		echo $this->Form->end(); ?>
