@@ -1,6 +1,3 @@
-
-
-
 <?php 	echo $this->Html->css('smoothness/jquery-ui-1.10.2.custom.min');
 		echo $this->Html->script('jquery-ui-1.10.2.custom.min');
 ?>
@@ -20,29 +17,24 @@
 
 <div class="users form">
 <?php echo $this->Form->create('User'); ?>
-	<fieldset>
+	<fieldset class="first">
 		<legend><?php echo __('Add User'); ?></legend>
 	<?php
 		echo $this->Form->input('username', array('placeholder' => 'Username'));
-		echo $this->Form->password('password', array('placeholder' => 'Passwort', 'type' => 'password', 'label' => 'Passwort'));
+		
+		echo $this->Form->input('password', array('label' => 'Passwort','placeholder' => 'Passwort', 'type' => 'password'));
 		echo $this->Form->input('email', array('placeholder' => 'Email','type' => 'email','label'=>'E-Mail'));
 		echo $this->Form->input('gender', array('placeholder' => __('gender'),'type' => 'select',
 					'options' => array( '0' => __('Frau'), '1' => __('Mann'))));
 		echo $this->Form->input('prename', array('placeholder' => 'Vorname','label'=> 'Vorname'));
-		echo $this->Form->input('surname', array('placeholder' => 'Nachname','label'=> 'Nachname'));
+		echo $this->Form->input('surname', array('placeholder' => 'Nachname','	label'=> 'Nachname'));
 	?>
 	</fieldset>
-	<fieldset>
+	<fieldset class="second">
 	<?php
-		echo $this->Form->input('birthdate', array('type' => 'date',
-		'minYear' => date('Y') - 70,
-    	'maxYear' => date('Y') - 0,
-    	  'selected' => array(
-   			 'day' => '15',
-   			 'month' => '06',
-   			 'year' => '1994',
-   			 'label' => _('birthdate'),
-   		)));
+		echo $this->Form->input('birthdate', array('type' => 'text',
+   			 'label' => __('birthdate'),
+   			 'placeholder' => date('d.m.Y')));
    		
 		echo $this->Form->input('place',array('label' => __('Wohnort'), 'type' => 'text'));
 		echo $this->Form->input('zip', array('label' => __('PLZ')));
@@ -52,23 +44,14 @@
 		echo $this->Form->input('website', array('label' => 'Website', 'placeholder' => 'Website'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Registrieren')); ?>
+	
+<?php 
+		echo $this->Form->submit(__('Registrieren'), array('class' => 'btn btn-large btn-primary'));
+		echo $this->Form->end(); ?>
 </div>
 
 
 <!-- 
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="users form">
 <?php echo $this->Form->create('User'); ?>
 	<fieldset>

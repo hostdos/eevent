@@ -192,10 +192,8 @@ public function oldlogin() {
 			$this->User->create();
 			$this->request->data['User']['status'] = 0;
 			$this->request->data['User']['isdisabled'] = 0;
-			$this->request->data['User']['password'] = Security::hash($this->request->data['User']['password'], 'md5',false);
-			$datestring = $this->request->data['User']['birthdate']['year'] . '/' .$this->request->data['User']['birthdate']['month'] . '/' . $this->request->data['User']['birthdate']['day'];
-         	$datestring = date('Y-m-d', strtotime($datestring));
-			$this->request->data['User']['birthdate'] = CakeTime::format('Y-m-d H:i:s',$datestring);			
+			$this->request->data['User']['password'] = 
+				Security::hash($this->request->data['User']['password'], 'md5',false);
 			if ($this->User->save($this->request->data)) {
 
 
