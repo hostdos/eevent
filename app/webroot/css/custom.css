@@ -441,3 +441,15 @@ padding-top: 45px
   font-weight: normal;
   font-size: 14px;
 }
+
+/* user add css*/
+#UserAddForm fieldset{
+width: 100px;
+float: left;
+margin-right: 70px;
+margin-top: 71px;
+}
+
+#UserAddForm .first {
+margin-top: 10px;
+}

@@ -14,6 +14,39 @@ class User extends AppModel {
 	public $displayField = 'username';
 
 /**
+ *	Converting all dates from and to swiss format after finding and before saving.
+ *
+ */
+ 
+ 
+	public function afterFind($results, $primary = false) {
+	    foreach ($results as $key => $val) {
+	        if (isset($val['User']['birthdate'])) {
+	            $results[$key]['User']['birthdate'] = $this->dateFormatAfterFind($val['User']['birthdate']);
+	        }
+
+	    }
+	    return $results;
+	}
+	
+	public function dateFormatAfterFind($dateString) {
+	    return date('d.m.Y', strtotime($dateString));
+	}
+
+
+	public function beforeSave($options = array()) {
+	    if(!empty($this->data['User']['birthdate'])){
+		    $this->data['User']['birthdate'] = $this->dateFormatBeforeSave($this->data['User']['birthdate']	);
+	    }
+	    return true;
+	}
+	
+	public function dateFormatBeforeSave($dateString) {
+	    return date('Y-m-d', strtotime($dateString));
+	}
+
+
+/**
  * Validation rules
  *
  * @var array
@@ -80,8 +113,8 @@ class User extends AppModel {
 			),
 		),
 		'birthdate' => array(
-			'datetime' => array(
-				'rule' => array('datetime'),
+			'date' => array(
+				'rule' => array('date', 'dmy'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -100,17 +133,16 @@ class User extends AppModel {
 			),
 		),
 		'zip' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
+			'notempty' => array(
+				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-			'notempty' => array(
-				'rule' => array('notempty')
-			),
+			'rule' => '/[0-9]{4}/',
+			'message' => 'Wenn de scho es Telefon agisch de bitte richtig',
 		),
 		'street' => array(
 			'notempty' => array(
@@ -125,6 +157,8 @@ class User extends AppModel {
 		'phone' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
+				'required' => false,
+				'allowEmpty' => true,
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
