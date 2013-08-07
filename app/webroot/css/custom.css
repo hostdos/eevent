@@ -453,3 +453,22 @@ margin-top: 71px;
 #UserAddForm .first {
 margin-top: 10px;
 }
+
+#UserAddForm .bar {
+  width: 200px;
+}
+
+.lol-slider .ui-slider-range {
+background-color: #caaa27;
+background: #caaa27;
+}
+
+.csgo-slider .ui-slider-range {
+background-color: #9fa2a7;
+background: #9fa2a7;
+}
+
+.hots-slider .ui-slider-range {
+background-color: #8228cc;
+background: #8228cc;
+}
