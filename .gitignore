@@ -1,8 +1,10 @@
-/app/Config/*
-/app/View/Elements/empty
-/app/tmp/cache/*
-/app/tmp/*
-/app/tmp
+app/Config/*
+app/View/Elements/empty
+app/tmp/cache/*
+app/tmp/*
+app/tmp
+app/tmp/cache/cake_*
+app/tmp/logs/*
 /vendors
 /build
 /dist
