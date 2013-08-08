@@ -46,9 +46,9 @@
 	</fieldset>
 	<fieldset class="pricemoneysliders">
 		<div class="priceinfo">
-		<span>
+		<h4>
 		<?php echo __('not more than 10 franks'); ?>
-		</span>
+		</h4>
 		</div>
 		<?php
 		echo '<div class="control-group">';

@@ -474,15 +474,18 @@ background: #8228cc;
 }
 
 #UserAddForm .pricemoneysliders{
-	width: 300px;
+	width: 510px;
 	float: left;
-	margin-top: 40px;
+	margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .pricemoneysliders .priceinfo {
-	width: 150px;
-	height: 40px;
+  width: 250px;
+  height: 25px;
 	padding: 15px;
+  margin-top: 0px;
+  padding-top: 0px;
 	padding-left: 0px;
 }
 
@@ -494,10 +497,19 @@ background: #8228cc;
 
 .pricemoneysliders label, .pricemoneysliders input {
 	float: left;
-	width: 80px;
-	margin-right: 25px;
+	width: 40px;
+  height: 10px;
+	margin-right: 5px;
+}
+.pricemoneysliders label {
+  margin-right: 15px;
+}
+.pricemoneysliders .control-group {
+  float: left;
+  margin-right: 20px;
 }
 
-.pricemoneysliders .control-group {
-	clear: both;
+#submitbutton {
+  float: left;
+  clear: both;
 }
