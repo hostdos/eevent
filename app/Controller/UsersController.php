@@ -182,6 +182,24 @@ public function oldlogin() {
 	$clanlist = $this->User->find('list',$clanoptions);
 	$this->set('clanlist', $clanlist);
 		if ($this->request->is('post')) {
+		
+		//validate price
+			$pricemoney = array(); 
+			$pricemoney['lol'] = $this->request->data['User']['price_lol'];
+			$pricemoney['csgo'] = $this->request->data['User']['price_csgo'];
+			$pricemoney['hots'] = $this->request->data['User']['price_hots'];
+			unset($this->request->data['User']['price_lol']);
+			unset($this->request->data['User']['price_csgo']);
+			unset($this->request->data['User']['price_hots']);
+
+			$pricetotal = $pricemoney['lol'] + $pricemoney['csgo'] + $pricemoney['hots'];
+			
+			if($pricetotal != 10){
+					$this->Session->setFlash(__('Deine Preisgeldauswahl darf zusammen Maximal 10 Chf ergeben.'));
+					$this->redirect(array('action' => 'add'));
+			}
+
+		
 			$condoptions = array('conditions' => array(
 				'OR' => array(
 				array('User.username' => $this->request->data['User']['username']),
@@ -190,14 +208,6 @@ public function oldlogin() {
 			$userexist = $this->User->find('first', $condoptions);
 			if(empty($userexist)){
 			$this->User->create();
-			
-			$pricemoney = array(); 
-			$pricemoney['lol'] = $this->request->data['User']['price_lol'];
-			$pricemoney['csgo'] = $this->request->data['User']['price_csgo'];
-			$pricemoney['hots'] = $this->request->data['User']['price_hots'];
-			unset($this->request->data['User']['price_lol']);
-			unset($this->request->data['User']['price_csgo']);
-			unset($this->request->data['User']['price_hots']);
 			
 			$this->request->data['User']['status'] = 0;
 			$this->request->data['User']['isdisabled'] = 0;

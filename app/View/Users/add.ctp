@@ -45,73 +45,44 @@
 	?>
 	</fieldset>
 	<fieldset class="pricemoneysliders">
-		<div class="span4">
-          <div id="slider_lol" class="ui-slider lol-slider">
-          </div>
+		<div class="priceinfo">
+		<span>
+		<?php echo __('not more than 10 franks'); ?>
+		</span>
 		</div>
-<script>
-    // jQuery UI Sliders
-    var $slider1 = $("#slider_lol");
-    if ($slider1.length) {
-      $slider1.slider({
-        min: 1,
-        max: 10,
-        value: 2,
-        orientation: "horizontal",
-        range: "min"
-      }).addSliderSegments($slider1.slider("option").max);
-    }
-</script>
-		<div class="span4">
-          <div id="slider_csgo" class="ui-slider csgo-slider">
-          </div>
-		</div>
-<script>
-    var $slider2 = $("#slider_csgo");
-    if ($slider2.length) {
-      $slider2.slider({
-        min: 1,
-        max: 10,
-        value: 2,
-        orientation: "horizontal",
-        range: "min"
-      }).addSliderSegments($slider2.slider("option").max);
-    }
-</script>
-		<div class="span4">
-          <div id="slider_hots" class="ui-slider hots-slider">
-          </div>
-		</div>
-<script>    
-var $slider3 = $("#slider_hots");
-    if ($slider3.length) {
-      $slider3.slider({
-        min: 1,
-        max: 10,
-        value: 2,
-        orientation: "horizontal",
-        range: "min"
-      }).addSliderSegments($slider3.slider("option").max);
-    }
-
-</script>
-
+		<?php
+		echo '<div class="control-group">';
+		echo $this->Form->input('price_lol', array('label' => __('LoL'), 'value' => '3'));
+		echo '</div>';
+		echo '<div class="control-group">';
+		echo $this->Form->input('price_csgo', array('label' => __('CS:GO'), 'value' => '4'));		
+		echo '</div>';
+		echo '<div class="control-group">';
+		echo $this->Form->input('price_hots', array('label' => __('SC2'), 'value' => '3'));
+		echo '</div>';
+		?>
+		<div class="pricenotify"></div>
 	</fieldset>
 
 <?php 
-		echo $this->Form->submit(__('Registrieren'), array('class' => 'btn btn-large btn-primary'));
+		echo $this->Form->submit(__('Registrieren'), array('class' => 'btn btn-large btn-primary', 'id' => 'submitbutton'));
 		echo $this->Form->end(); ?>
 </div>
 <script>
+/*
+$('#UserPriceLol').change(function() {
+	checkTotal();
+	$('#UserPriceLol').parent().parent().addClass('error');
+});
+$('#UserPriceCsgo').change(function() {
+	$('#UserPriceCsgo').parent().parent().addClass('error');
+});
+$('#UserPriceHots').change(function() {
+	$('#UserPriceHots').parent().parent().addClass('error');
+	$('#submitbutton').attr("disabled","disabled");
+});
      
-   function addSliderSegments (amount) {
-    return this.each(function () {
-      var segmentGap = 100 / (amount - 1) + "%"
-        , segment = "<div class='ui-slider-segment' style='margin-left: " + segmentGap + ";'></div>";
-      $(this).prepend(segment.repeat(amount - 2));
-    });
-  };
-
+*/
 
 
 

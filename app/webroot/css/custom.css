@@ -472,3 +472,32 @@ background: #9fa2a7;
 background-color: #8228cc;
 background: #8228cc;
 }
+
+#UserAddForm .pricemoneysliders{
+	width: 300px;
+	float: left;
+	margin-top: 40px;
+}
+
+.pricemoneysliders .priceinfo {
+	width: 150px;
+	height: 40px;
+	padding: 15px;
+	padding-left: 0px;
+}
+
+.pricemoneysliders .priceinfo span {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.pricemoneysliders label, .pricemoneysliders input {
+	float: left;
+	width: 80px;
+	margin-right: 25px;
+}
+
+.pricemoneysliders .control-group {
+	clear: both;
+}

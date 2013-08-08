@@ -944,3 +944,6 @@ msgstr "Reservation löschen"
 
 msgid "payment info"
 msgstr "Zahlungsinfos"
+
+msgid  "not more than 10 franks"
+msgstr "Achtung! dein Preisgeld Muss insgesamt genau 10 Franken sein!"
