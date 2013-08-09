@@ -197,9 +197,12 @@ public function oldlogin() {
 			if($pricetotal != 10){
 					$this->Session->setFlash(__('Deine Preisgeldauswahl darf zusammen Maximal 10 Chf ergeben.'));
 					$this->redirect(array('action' => 'add'));
+					unset($pricemoney);
+			}else{
+				
 			}
-
-		
+			
+			
 			$condoptions = array('conditions' => array(
 				'OR' => array(
 				array('User.username' => $this->request->data['User']['username']),
@@ -213,9 +216,6 @@ public function oldlogin() {
 			$this->request->data['User']['isdisabled'] = 0;
 			$this->request->data['User']['password'] = 
 				Security::hash($this->request->data['User']['password'], 'md5',false);
-			if ($this->User->save($this->request->data)) {
-
-
 
 				$emailstring = 
 				'Hallo ' . $this->request->data["User"]["prename"] .' '. $this->request->data["User"]["surname"] .',
@@ -238,18 +238,21 @@ public function oldlogin() {
 				
 				//create registration and set the valuezzzz
 				
-				$this->loadModel('Registrations');
-				$reg['Registrations']['user_id'] = $this->User->getLastInsertId();
-				$reg['Registrations']['price_lol'] = $pricemoney['lol'];
-				$reg['Registrations']['price_csgp'] = $pricemoney['csgo'];
-				$reg['Registrations']['price_hots'] = $pricemoney['hots'];
-				$this->Registrations->create();
-				if($this->Registrations->save($reg)){
-					
-				}else{
-					$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
-				}
+			if ($this->User->save($this->request->data)) {
+				if($pricemoney){
 
+					$this->loadModel('Registrations');
+					$reg['Registrations']['user_id'] = $this->User->getLastInsertId();
+					$reg['Registrations']['price_lol'] = $pricemoney['lol'];
+					$reg['Registrations']['price_go'] = $pricemoney['csgo'];
+					$reg['Registrations']['price_sc'] = $pricemoney['hots'];
+					$this->Registrations->create();
+					if($this->Registrations->save($reg)){
+						//registration was saved.
+					}else{
+						$this->Session->setFlash(__('Your Pricemoney could not be saved.'));
+					}
+					}
 				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {

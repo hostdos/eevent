@@ -420,10 +420,11 @@ position: relative;
 
 .navbar-fixed-top {
     position:fixed;
+    z-index: 50;
 }
 
 .navbar-fixed-top-active {
-padding-top: 45px
+padding-top: 45px;
 }
 
 .sidelogin input {

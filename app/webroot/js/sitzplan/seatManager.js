@@ -29,6 +29,8 @@ $(document).ready(function(){
         //top right left row
             type: 'seatGroup',
             startingId: 145,
+            startingNum: 1,
+            letter: 'A',
             width: 1,
             seatAmount: 12,
             x: 450,
@@ -39,7 +41,9 @@ $(document).ready(function(){
         	//middle right left row
             type: 'seatGroup',
             startingId: 97,
-            width: 1,
+            startingNum: 12,
+			letter: 'A',
+			width: 1,
             seatAmount: 12,
             x: 325,
             y: 158
@@ -48,6 +52,8 @@ $(document).ready(function(){
         	//middle right right row
             type: 'seatGroup',
             startingId: 121,
+            startingNum: 12,
+			letter: 'B',
             width: 1,
             seatAmount: 12,
             x: 354,
@@ -57,6 +63,8 @@ $(document).ready(function(){
         //top middle left left row
             type: 'seatGroup',
             startingId: 49,
+            startingNum: 12,
+			letter: 'B',
             width: 1,
             seatAmount: 12,
             x: 200,
@@ -66,6 +74,8 @@ $(document).ready(function(){
         //top middle left right row
             type: 'seatGroup',
             startingId: 73,
+            startingNum: 12,
+			letter: 'C',
             width: 1,
             seatAmount: 12,
             x: 229,
@@ -78,6 +88,8 @@ $(document).ready(function(){
             type: 'seatGroup',
             startingId: 157,
             width: 1,
+            startingNum: 12,
+			letter: 'C',
             seatAmount: 12,
             x: 450,
             y: 558
@@ -87,6 +99,8 @@ $(document).ready(function(){
             type: 'seatGroup',
             startingId: 181,
             width: 1,
+            startingNum: 12,
+			letter: 'D',
             seatAmount: 12,
             x: 479,
             y: 558
@@ -96,6 +110,8 @@ $(document).ready(function(){
             type: 'seatGroup',
             startingId: 109,
             width: 1,
+            startingNum: 12,
+			letter: 'D',
             seatAmount: 12,
             x: 325,
             y: 558
@@ -105,6 +121,8 @@ $(document).ready(function(){
             type: 'seatGroup',
             startingId: 133,
             width: 1,
+            startingNum: 12,
+			letter: 'E',
             seatAmount: 12,
             x: 354,
             y: 558
@@ -114,6 +132,8 @@ $(document).ready(function(){
             type: 'seatGroup',
             startingId: 61,
             width: 1,
+            startingNum: 12,
+			letter: 'E',
             seatAmount: 12,
             x: 200,
             y: 558
@@ -123,6 +143,8 @@ $(document).ready(function(){
             type: 'seatGroup',
             startingId: 85,
             width: 1,
+            startingNum: 12,
+			letter: 'F',
             seatAmount: 12,
             x: 229,
             y: 558
@@ -131,6 +153,8 @@ $(document).ready(function(){
            //bottom left group
             type: 'seatGroup',
             startingId: 13,
+            startingNum: 12,
+			letter: 'F',
             width: 1,
             seatAmount: 12,
             x: 75,
@@ -141,6 +165,8 @@ $(document).ready(function(){
             type: 'seatGroup',
             startingId: 37,
             width: 1,
+            startingNum: 12,
+			letter: 'G',
             seatAmount: 12,
             x: 104,
             y: 558
@@ -264,6 +290,8 @@ $(document).ready(function(){
 			
 			for(var i = 0; i < seatGroup.seatAmount; i++){
 				var seatId = i + seatGroup.startingId;
+				var letter = seatGroup.letter;
+				var seatNum = i + seatGroup.startingNum;
 				var seatElement = $('<div></div>');
 				seatElement.addClass('seat');
 				seatElement.attr('id', 'seat'+seatId);
@@ -271,7 +299,7 @@ $(document).ready(function(){
 				seatElement.css('width', config.seatSize);
 				seatElement.css('height', config.seatSize);
 				seatElement.css('margin', config.seatMargin);
-				seatElement.html(seatId);
+				seatElement.html(letter + " " + seatNum);
 				var seatLabel = $('<div></div>');
 				seatLabel.addClass('seatLabel');
 				seatElement.append(seatLabel);

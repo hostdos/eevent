@@ -35,6 +35,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
     echo $this->Html->script('jquery-1.9.1.min');
     echo $this->Html->script('jquery-ui-1.10.3.full.min');
     echo $this->Html->script('bootstrap.min');
+    echo $this->Html->script('bootstrap/transition.collapse.min');
     echo $this->Html->script('slider/bootstrap-select');
     echo $this->Html->script('slider/jquery.tagsinput');
     //echo $this->Html->script('slider/application');
