@@ -69,6 +69,40 @@
 		echo $this->Form->end(); ?>
 </div>
 <script>
+
+$('#UserPriceLol').keyup(function(){
+	validatePrice();
+	});
+$('#UserPriceCsgo').keyup(function(){
+	validatePrice();
+	});
+$('#UserPriceHots').keyup(function(){
+	validatePrice();
+	});
+
+
+
+function validatePrice() {
+	var lol = parseInt($('#UserPriceLol').val());
+	var go = parseInt($('#UserPriceCsgo').val());
+	var sc = parseInt($('#UserPriceHots').val());
+	var total = lol + go + sc;
+
+	if(total == 10){
+		$('.priceerror').hide();
+		$('#submitbutton').removeAttr("disabled");
+		return true;
+	}else{
+		$('.priceerror').show();
+		$('#submitbutton').attr('disabled','disabled');
+		console.log($('#submitbutton'));
+		return total;
+	}
+}
+
+
+
+
 /*
 $('#UserPriceLol').change(function() {
 	checkTotal();
