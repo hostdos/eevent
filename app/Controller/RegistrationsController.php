@@ -15,7 +15,8 @@ public $components = array('Auth','Email','RequestHandler');
 
 	public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('liste', 'sitzplan');
+
+		$this->Auth->allow('liste', 'sitzplan','register');
 				$this->layout = 'bootstrap_basic';
 
 	}
@@ -33,7 +34,6 @@ public $components = array('Auth','Email','RequestHandler');
 		$this->loadModel('User');
 		$usermail = $this->User->findById($user['id']);
 		$usermail = $usermail['User']['email'];
-
 	//check if register entry exists, if yes then set it to 1
 	//$options = array('conditions' => 'registrations.user_id' => $user['id'])
 	$registr = $this->Registration->findByUserId($user['id']);

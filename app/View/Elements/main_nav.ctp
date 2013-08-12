@@ -11,7 +11,7 @@
 					  'Sitzplan' => array('controller' => 'registrations', 'action' => 'sitzplan', 'admin' => null , '#' => 'menu'),
 					  'Suche' => array('controller' => 'Search', 'action' => 'index', 'admin' => null , '#' => 'menu'),
 					  'FAQ' => array('controller' => 'pages', 'action' => 'faq', 'admin' => null , '#' => 'menu'),
-					  'Turniere' => array('controller' => 'tournaments', 'action' => 'index', 'admin' => null , '#' => 'menu'),
+					  //'Turniere' => array('controller' => 'tournaments', 'action' => 'index', 'admin' => null , '#' => 'menu'),
 					);
 					if($authUser != null && $authUser['status'] == 1){
 					$menupoints1 = array(

@@ -389,6 +389,7 @@ text-shadow: 1px 1px 0px #5555AA;
 body {
     background-color: #edeeef;
     background-image: url('../img/pw_maze_white.png');
+    font-family: 'Open Sans', sans-serif;
 }
 
 .shadowblock{

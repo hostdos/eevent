@@ -3,8 +3,6 @@
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 		
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-
 		<?php
 		echo $this->Html->css('sitzplan/siteLayout.css');
 		echo $this->Html->css('sitzplan/siteStyle.css');
