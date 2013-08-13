@@ -26,9 +26,6 @@
 	  		      <h3>
 				      620CHf
 			      </h3>
-				<div class="progress progress-striped active">
-				  <div class="bar" style="width: 40%;"></div>
-				</div>
 		      </div>
 			</div>
 			<div class="kickbar" id="csgo">
@@ -37,9 +34,6 @@
 	  		      <h3>
 				      620CHf
 			      </h3>
-				<div class="progress progress-striped active">
-				  <div class="bar" style="width: 40%;"></div>
-				</div>
 		      </div>
 			</div>
 			<div class="kickbar" id="hots">
@@ -48,9 +42,6 @@
 	  		      <h3>
 				      620CHf
 			      </h3>
-				<div class="progress progress-striped active">
-				  <div class="bar" style="width: 40%;"></div>
-				</div>
 		      </div>
 			</div>
 		</div>

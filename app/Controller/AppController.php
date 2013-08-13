@@ -53,9 +53,12 @@ class AppController extends Controller {
 		$progressbar['bezahlt']['num'] = $bezahlt;
 		$progressbar['bezahlt']['perc'] = $this->percentage($bezahlt);
 		$tempnum = $all - ($bezahlt + $angemeldet);
-
 		$progressbar['frei']['num'] = $tempnum;
-		$progressbar['frei']['perc'] = $this->percentage_floor($tempnum);
+		$progressbar['frei']['perc'] = 100 - ($progressbar['bezahlt']['perc'] + $progressbar['angemeldet']['perc']);
+/*
+		$progressbar['frei']['num'] = $tempnum;
+		$progressbar['frei']['perc'] = $this->percentage($tempnum);
+*/
 		$this->set('progressbar', $progressbar);
 		$this->allowAccess(); 
 			}
