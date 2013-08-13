@@ -24,15 +24,15 @@
 				<?php echo $this->Html->image('lol.png', array('class'=>'kickimg')); ?>
 		      <div class="esportsmoney">
 	  		      <h3>
-				      620CHf
-			      </h3>
+				      <?php echo $pricemoney['lol'] . 'CHf' ?>
+				  </h3>
 		      </div>
 			</div>
 			<div class="kickbar" id="csgo">
 				<?php echo $this->Html->image('csgo.png', array('class'=>'kickimg')); ?>
 		      <div class="esportsmoney">
 	  		      <h3>
-				      620CHf
+				      <?php echo $pricemoney['cs'] . 'CHf' ?>
 			      </h3>
 		      </div>
 			</div>
@@ -40,7 +40,7 @@
 				<?php echo $this->Html->image('hots.png', array('class'=>'kickimg')); ?>
 		      <div class="esportsmoney">
 	  		      <h3>
-				      620CHf
+				      <?php echo $pricemoney['sc'] . 'CHf' ?>
 			      </h3>
 		      </div>
 			</div>

@@ -40,8 +40,9 @@ footer {
   margin-bottom: 14px;
 }
 
-.actions {
+.actions ul{
   list-style: none;
+  margin-left: 0px;
 }
 
 .fpadd{
@@ -143,6 +144,7 @@ margin-bottom: 0px;
 }
 
 .kickprogress h3 {
+width: 180px;
 line-height: 30px;
 font-size: 30px;
 color: #FCFCF0;
@@ -221,13 +223,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);*/
 }
 
 .news {
-  background-color: #A9C1D9;
-  border-radius: 1px;
-  padding-top: 1px;
-  padding-left: 3px;
-  margin-bottom: 22px;
-  padding-bottom: 5px;
-  color: #113585;
+	border-bottom: 3px solid;
+	border-radius: 24px;
+	border-top: 3px solid;
+	padding-left: 3px;
+	border-left: 1px solid #A9C1D9;
+	border-right: 1px solid #A9C1D9;
+	padding-bottom: 5px;
+	color: #113585;
+	padding: 10px;
 }
 
 .news ul {
@@ -446,6 +450,13 @@ padding-top: 59px;
   font-weight: normal;
   font-size: 14px;
 }
+/* user view css*/
+.users dt {
+	font-weight: normal;
+	float: left;
+	width: 150px;
+}
+
 
 /* user add css*/
 #UserAddForm fieldset{

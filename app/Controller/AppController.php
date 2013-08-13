@@ -55,11 +55,25 @@ class AppController extends Controller {
 		$tempnum = $all - ($bezahlt + $angemeldet);
 		$progressbar['frei']['num'] = $tempnum;
 		$progressbar['frei']['perc'] = 100 - ($progressbar['bezahlt']['perc'] + $progressbar['angemeldet']['perc']);
+		$this->set('progressbar', $progressbar);
+
 /*
 		$progressbar['frei']['num'] = $tempnum;
 		$progressbar['frei']['perc'] = $this->percentage($tempnum);
 */
-		$this->set('progressbar', $progressbar);
+		//now calculate pricemoneh
+		$pricemoney = array();
+		$pricemoney['lol'] = 
+		$this->Registrations->find('all', array('conditions' => array('Registrations.registered' => 1), 'fields' => 'SUM(price_lol)'));
+		$pricemoney['cs'] = 
+		$this->Registrations->find('all', array('conditions' => array('Registrations.registered' => 1), 'fields' => 'SUM(price_go)'));
+		$pricemoney['sc'] = 
+		$this->Registrations->find('all', array('conditions' => array('Registrations.registered' => 1), 'fields' => 'SUM(price_sc)'));
+		$pricemoney['lol'] = substr($pricemoney['lol'][0][0]['SUM(price_lol)'], 0, -3);		
+		$pricemoney['cs'] = substr($pricemoney['cs'][0][0]['SUM(price_go)'], 0, -3);
+		$pricemoney['sc'] = substr($pricemoney['sc'][0][0]['SUM(price_sc)'], 0, -3);
+		$this->set('pricemoney', $pricemoney);
+
 		$this->allowAccess(); 
 			}
 
