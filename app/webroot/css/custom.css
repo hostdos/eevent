@@ -66,8 +66,6 @@ footer {
 
 .headerawesome{
 padding: 0px;
-padding-left: 10%;
-padding-right: 10%;
 margin: 0px;
 height: 200px;
 z-index: 5;
@@ -122,8 +120,8 @@ margin-top: 40px;
 
 .kickdesc h5{
 color: white;
-line-height: 23px;
-font-size: 17px;
+line-height: 20px;
+font-size: 16px;
 font-weight: normal;
 vertical-align: middle;
 text-align: center;
@@ -419,8 +417,8 @@ position: relative;
   vertical-align: top;
 }
 .navbar .progress{
-	line-height: 14px;
-	height: 14px;
+	line-height: 18px;
+	height: 18px;
 }
 .navbar-inner {
   text-align:center;
@@ -432,7 +430,7 @@ position: relative;
 }
 
 .navbar-fixed-top-active {
-padding-top: 59px;
+padding-top: 61px;
 }
 
 .sidelogin input {
@@ -497,7 +495,7 @@ background: #8228cc;
 }
 
 .pricemoneysliders .priceinfo {
-	width: 300px;
+	width: 330px;
 	height: 25px;
 	padding: 15px;
 	margin-top: 0px;

@@ -55,13 +55,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         <div class="container">
   <?php //echo $this->element('eevent_banner_small'); ?>
 
-    <div class="row">
+    <div class="row-fluid">
 
 
       <?php echo $this->Session->flash(); ?>
        <div class="span2">
         <?php echo $this->element('login_status_left_sidebar'); ?>
-        <?php echo $this->element('sponsors'); ?>
         </div>
 
         <div class="span8">
@@ -71,7 +70,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                 <div class="shadowblock"> </div>
 
       </div>
-        <div class="span2">
+       <div class="span2">
+        <?php echo $this->element('sponsors'); ?>
         </div>
       <?php //echo $this->element('breadcrumb'); ?>
     </div>

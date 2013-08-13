@@ -60,13 +60,12 @@ $cakeDescription = __d('eevent', 'eevent');
 
         <div class="container">
 
-    <div class="row">
+    <div class="row-fluid">
 
 
       <?php echo $this->Session->flash(); ?>
        <div class="span2">
       <?php echo $this->element('login_status_left_sidebar'); ?>
-      <?php echo $this->element('sponsors'); ?>
 
         </div>
 
@@ -76,7 +75,8 @@ $cakeDescription = __d('eevent', 'eevent');
                 <div class="shadowblock"> </div>
 
       </div>
-        <div class="span2">
+       <div class="span2">
+        <?php echo $this->element('sponsors'); ?>
         </div>
       <?php //echo $this->element('breadcrumb'); ?>
     </div>

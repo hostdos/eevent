@@ -1,5 +1,5 @@
 
-<div class="row headerawesome">
+<div class="row-fluid headerawesome">
 <div class="container">
     <div class="bannerdiv span3">
       <?php echo $this->Html->image('welcome/logo.png', array('class'=>'bannerimg')); ?>
@@ -7,10 +7,15 @@
     
 	<div class="bannertitle span3">
 	<h4>
-	200 Gamer, 4 Turniere, Geniale Stimmung!
+	200 Gamer, 4 Turniere
 	</h4>
   <?php echo $this->Html->link('Jetzt für die EEvent anmelden!', 
   array('controller' => 'registrations','action'=>'register','admin' => null), array('class' => 'btn btn-primary btn-large middlebutton')); ?>
+	<div class="teilnehmerlink">
+<?php echo $this->Html->link(__('Teilnehmerliste'), array('controller' => 'registrations', 
+'action' => 'liste', '#' => 'menu')); ?>
+</div>
+
 	</div>
 	<div class="kickdesc span2">
 		<h5>

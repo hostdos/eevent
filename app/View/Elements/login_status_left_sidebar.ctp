@@ -15,9 +15,9 @@
           echo $this->Form->password('password', array('placeholder' => 'passwort')); // No div, no label
           echo $this->Form->submit('login', array('class' => 'btn'));
           echo $this->Form->end();
-          echo $this->Html->link('Passwort vergessen?', array('controller' => 'users', 'action' => 'forgotpass'));
           echo $this->Html->link('Registrieren', array('controller' => 'users','action'=>'add','admin'=> null));
-
+          echo '<br />';
+          echo $this->Html->link('Passwort vergessen?', array('controller' => 'users', 'action' => 'forgotpass'));
         }
         ?>
         </div>

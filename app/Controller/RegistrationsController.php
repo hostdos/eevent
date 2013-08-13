@@ -16,7 +16,7 @@ public $components = array('Auth','Email','RequestHandler');
 	public function beforeFilter(){
 		parent::beforeFilter();
 
-		$this->Auth->allow('liste', 'sitzplan','register');
+		$this->Auth->allow('liste', 'sitzplan');
 				$this->layout = 'bootstrap_basic';
 
 	}
