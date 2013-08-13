@@ -946,4 +946,7 @@ msgid "payment info"
 msgstr "Zahlungsinfos"
 
 msgid  "not more than 10 franks"
-msgstr "Achtung! dein Preisgeld Muss insgesamt genau 10 Franken sein!"
+msgstr "Achtung! Dein Preisgeld Muss insgesamt genau 10 Franken sein!"
+
+msgid  "all prices have to equal 10 franks"
+msgstr "Alle Preisgelder zusammen müssen exakt 10 Franken sein!"

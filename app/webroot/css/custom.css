@@ -483,11 +483,12 @@ background: #8228cc;
 }
 
 .pricemoneysliders .priceinfo {
-  width: 250px;
-  height: 25px;
+	width: 300px;
+	height: 25px;
 	padding: 15px;
-  margin-top: 0px;
-  padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-top: 0px;
 	padding-left: 0px;
 }
 
@@ -509,6 +510,16 @@ background: #8228cc;
 .pricemoneysliders .control-group {
   float: left;
   margin-right: 20px;
+}
+.priceerror {
+	float: left;
+	height: 50px;
+	width: 400px;
+}
+.priceerror p {
+	color: #cc2323;
+	font-size: 14px;
+	line-height: 16px;
 }
 
 #submitbutton {

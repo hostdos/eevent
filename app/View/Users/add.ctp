@@ -61,7 +61,11 @@
 		echo $this->Form->input('price_hots', array('label' => __('SC2'), 'value' => '3'));
 		echo '</div>';
 		?>
-		<div class="pricenotify"></div>
+		<div class="priceerror" style="display:none;">
+			<p>
+			<?php echo __('all prices have to equal 10 franks'); ?>
+			</p>
+		</div>
 	</fieldset>
 
 <?php 
@@ -103,50 +107,4 @@ function validatePrice() {
 
 
 
-/*
-$('#UserPriceLol').change(function() {
-	checkTotal();
-	$('#UserPriceLol').parent().parent().addClass('error');
-});
-$('#UserPriceCsgo').change(function() {
-	$('#UserPriceCsgo').parent().parent().addClass('error');
-});
-$('#UserPriceHots').change(function() {
-	$('#UserPriceHots').parent().parent().addClass('error');
-	$('#submitbutton').attr("disabled","disabled");
-});
-     
-*/
-
-
-
 </script>
-
-<!-- 
-<div class="users form">
-<?php echo $this->Form->create('User'); ?>
-	<fieldset>
-		<legend><?php echo __('Add User'); ?></legend>
-	<?php
-		echo $this->Form->input('username');
-		echo $this->Form->input('password');
-		echo $this->Form->input('email');
-		echo $this->Form->input('prename');
-		echo $this->Form->input('surname');
-		echo $this->Form->input('birthdate');
-		echo $this->Form->input('clan');
-		echo $this->Form->input('website');
-		echo $this->Form->input('status');
-		echo $this->Form->input('isdisabled');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Html->link(__('List Users'), array('action' => 'index')); ?></li>
-	</ul>
-</div>
- -->
