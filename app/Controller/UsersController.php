@@ -273,8 +273,6 @@ public function oldlogin() {
  */
 	public function edit($id = null) {
 		$usr = $this->Auth->user('User');
-		var_dump($usr['id']);
-		var_dump($id);
 		if ($usr['id'] === $id){
 
 		if (!$this->User->exists($id)) { 

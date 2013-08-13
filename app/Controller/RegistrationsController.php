@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 App::uses('CakeEmail', 'Network/Email');
 App::uses('AppController', 'Controller');
 /**
