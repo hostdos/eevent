@@ -538,3 +538,18 @@ background: #8228cc;
   float: left;
   clear: both;
 }
+
+#price {
+  position: relative;
+  left:65%;
+  top: 100px;
+  padding: 15px;
+  height: 20px;
+  width: 150px;
+  background-color: red;
+  margin-bottom: -40px;
+}
+
+#price span{
+  float: left;
+}

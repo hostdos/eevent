@@ -11,7 +11,7 @@ class RegistrationsController extends AppController {
 public $helpers = array('Js');
 public $components = array('Auth','Email','RequestHandler');
 
-
+	var $uses = array('Preorder','Registration');
 
 	public function beforeFilter(){
 		parent::beforeFilter();
@@ -37,67 +37,100 @@ public $components = array('Auth','Email','RequestHandler');
 	//check if register entry exists, if yes then set it to 1
 	//$options = array('conditions' => 'registrations.user_id' => $user['id'])
 	$registr = $this->Registration->findByUserId($user['id']);
-	if(empty ($registr)) {
-		$this->Registration->create();
-		$regist['user_id'] = $user['id'];
-		$regist['registered'] = 1;
+		$hassaved = 0;
+	if($this->request->is('post')){
+		if(empty ($registr)) {
+			$this->Registration->create();
+			$regist['user_id'] = $user['id'];
+			$regist['registered'] = s;
+			$regist['price_lol'] = $this->data['registrations']['price_lol'];
+			$regist['price_cs'] = $this->data['registrations']['price_csgo'];
+			$regist['price_sc'] = $this->data['registrations']['price_hots'];
+
+			if($this->Registration->save($regist)){
+				$hassaved = 1;
+
+				$Email = new CakeEmail();
+				$Email->from(array('info@eevent.ch' => 'Eevent info'));
+				$Email->to(array( $usermail => $user['username']));
+				$Email->subject(__('Registrierung für EEvent 2.0'));
+
+				$emailstring = "Hallo ". $user['username'] .",
+				Deine Anmeldung für die eevent LAN-Party 2.0 war erfolgreich!
+				Damit du einen Sitzplatz auswählen kannst und du definitiv einen Platz hast, musst du nun nur noch den Unkostenbeitrag von CHF 45.00 auf folgendes Konto überweisen.
+
+				Zahlungsdetails:
+				Filmsoft Verein
+				Weingartstrasse 11
+				3014 Bern
+				CH41 0630 0016 9466 1000 6
+				Valiant Bank
+				3001 Bern
+
+				Betreff: Nickname, eevent 2.0
+
+				Bei Zahlungen für mehrere Personen einfach alle Nicknamen angeben.
+
+				Vielen Dank. Wir freuen uns sehr, dich vom 03-05 Mai in Subingen begrüssen zu dürfen.
+
+				Liebe Grüsse
+				Dein Eevent Team
+				";
 
 
-		if($this->Registration->save($regist)){
-			$Email = new CakeEmail();
-			$Email->from(array('info@eevent.ch' => 'Eevent info'));
-			$Email->to(array( $usermail => $user['username']));
-			$Email->subject(__('Registrierung für EEvent 2.0'));
+				$Email->send($emailstring);
 
-			$emailstring = "Hallo ". $user['username'] .",
-Deine Anmeldung für die eevent LAN-Party 2.0 war erfolgreich!
-Damit du einen Sitzplatz auswählen kannst und du definitiv einen Platz hast, musst du nun nur noch den Unkostenbeitrag von CHF 45.00 auf folgendes Konto überweisen.
-
-Zahlungsdetails:
-Filmsoft Verein
-Weingartstrasse 11
-3014 Bern
-CH41 0630 0016 9466 1000 6
-Valiant Bank
-3001 Bern
-
-Betreff: Nickname, eevent 2.0
-
-Bei Zahlungen für mehrere Personen einfach alle Nicknamen angeben.
-
-Vielen Dank. Wir freuen uns sehr, dich vom 03-05 Mai in Subingen begrüssen zu dürfen.
-
-Liebe Grüsse
-Dein Eevent Team
-";
-
-
-			$Email->send($emailstring);
-
-			$this->Session->setFlash(__('You are now registered'));
-			$this->redirect(array('controller' => 'news', 'action' => 'index'));
+				$this->Session->setFlash(__('You are now registered'));
+				$this->redirect(array('controller' => 'news', 'action' => 'index'));
+			}else{
+				$this->Session->setFlash(__('The registration could not be saved. Please, try again.'));
+			}
 		}else{
-			$this->Session->setFlash(__('The registration could not be saved. Please, try again.'));
+		//if exists then set to 1
+			$regist['id'] = $registr['Registration']['id'];
+			$regist['price_lol'] = $this->data['registrations']['price_lol'];
+			$regist['price_go'] = $this->data['registrations']['price_csgo'];
+			$regist['price_sc'] = $this->data['registrations']['price_hots'];
+			$regist['registered'] = 1;
+
+			if($this->Registration->save($regist)){
+				$hassaved = 1;
+				$this->Session->setFlash(__('You are now registered'));
+
+
+
+			}else{
+				$this->Session->setFlash(__('The registration could not be saved. Please, try again.'));
+			}
+
 		}
-	}else{
-	//if exists then set to 1
-		$regist['id'] = $registr['Registration']['id'];
-		$regist['registered'] = 1;
+		if($hassaved == 1){
+			if(!empty($registr)){
+				$this->Preorder->deleteAll(array('user_id' => $user['id']));
+			}
 
-		if($this->Registration->save($regist)){
+			//save spiesspreorder
+			$spreorder['user_id'] = $user['id'];
+			$spreorder['amount'] = 1;
+			$spreorder['spiesstype'] = $this->data['preorder']['spiesstype'];
+			$spreorder['drinktype'] = $this->data['preorder']['drinktype'];
+			$this->Preorder->create();
+			if($this->Preorder->save($spreorder)){
+			}else{
+				$hassaved = 0;
+			}
 
-			$this->Session->setFlash(__('You are now registered'));
+			$preorder['user_id'] = $user['id'];
+			$preorder['amount'] = $this->data['preorders']['amount'];
+			$preorder['spiesstype'] = 'energy';
+			$preorder['drinktype'] = 'Ohne';
+			$this->Preorder->create();
+			if($this->Preorder->save($preorder)){
+			}else{
+				$hassaved = 0;
+			}
 			$this->redirect(array('controller' => 'news', 'action' => 'index'));
-
-
-
-		}else{
-			$this->Session->setFlash(__('The registration could not be saved. Please, try again.'));
 		}
-
-
-
-
 	}
 }
 
@@ -284,6 +317,9 @@ Dein Eevent Team
 	}
 	
 	public function sitzplan() {
+
+
+		$this->layout = 'content_only';
 
 		$this->loadModel('Users');
 		if($this->Auth->loggedin()){

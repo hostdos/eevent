@@ -70,9 +70,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                 <div class="shadowblock"> </div>
 
       </div>
-       <div class="span2">
-        <?php echo $this->element('sponsors'); ?>
-        </div>
       <?php //echo $this->element('breadcrumb'); ?>
     </div>
   <?php echo $this->element('footer'); ?>
