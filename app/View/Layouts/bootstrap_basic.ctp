@@ -75,10 +75,10 @@ $cakeDescription = __d('eevent', 'eevent');
                 <div class="shadowblock"> </div>
 
       </div>
-       <div class="span2">
-        <?php echo $this->element('sponsors'); ?>
-        </div>
       <?php //echo $this->element('breadcrumb'); ?>
+      <div class="span2">
+        <?php echo $this->element('sponsors'); ?>
+      </div>
     </div>
   <?php echo $this->element('footer'); ?>
 

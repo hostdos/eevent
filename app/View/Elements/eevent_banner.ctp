@@ -10,7 +10,7 @@
 	200 Gamer, 4 Turniere
 	</h4>
   <?php 
-  if(empty($userRegistr){
+  if(empty($userRegistr)){
 	  echo $this->Html->link('Jetzt für die EEvent anmelden!', 
 	  array('controller' => 'registrations','action'=>'register','admin' => null), array('class' => 'btn btn-primary btn-large middlebutton')); 
   	}else{

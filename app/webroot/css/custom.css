@@ -553,9 +553,27 @@ background: #8228cc;
 	height: 1200px;
 }
 .tournamentlist li{
+  list-style: none;
 	float: left;
+  height: 200px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
-.tournamentlist li:nth-child(3){
+.tournamentlist li:nth-child(4){
 	clear: both;
+}
+
+.tournamentlist .tournamentlogo {
+  width: 180px;
+  max-height: 180px;
+}
+.angemeldetlist ul, h3 {
+  width: 540px;
+  float: left;
+}
+.angemeldetlist ul li {
+  width: 180px;
+  float: left;
+  word-wrap: break-word;
 }

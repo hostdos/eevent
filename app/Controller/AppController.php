@@ -43,8 +43,8 @@ class AppController extends Controller {
 		$this->set('authUser', $this->Auth->user('User'));
 		$user = $this->Auth->user('User');
 		$this->loadModel('Registrations');
-		$userRegistr = $this->Registration->findByUserId($user['id'],array(
-		'conditions' => array('Registrations.registered' => 1)));
+		$userRegistr = $this->Registrations->find('all',array(
+		'conditions' => array('Registrations.registered' => 1,'Registrations.user_id' => $user['id'])));
 		$this->set('userRegistr',$userRegistr);
 		$all = 228;
 		$angemeldet = $this->Registrations->find('count', array(

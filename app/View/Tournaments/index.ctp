@@ -4,10 +4,12 @@
 	<?php foreach ($tournaments as $tournament): ?>
 		<li>
 				<?php 
-				echo $this->Html->link( $this->Html->image($tournament['Tournament']['image'], array('fullBase' => true, 'class' => 'tournamentlogo'))
-				, array('action' => 'view', $tournament['Tournament']['id'], '#' => 'menu')); ?>
+				echo $this->Html->link(
+				$this->Html->image($tournament['Tournament']['image'], array('fullBase' => true, 'class' => 'tournamentlogo'))
+				, array('action' => 'view', $tournament['Tournament']['id'], '#' => 'menu'),array('escape' => false)); ?>
 		</li>
 	<?php endforeach; ?>
 	</ul>
 </br>
 <a href="http://eevent.ch/images/zeitplan_erneuert.pdf">Turnier Zeitplan</a>
+</div>

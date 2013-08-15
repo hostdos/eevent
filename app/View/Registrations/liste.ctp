@@ -1,6 +1,7 @@
 <h1>Liste aller Eevent Teilnehmer</h1>
 </br>
 <h3>Angemeldete User</h3>
+<div class="angemeldetlist">
 <ul>
 <?php
 if(!empty($usersa)){
@@ -29,3 +30,4 @@ echo 'Es hat noch kein User für die Eevent Bezahlt';
 echo '</li>';
 }?>
 </ul>
+</div>
