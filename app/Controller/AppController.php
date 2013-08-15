@@ -41,7 +41,11 @@ class AppController extends Controller {
 		CakeSession::write('Config.language', 'deu');
 		Configure::write('Config.language','de');
 		$this->set('authUser', $this->Auth->user('User'));
+		$user = $this->Auth->user('User');
 		$this->loadModel('Registrations');
+		$userRegistr = $this->Registration->findByUserId($user['id'],array(
+		'conditions' => array('Registrations.registered' => 1)));
+		$this->set('userRegistr',$userRegistr);
 		$all = 228;
 		$angemeldet = $this->Registrations->find('count', array(
         'conditions' => array('Registrations.registered' => 1)));

@@ -4,10 +4,10 @@
 <div class="preorders form">
 <?php echo $this->Form->create('register'); ?>
 	<fieldset>
-		<legend><?php echo __('Spiessli vorbestellen'); ?></legend>
+		<legend><?php echo __('Grillfleisch vorbestellen'); ?></legend>
 	<?php
-		echo $this->Form->input('preorder.spiesstype', array('type' => 'select', 'options' => array(null => 'Kein Spiessli','PouletSpiess' => 'PouletSpiess','RindSpiess' => 'RindSpiess'), 'label' => ''));
-		echo "PouletSpiess = 10 CHf, RindSpiess = 11 CHf";
+		echo $this->Form->input('preorder.spiesstype', array('type' => 'select', 'options' => array(null => 'Kein Spiessli','Poulet Spiesse' => 'Poulet Spiesse','Rinds entercote' => 'Rinds entercote'), 'label' => ''));
+		echo "Poulet Spiesse = 14 CHf, Rinds entercote = 16 CHf";
 		echo "</br>";
 		echo $this->Form->input('preorder.drinktype', array('type' => 'select', 'options' => array('Ohne' => 'Ohne','Bier' => 'Bier','Mineral' => 'Mineral'), 'label' => ''));
 	?>
@@ -108,11 +108,11 @@ function getSpiessPrice() {
 function getEnergyPrice() {
 	var spiesstype = $('#preorderSpiesstype').val();
 	var drinktype = $('#preorderDrinktype').val();
-	if(spiesstype == 'PouletSpiess'){
-		var spiess = 10;
+	if(spiesstype == 'Poulet Spiesse'){
+		var spiess = 14;
 	}
-	if(spiesstype == 'RindSpiess'){
-		var spiess = 11;
+	if(spiesstype == 'Rinds entercote'){
+		var spiess = 16;
 	}
 	if(spiesstype == ''){
 		var spiess = 0;

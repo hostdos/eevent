@@ -38,6 +38,10 @@ public $components = array('Auth','Email','RequestHandler');
 	//$options = array('conditions' => 'registrations.user_id' => $user['id'])
 	$registr = $this->Registration->findByUserId($user['id']);
 		$hassaved = 0;
+	if(!empty($registr)){
+		$this->Session->setFlash(__('You are already registered'));
+		$this->redirect(array('controller' => 'news', 'action' => 'index'));
+	}
 	if($this->request->is('post')){
 		if(empty ($registr)) {
 			$this->Registration->create();

@@ -9,8 +9,15 @@
 	<h4>
 	200 Gamer, 4 Turniere
 	</h4>
-  <?php echo $this->Html->link('Jetzt für die EEvent anmelden!', 
-  array('controller' => 'registrations','action'=>'register','admin' => null), array('class' => 'btn btn-primary btn-large middlebutton')); ?>
+  <?php 
+  if(empty($userRegistr){
+	  echo $this->Html->link('Jetzt für die EEvent anmelden!', 
+	  array('controller' => 'registrations','action'=>'register','admin' => null), array('class' => 'btn btn-primary btn-large middlebutton')); 
+  	}else{
+	  echo $this->Html->link('Viel spass an der EEvent!', 
+	  array(), array('class' => 'btn btn-primary btn-large middlebutton')); 
+  	}
+  ?>
 	<div class="teilnehmerlink">
 <?php echo $this->Html->link(__('Teilnehmerliste'), array('controller' => 'registrations', 
 'action' => 'liste', '#' => 'menu')); ?>

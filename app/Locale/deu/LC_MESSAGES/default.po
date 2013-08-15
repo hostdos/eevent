@@ -953,3 +953,6 @@ msgstr "Alle Preisgelder zusammen müssen exakt 10 Franken sein!"
 
 msgid  "you can reserve a seat as soon as we recieve your payment"
 msgstr "Sobald wir deine Zahlung erhalten haben kannst du einen Sitzplatz reservieren."
+
+msgid  "You are already registered"
+msgstr "Du bist schon Registriert!"
