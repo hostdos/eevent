@@ -1,17 +1,13 @@
 <div class="tournaments index">
 	<h2><?php echo __('Tournaments'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
-	<tr>
-			<th></th>
-	</tr>
+	<ul class="tournamentlist">
 	<?php foreach ($tournaments as $tournament): ?>
-	<tr>
-		<td><?php echo h($tournament['Tournament']['name']); ?>&nbsp;</td>
-		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $tournament['Tournament']['id'], '#' => 'menu')); ?>
-		</td>
-	</tr>
-<?php endforeach; ?>
-	</table>
+		<li>
+				<?php 
+				echo $this->Html->link( $this->Html->image($tournament['Tournament']['image'], array('fullBase' => true, 'class' => 'tournamentlogo'))
+				, array('action' => 'view', $tournament['Tournament']['id'], '#' => 'menu')); ?>
+		</li>
+	<?php endforeach; ?>
+	</ul>
 </br>
 <a href="http://eevent.ch/images/zeitplan_erneuert.pdf">Turnier Zeitplan</a>

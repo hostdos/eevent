@@ -534,16 +534,28 @@ background: #8228cc;
 }
 
 #price {
-  position: relative;
-  left:65%;
-  top: 100px;
-  padding: 15px;
-  height: 20px;
-  width: 150px;
-  background-color: red;
-  margin-bottom: -40px;
+	position: relative;
+	left: 65%;
+	top: 100px;
+	padding: 15px;
+	height: 20px;
+	width: 150px;
+	background-color: #cecece;
+	margin-bottom: -40px;
+	box-shadow: 0px 0px 6px 5px #efefef inset;
 }
 
 #price span{
   float: left;
+}
+
+#sitzplanfiller {
+	height: 1200px;
+}
+.tournamentlist li{
+	float: left;
+}
+
+.tournamentlist li:nth-child(3){
+	clear: both;
 }

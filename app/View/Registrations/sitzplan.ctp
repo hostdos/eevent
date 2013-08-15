@@ -28,6 +28,7 @@
 	</head>
 	<body>
 				<div id="content">
+					<div id="sitzplanfiller"></div>
 					<h1>Sitzplan</h1>
 					<?php
 					if(!empty($userreg) && $userreg['Registrations']['paid'] == 1 && 

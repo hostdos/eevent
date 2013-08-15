@@ -8,6 +8,8 @@
 #room{
 	width: 620px;
 	height: 1200px;
+	top: 360px;
+	left: 590px;
 }
 
 .roomLoading{

@@ -1,5 +1,5 @@
 <div id="price">
-<span>Gesamtpreis: </span><span id="totalprice">45</span><span>Chf.-</span>
+<span>Gesamtpreis:  </span><span id="totalprice">45</span><span>Chf.-</span>
 </div>
 <div class="preorders form">
 <?php echo $this->Form->create('register'); ?>
