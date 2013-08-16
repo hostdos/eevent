@@ -1,5 +1,5 @@
 .room{
-	position: absolute;
+	position: relative;
 	margin-bottom: 100px;
 	margin-left: 50px;
 	margin-top: 20px;
@@ -8,8 +8,6 @@
 #room{
 	width: 620px;
 	height: 1200px;
-	top: 360px;
-	left: 590px;
 }
 
 .roomLoading{

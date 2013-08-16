@@ -81,6 +81,7 @@ $cakeDescription = __d('eevent', 'eevent');
       </div>
     </div>
   <?php echo $this->element('footer'); ?>
+  <?php echo $this->element('webchat'); ?>
 
 </body>
 </html>

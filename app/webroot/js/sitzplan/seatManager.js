@@ -270,8 +270,8 @@ $(document).ready(function(){
 		initSeats();
 		
 		function initLayout(seatLayout){
-			for(item in seatLayout){
-				var currentElement = seatLayout[item];
+			for(items in seatLayout){
+				var currentElement = seatLayout[items];
 				if(currentElement.type == 'seatGroup'){
 					addSeatGroup(currentElement);
 				} else if(currentElement.type == 'area'){
@@ -329,8 +329,8 @@ $(document).ready(function(){
 		
 		function applySeatList(){
 			clearSeatElements();
-			for(item in occupiedSeats){
-				var currentElement = occupiedSeats[item];
+			for(items in occupiedSeats){
+				var currentElement = occupiedSeats[items];
 				var seatElement = $('#seat'+currentElement.seatId);
 				
 				seatElement.addClass('occupied');
@@ -362,9 +362,9 @@ $(document).ready(function(){
 		}
 		
 		function removeOccupant(username){
-			for(item in occupiedSeats){				
-				if( occupiedSeats[item].username == username){
-					occupiedSeats.splice(item, 1);
+			for(items in occupiedSeats){				
+				if( occupiedSeats[items].username == username){
+					occupiedSeats.splice(items, 1);
 					return true;
 				}
 			}

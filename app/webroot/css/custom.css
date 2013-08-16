@@ -568,7 +568,7 @@ background: #8228cc;
   width: 180px;
   max-height: 180px;
 }
-.angemeldetlist ul, h3 {
+.angemeldetlist ul, .angemeldetlist h3 {
   width: 540px;
   float: left;
 }
@@ -576,4 +576,19 @@ background: #8228cc;
   width: 180px;
   float: left;
   word-wrap: break-word;
+}
+
+#webchat {
+	overflow: hidden;
+    position: static;
+    right:2px;
+    bottom:2px;
+    height:270px;
+    font-size:12px;
+}
+#webchat a {
+	    position:relative;
+    right:0;
+    bottom:0;
+    padding:0 0 0 200px;
 }

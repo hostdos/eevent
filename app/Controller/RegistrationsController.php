@@ -36,9 +36,13 @@ public $components = array('Auth','Email','RequestHandler');
 		$usermail = $usermail['User']['email'];
 	//check if register entry exists, if yes then set it to 1
 	//$options = array('conditions' => 'registrations.user_id' => $user['id'])
+	$isregistered = $this->Registration->find('all',array(
+	'conditions' => array(
+	'user_id' => $user['id'],
+	'registered' => 1)));
 	$registr = $this->Registration->findByUserId($user['id']);
 		$hassaved = 0;
-	if(!empty($registr)){
+	if(!empty($registr) && !empty($isregistered)){
 		$this->Session->setFlash(__('You are already registered'));
 		$this->redirect(array('controller' => 'news', 'action' => 'index'));
 	}
