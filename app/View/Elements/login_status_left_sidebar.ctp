@@ -3,9 +3,48 @@
         if ($authUser){
          echo '<span>';
          echo 'Eingeloggt als ';
-         echo $this->Html->link($authUser['username'], array('controller' => 'users', 'action' => 'view', 
+         echo $authUser['username'];
+         echo '<br/>';
+         echo $this->Html->link(__('Profil Editieren'), array('controller' => 'users', 'action' => 'view', 
           $authUser['id']));
          echo '</br>';
+        if(isset($userRegistr)){
+          if($userRegistr[0]['Registrations']['registered'] == 1){
+            echo __('Du bist für die EEvent 3.0 Angemeldet!');
+            echo '<br/>';
+          }
+          if($userRegistr[0]['Registrations']['paid'] == 1){
+            echo __('Wir haben noch keine Zahlung von dir erhalten.');
+            echo '<br/>';
+          }elseif($userRegistr[0]['Registrations']['paid'] == 0){
+            echo __('Deine Zahlung ist bei uns angekommen!');
+            echo '<br/>';
+          }
+        }
+
+         foreach($preorder as $preord){
+           if(isset($preord) && $preord['Preorders']['spiesstype'] != '' || $preord['Preorders']['spiesstype'] != null){
+            echo 'Bestelltes Essen: <br/>';
+            switch ($preord['Preorders']['spiesstype']) {
+              case 'PouletSpiess':
+              echo 'Poulet Spiess mit Kartoffelsalat';
+                break;
+              case 'RindSpiess':
+              echo 'Rinds Entercote mit Kartoffelsalat';
+                break;
+              default:
+              echo 'Nichts bestellt';
+                break;
+            }
+            echo '<br/>';
+           }
+          if(isset($preorder) && $preord['Preorders']['spiesstype'] == 'energy' || $preord['Preorders']['spiesstype'] != null){
+            echo 'Bestellte Energy Drinks: <br/>';
+            echo $preord['Preorders']['amount'];
+            echo '<br/>';
+           }
+        }
+
          echo $this->Html->link('Ausloggen?', array('controller' => 'users','action'=>'logout','admin' => null));
          echo '</span>';
         } else {

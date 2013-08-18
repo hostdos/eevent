@@ -8,8 +8,6 @@
 	<?php
 		echo $this->Form->input('preorder.spiesstype', array('type' => 'select', 'options' => array(null => 'Kein Spiessli','Poulet Spiesse' => 'Poulet Spiesse','Rinds entercote' => 'Rinds entercote'), 'label' => ''));
 		echo "Poulet Spiesse = 14 CHf, Rinds entercote = 16 CHf";
-		echo "</br>";
-		echo $this->Form->input('preorder.drinktype', array('type' => 'select', 'options' => array('Ohne' => 'Ohne','Bier' => 'Bier','Mineral' => 'Mineral'), 'label' => ''));
 	?>
 	</fieldset>
 </div>
@@ -55,13 +53,13 @@
 
 <script>
 
-$('#UserPriceLol').keyup(function(){
+$('#registrationsPriceLol').keyup(function(){
 	validatePrice();
 	});
-$('#UserPriceCsgo').keyup(function(){
+$('#registrationsPriceCsgo').keyup(function(){
 	validatePrice();
 	});
-$('#UserPriceHots').keyup(function(){
+$('#registrationsPriceHots').keyup(function(){
 	validatePrice();
 	});
 $('#preordersAmount').keyup(function(){
@@ -70,15 +68,12 @@ $('#preordersAmount').keyup(function(){
 $('#preorderSpiesstype').change(function(){
 	calculatePrice();
 })
-$('#preorderDrinktype').change(function(){
-	calculatePrice();
-})
 
 
 function validatePrice() {
-	var lol = parseInt($('#UserPriceLol').val());
-	var go = parseInt($('#UserPriceCsgo').val());
-	var sc = parseInt($('#UserPriceHots').val());
+	var lol = parseInt($('#registrationsPriceLol').val());
+	var go = parseInt($('#registrationsPriceCsgo').val());
+	var sc = parseInt($('#registrationsPriceHots').val());
 	var total = lol + go + sc;
 
 	if(total == 10){
@@ -107,7 +102,6 @@ function getSpiessPrice() {
 
 function getEnergyPrice() {
 	var spiesstype = $('#preorderSpiesstype').val();
-	var drinktype = $('#preorderDrinktype').val();
 	if(spiesstype == 'Poulet Spiesse'){
 		var spiess = 14;
 	}
@@ -117,17 +111,7 @@ function getEnergyPrice() {
 	if(spiesstype == ''){
 		var spiess = 0;
 	}
-
-	if(drinktype == 'Ohne'){
-		var drink = 0;
-	}
-	if(drinktype == 'Bier'){
-		var drink = 5;
-	}
-	if(drinktype == 'Mineral'){
-		var drink = 3;
-	}
-	return spiess + drink;
+	return spiess;
 }
 
 </script>

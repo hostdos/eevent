@@ -592,3 +592,15 @@ background: #8228cc;
     bottom:0;
     padding:0 0 0 200px;
 }
+
+.searchheader {
+  float: left;
+  clear: both;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.searchlists td {
+  float: left;
+  clear: both;
+}

@@ -121,7 +121,6 @@ public $components = array('Auth','Email','RequestHandler');
 			$spreorder['user_id'] = $user['id'];
 			$spreorder['amount'] = 1;
 			$spreorder['spiesstype'] = $this->data['preorder']['spiesstype'];
-			$spreorder['drinktype'] = $this->data['preorder']['drinktype'];
 			$this->Preorder->create();
 			if($this->Preorder->save($spreorder)){
 			}else{
@@ -131,7 +130,6 @@ public $components = array('Auth','Email','RequestHandler');
 			$preorder['user_id'] = $user['id'];
 			$preorder['amount'] = $this->data['preorders']['amount'];
 			$preorder['spiesstype'] = 'energy';
-			$preorder['drinktype'] = 'Ohne';
 			$this->Preorder->create();
 			if($this->Preorder->save($preorder)){
 			}else{

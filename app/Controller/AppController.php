@@ -46,6 +46,11 @@ class AppController extends Controller {
 		$userRegistr = $this->Registrations->find('all',array(
 		'conditions' => array('Registrations.registered' => 1,'Registrations.user_id' => $user['id'])));
 		$this->set('userRegistr',$userRegistr);
+		$this->loadModel('Preorders');
+        $preorder = $this->Preorders->find('all',array(
+        	'conditions' => array('user_id' => $user['id'])));
+        $this->set('preorder',$preorder);
+
 		$all = 228;
 		$angemeldet = $this->Registrations->find('count', array(
         'conditions' => array('Registrations.registered' => 1)));
