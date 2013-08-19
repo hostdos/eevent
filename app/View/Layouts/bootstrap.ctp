@@ -67,10 +67,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         <div class="container">
 
 		<div class="row-fluid">
-			<?php echo $this->Session->flash(); ?>
        <div class="span2">
         </div>
         <div class="span8">
+      <?php echo $this->Session->flash(); ?>
           <div class="shadowblock"></div>
           <?php echo $this->element('eevent_info'); ?>
           <?php echo $this->fetch('content'); ?>

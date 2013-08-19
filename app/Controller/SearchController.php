@@ -52,7 +52,7 @@ class SearchController extends AppController {
             $this->createAdvert($id);
             $this->Session->setFlash(__('Das Inserat wurde erstellt'));
         }
-        $game = $this->Game->find('first', array('conditions' => array('game.id' => $id)));
+        $game = $this->Game->find('first', array('conditions' => array('id' => $id)));
         $adverts = $this->Search->find('all', array('conditions' => array('game_id' => $id)));
         
         $this->set('game', $game['Game']);
@@ -88,7 +88,7 @@ class SearchController extends AppController {
             $gameId = 1;
         }
         $this->loadModel('Game');
-        $game = $this->Game->find('first', array('conditions' => array('game.id' => $gameId)));
+        $game = $this->Game->find('first', array('conditions' => array('id' => $gameId)));
         $this->set('game', $game['Game']);
     }
     

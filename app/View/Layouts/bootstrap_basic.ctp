@@ -63,13 +63,13 @@ $cakeDescription = __d('eevent', 'eevent');
     <div class="row-fluid">
 
 
-      <?php echo $this->Session->flash(); ?>
        <div class="span2">
       <?php echo $this->element('login_status_left_sidebar'); ?>
 
         </div>
 
         <div class="span8">
+      <?php echo $this->Session->flash(); ?>
                 <div class="shadowblock"> </div>
       <?php echo $this->fetch('content'); ?>
                 <div class="shadowblock"> </div>

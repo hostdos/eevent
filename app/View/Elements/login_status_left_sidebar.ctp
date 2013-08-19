@@ -8,7 +8,7 @@
          echo $this->Html->link(__('Profil Editieren'), array('controller' => 'users', 'action' => 'view', 
           $authUser['id']));
          echo '</br>';
-        if(isset($userRegistr)){
+        if(isset($userRegistr) && $userRegistr != null && !empty($userRegistr) ){
           if($userRegistr[0]['Registrations']['registered'] == 1){
             echo __('Du bist für die EEvent 3.0 Angemeldet!');
             echo '<br/>';

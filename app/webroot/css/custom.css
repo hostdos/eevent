@@ -26,10 +26,10 @@ list-style: none !important;
 }
  
 #flashMessage {
-  width: 400px;
+  width: 300px;
   text-align: center;
   vertical-align: center;
-  margin-left: 300px;
+  margin-left: 150px;
   font-size: 15px;
   font-weight: bold;
   background-color: #8787BB;
