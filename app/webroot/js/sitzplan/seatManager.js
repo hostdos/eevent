@@ -24,47 +24,58 @@ $(document).ready(function(){
 		//	x: 150,
 		//	y: 103
 		//},
-
-        {
-        //top right left row
+				{
+        //top left group
             type: 'seatGroup',
-            startingId: 145,
+            startingId: 1,
+            width: 1,
             startingNum: 1,
-            letter: 'A',
-            width: 1,
+			letter: 'F',
             seatAmount: 12,
-            x: 450,
+            x: 104,
             y: 158
         },
-     
-        {
-        	//middle right left row
+
+
+		{
+        //top left group
             type: 'seatGroup',
-            startingId: 97,
-            startingNum: 12,
-			letter: 'A',
-			width: 1,
+            startingId: 25,
+            width: 1,
+            startingNum: 2,
+			letter: 'F',
             seatAmount: 12,
-            x: 325,
+            x: 75,
             y: 158
         },
         {
-        	//middle right right row
+           //bottom left group
             type: 'seatGroup',
-            startingId: 121,
-            startingNum: 12,
-			letter: 'B',
+            startingId: 37,
+            startingNum: 26,
+			letter: 'F',
             width: 1,
             seatAmount: 12,
-            x: 354,
-            y: 158
+            x: 75,
+            y: 558
+        },
+        {
+        //bottom left group
+            type: 'seatGroup',
+            startingId: 13,
+            width: 1,
+            startingNum: 25,
+			letter: 'F',
+            seatAmount: 12,
+            x: 104,
+            y: 558
         },
         {
         //top middle left left row
             type: 'seatGroup',
             startingId: 49,
-            startingNum: 12,
-			letter: 'B',
+            startingNum: 2,
+			letter: 'E',
             width: 1,
             seatAmount: 12,
             x: 200,
@@ -74,65 +85,19 @@ $(document).ready(function(){
         //top middle left right row
             type: 'seatGroup',
             startingId: 73,
-            startingNum: 12,
-			letter: 'C',
+            startingNum: 1,
+			letter: 'E',
             width: 1,
             seatAmount: 12,
             x: 229,
             y: 158
-        },
-        
-
-        {
-        //bottom right left row
-            type: 'seatGroup',
-            startingId: 157,
-            width: 1,
-            startingNum: 12,
-			letter: 'C',
-            seatAmount: 12,
-            x: 450,
-            y: 558
-        },
-        {
-        //bottom right right row
-            type: 'seatGroup',
-            startingId: 181,
-            width: 1,
-            startingNum: 12,
-			letter: 'D',
-            seatAmount: 12,
-            x: 479,
-            y: 558
-        },
-        {
-        //bottom middle right left row
-            type: 'seatGroup',
-            startingId: 109,
-            width: 1,
-            startingNum: 12,
-			letter: 'D',
-            seatAmount: 12,
-            x: 325,
-            y: 558
-        },
-        {
-        //bottom middle right right row
-            type: 'seatGroup',
-            startingId: 133,
-            width: 1,
-            startingNum: 12,
-			letter: 'E',
-            seatAmount: 12,
-            x: 354,
-            y: 558
         },
         {
         //bottom middle left left row
             type: 'seatGroup',
             startingId: 61,
             width: 1,
-            startingNum: 12,
+            startingNum: 26,
 			letter: 'E',
             seatAmount: 12,
             x: 200,
@@ -143,34 +108,102 @@ $(document).ready(function(){
             type: 'seatGroup',
             startingId: 85,
             width: 1,
-            startingNum: 12,
-			letter: 'F',
+            startingNum: 25,
+			letter: 'E',
             seatAmount: 12,
             x: 229,
             y: 558
         },
         {
-           //bottom left group
+        	//middle right left row
             type: 'seatGroup',
-            startingId: 13,
-            startingNum: 12,
-			letter: 'F',
+            startingId: 97,
+            startingNum: 2,
+			letter: 'D',
+			width: 1,
+            seatAmount: 12,
+            x: 325,
+            y: 158
+        },
+        {
+        	//middle right right row
+            type: 'seatGroup',
+            startingId: 121,
+            startingNum: 1,
+			letter: 'D',
             width: 1,
             seatAmount: 12,
-            x: 75,
+            x: 354,
+            y: 158
+        },
+        {
+        //bottom middle right left row
+            type: 'seatGroup',
+            startingId: 109,
+            width: 1,
+            startingNum: 26,
+			letter: 'D',
+            seatAmount: 12,
+            x: 325,
             y: 558
         },
         {
-        //bottom left group
+        //bottom middle right right row
             type: 'seatGroup',
-            startingId: 37,
+            startingId: 133,
             width: 1,
-            startingNum: 12,
-			letter: 'G',
+            startingNum: 25,
+			letter: 'D',
             seatAmount: 12,
-            x: 104,
+            x: 354,
             y: 558
         },
+//end of middle right rows
+        {
+        	//right left row
+            type: 'seatGroup',
+            startingId: 145,
+            startingNum: 2,
+			letter: 'D',
+			width: 1,
+            seatAmount: 12,
+            x: 450,
+            y: 158
+        },
+        {
+        	//right right row
+            type: 'seatGroup',
+            startingId: 169,
+            startingNum: 1,
+			letter: 'D',
+            width: 1,
+            seatAmount: 12,
+            x: 479,
+            y: 158
+        },
+        {
+        //bottom right left row
+            type: 'seatGroup',
+            startingId: 157,
+            width: 1,
+            startingNum: 26,
+			letter: 'D',
+            seatAmount: 12,
+            x: 450,
+            y: 558
+        },
+        {
+        //bottom right right row
+            type: 'seatGroup',
+            startingId: 181,
+            width: 1,
+            startingNum: 25,
+			letter: 'D',
+            seatAmount: 12,
+            x: 479,
+            y: 558
+        },
+
 		{
 			type: 'area',
 			label: 'B&uuml;hne, Admin Area',
@@ -287,7 +320,7 @@ $(document).ready(function(){
 			toAppend.css('width', seatGroupWidth);
 			toAppend.css('left', seatGroup.x);
 			toAppend.css('top', seatGroup.y);
-			
+			var plus = 0;
 			for(var i = 0; i < seatGroup.seatAmount; i++){
 				var seatId = i + seatGroup.startingId;
 				var letter = seatGroup.letter;
@@ -299,7 +332,8 @@ $(document).ready(function(){
 				seatElement.css('width', config.seatSize);
 				seatElement.css('height', config.seatSize);
 				seatElement.css('margin', config.seatMargin);
-				seatElement.html(letter + " " + seatNum);
+				seatElement.html(letter + " " + (seatNum + plus));
+				var plus = plus + 1;
 				var seatLabel = $('<div></div>');
 				seatLabel.addClass('seatLabel');
 				seatElement.append(seatLabel);
@@ -332,7 +366,6 @@ $(document).ready(function(){
 			for(items in occupiedSeats){
 				var currentElement = occupiedSeats[items];
 				var seatElement = $('#seat'+currentElement.seatId);
-				
 				seatElement.addClass('occupied');
 				seatElement.removeClass('free');
 				seatElement.children('.seatLabel').html(currentElement.username+'<br />'+currentElement.clan);
