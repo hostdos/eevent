@@ -21,30 +21,36 @@
             echo '<br/>';
           }
         }
-
+		$totalticketprice = 45;
          foreach($preorder as $preord){
-           if(isset($preord) && $preord['Preorders']['spiesstype'] != '' || $preord['Preorders']['spiesstype'] != null){
+           if(isset($preord) && $preord['Preorders']['spiesstype'] != '' && $preord['Preorders']['spiesstype'] != null && $preord['Preorders']['spiesstype'] != 'energy'){
             echo 'Bestelltes Essen: <br/>';
             switch ($preord['Preorders']['spiesstype']) {
-              case 'PouletSpiess':
+              case 'Poulet Spiesse':
               echo 'Poulet Spiess mit Kartoffelsalat';
+              $totalticketprice += 14;
                 break;
-              case 'RindSpiess':
+              case 'Rinds entercote':
               echo 'Rinds Entercote mit Kartoffelsalat';
-                break;
+              $totalticketprice += 16;
+              break;
               default:
               echo 'Nichts bestellt';
                 break;
             }
             echo '<br/>';
            }
-          if(isset($preorder) && $preord['Preorders']['spiesstype'] == 'energy' || $preord['Preorders']['spiesstype'] != null){
+          if(isset($preorder) && $preord['Preorders']['spiesstype'] == 'energy'){
             echo 'Bestellte Energy Drinks: <br/>';
             echo $preord['Preorders']['amount'];
+            $totalticketprice += $preord['Preorders']['amount'];
             echo '<br/>';
            }
         }
-
+		
+			echo __('Dein Ticketpreis: ',true) . $totalticketprice . __('Chf.-',true);
+			echo '<br />';
+		
          echo $this->Html->link('Ausloggen?', array('controller' => 'users','action'=>'logout','admin' => null));
          echo '</span>';
         } else {

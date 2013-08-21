@@ -84,7 +84,7 @@ class SearchController extends AppController {
     }
     
     public function add($gameId = null) {
-        if($gameId != 1 || $gameId != 2) {
+        if($gameId != 1 && $gameId != 2) {
             $gameId = 1;
         }
         $this->loadModel('Game');
