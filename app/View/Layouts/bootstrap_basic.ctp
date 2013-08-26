@@ -27,6 +27,7 @@ $cakeDescription = __d('eevent', 'eevent');
     echo $this->Html->css('bootstrap');
     echo $this->Html->css('custom');
     echo $this->Html->css('slider');
+    echo $this->Html->css('custom-responsive');
     echo $this->Html->script('jquery-1.9.1.min');
     echo $this->Html->script('jquery-ui-1.10.3.full.min');
     echo $this->Html->script('bootstrap.min');

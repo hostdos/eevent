@@ -1,0 +1,65 @@
+@media (max-width: 767px) {
+
+  .shadowblock {
+    width: 100%;
+  }
+  .author {
+    width: 100%;
+  }
+
+  .container .bannerdiv {
+    width: 48%;
+  }
+
+  .container .bannertitle {
+    width: 48%;
+  }
+
+  .container .kickdesc {
+    display: none;
+  }
+
+  .container .kickprogress {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    float: left;
+  }
+
+  .container .span2 {
+    width: 100%;
+    float: left;
+  }
+
+  .container .span8 {
+    width: 100%;
+    float: left;
+  }
+
+  .fpadd {
+    width: 100%;
+    float: left;
+  }
+
+  .span12 {
+    width: 100%;
+    float: left
+  }
+  .navbar-fixed-top-active {
+    padding: 0px;
+  }
+
+   .navbar-fixed-top {
+    position: relative;
+    margin-bottom: 20px;
+   }
+   .navbar-inner {
+    padding: 0px;
+   }
+   .sidesponsors a img {
+    width: 48%;
+   }
+
+}
