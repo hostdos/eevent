@@ -6,31 +6,45 @@
     <div>
         <?php if(!empty($adverts)){ ?>
             <table class="fullWidth hover">
-            <?php foreach($adverts as $advert){ 
-            $teams = array();
+            <?php
+			$teams = array();
             $solo = array();
-            if($advert['Search']['type'] == 0){
-                array_push($teams, $advert);
-            }elseif($advert['Search']['type'] == 1){
-                array_push($solo, $advert);
-            }
-        }
-        foreach($teams as $team){ ?>
-                <tr class="searchlists">
-                    <th class="searchheader"> <?php echo __('Suche Team'); ?> </th>
+            foreach($adverts as $advert){ 
+	            if($advert['Search']['type'] == 1){
+	                array_push($teams, $advert['Search']);
+	            }elseif($advert['Search']['type'] == 0){
+	                array_push($solo, $advert['Search']);
+	            }
+			}
+
+			if(!empty($teams)):
+?>
+	        <tr class="searchlists">
+	            <th class="searchheader"> <?php echo __('Suche Team'); ?> </th>
+  <?php
+        foreach($teams as $team){ 
+        ?>
                     <td class="padding-top10 padding-bottom10 border-top border-bottom padding-left10">
-                        <?php echo $this->Html->link($advert['Search']['title'],array('controller' => 'search', 'action' => 'detail', $advert['Search']['id']),array('escape' => false)); ?>
+                        <?php echo $this->Html->link($team['title'],array('controller' => 'search', 											'action' => 'detail', $team['id']),array('escape' => false)); ?>
                     </td>
-                </tr>
-            <?php }
-        foreach($solo as $sol){ ?>
-                <tr>
-                    <th class="searchheader"> <?php echo __('Suche Spieler'); ?> </th>
-                    <td class="padding-top10 padding-bottom10 border-top border-bottom padding-left10">
-                        <?php echo $this->Html->link($advert['Search']['title'],array('controller' => 'search', 'action' => 'detail', $advert['Search']['id']),array('escape' => false)); ?>
-                    </td>
-                </tr>
             <?php } ?>
+                </tr>
+		<?php	
+		endif;
+		if(!empty($solo)):
+		?> 
+                <tr class="searchlists">
+                    <th class="searchheader"> <?php echo __('Suche Spieler'); ?> </th>
+
+				<?php
+        foreach($solo as $sol){ 
+        ?>
+                    <td class="padding-top10 padding-bottom10 border-top border-bottom padding-left10">
+                        <?php echo $this->Html->link($sol['title'],array('controller' => 'search', 												'action' => 'detail', $sol['id']),array('escape' => false)); ?>
+                    </td>
+            <?php } ?>
+                </tr>
+                <?php endif; ?>
             </table>
         <?php } ?>
     </div>

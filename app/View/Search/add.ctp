@@ -11,7 +11,7 @@
             <div class="left width100">
                 Typ:
             </div>
-            <?php echo $this->Form->input('typ', array('type' => 'select', 'options' => array('Teamsuche', 'Spielersuche'), 'label' => false)); ?>
+            <?php echo $this->Form->input('typ', array('type' => 'select', 'options' => array( 1 => 'Teamsuche', 0 => 'Spielersuche'), 'label' => false)); ?>
         </div>
         <div>
             <div class="left width100">

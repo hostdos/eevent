@@ -11,8 +11,9 @@ class SearchController extends AppController {
 
     public function beforeFilter(){
         parent::beforeFilter();
-        //  Secur ity::hash($password, 'md5', false);
-        $this->Auth->allow('view','detail','add','createComment','createAdvert');
+
+        $this->Auth->allow('view','detail');
+        $this->Auth->deny('add','createComment','createAdvert');
     }
 
 
@@ -60,6 +61,7 @@ class SearchController extends AppController {
     }
     
     public function detail($id = null) {
+    
         $this->loadModel('Users');
         $this->loadModel('Adcomment');
         if(!empty($this->request->data)) {
@@ -84,6 +86,7 @@ class SearchController extends AppController {
     }
     
     public function add($gameId = null) {
+    
         if($gameId != 1 && $gameId != 2) {
             $gameId = 1;
         }
@@ -93,13 +96,17 @@ class SearchController extends AppController {
     }
     
     private function createAdvert($id) {
+    
         $user = $this->Auth->user('User');
+        $userid = $user['id'];
+        
+        $this->Search->create();
         $this->Search->set('created', date('Y-m-d h:i:s', time()));
         $this->Search->set('updated', date('Y-m-d h:i:s', time()));
         $this->Search->set('game_id', $id);
         //$this->Search->set('users_id', $user['id']);
-        $this->Search->set('users_id', 1);
-        $this->Search->set('typ', $this->request->data['Search']['typ']);
+        $this->Search->set('users_id', $userid);
+        $this->Search->set('type', $this->request->data['Search']['typ']);
         $this->Search->set('title', $this->request->data['Search']['title']);
         $this->Search->set('text', $this->request->data['Search']['text']);
         $this->Search->save();
@@ -107,10 +114,17 @@ class SearchController extends AppController {
     
     private function createComment($id) {
         $user = $this->Auth->user('User');
+
+        $userid = $user['id'];
+
+        if(empty($user) || $user == null){
+	        $this->redirect(array('controller' => 'users','action' => 'login'));
+        }
+        $this->Adcomment->create();
         $this->Adcomment->set('text', $this->request->data['adcomment']['text']);
         $this->Adcomment->set('advert_id', $id);
         //$this->Adcomment->set('users_id', $user['id']);
-        $this->Adcomment->set('users_id', 1);
+        $this->Adcomment->set('users_id', $userid);
         $this->Adcomment->set('created', date('Y-m-d h:i:s', time()));
         $this->Adcomment->set('updated', date('Y-m-d h:i:s', time()));
         $this->Adcomment->save();
