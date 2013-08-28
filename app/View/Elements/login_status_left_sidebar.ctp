@@ -8,17 +8,22 @@
          echo $this->Html->link(__('Profil Editieren'), array('controller' => 'users', 'action' => 'view', 
           $authUser['id']));
          echo '</br>';
+         echo '<hr/>';
         if(isset($userRegistr) && $userRegistr != null && !empty($userRegistr) ){
           if($userRegistr[0]['Registrations']['registered'] == 1){
             echo __('Du bist für die EEvent 3.0 Angemeldet!');
             echo '<br/>';
-          }
+			echo '<hr/>';
+         
+         }
           if($userRegistr[0]['Registrations']['paid'] == 1){
             echo __('Wir haben noch keine Zahlung von dir erhalten.');
             echo '<br/>';
+			echo '<hr/>';
           }elseif($userRegistr[0]['Registrations']['paid'] == 0){
             echo __('Deine Zahlung ist bei uns angekommen!');
             echo '<br/>';
+			echo '<hr/>';
           }
         }
 		$totalticketprice = 45;
@@ -39,19 +44,22 @@
                 break;
             }
             echo '<br/>';
+			echo '<hr/>';
            }
           if(isset($preorder) && $preord['Preorders']['spiesstype'] == 'energy'){
             echo 'Bestellte Energy Drinks: <br/>';
             echo $preord['Preorders']['amount'];
             $totalticketprice += $preord['Preorders']['amount'];
             echo '<br/>';
+			echo '<hr/>';
            }
         }
 		
 			echo __('Dein Ticketpreis: ',true) . $totalticketprice . __('Chf.-',true);
+			echo '<hr/>';
 			echo '<br />';
 		
-         echo $this->Html->link('Ausloggen?', array('controller' => 'users','action'=>'logout','admin' => null));
+         echo $this->Html->link('Ausloggen?', array('action'=>'logout','admin' => null));
          echo '</span>';
         } else {
          
@@ -62,6 +70,7 @@
           echo $this->Form->end();
           echo $this->Html->link('Registrieren', array('controller' => 'users','action'=>'add','admin'=> null));
           echo '<br />';
+			echo '<hr/>';
           echo $this->Html->link('Passwort vergessen?', array('controller' => 'users', 'action' => 'forgotpass'));
         }
         ?>

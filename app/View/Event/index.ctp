@@ -26,7 +26,42 @@ Die Voraussetzungen sind einfach nur genial! Wir haben eine super Location, ein 
 </ul>
 </br>
 <a id="anreise" href="#anreise"><h4>Anreise</h4></a>
-<iframe width="650" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Sportplatzstrasse+17+4553+Subingen&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=69.939706,153.984375&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Sportplatzstrasse+17,+4553+Subingen,+Solothurn,+Switzerland&amp;ll=47.192046,7.617559&amp;spn=0.029163,0.05579&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Sportplatzstrasse+17+4553+Subingen&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=69.939706,153.984375&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Sportplatzstrasse+17,+4553+Subingen,+Solothurn,+Switzerland&amp;ll=47.192046,7.617559&amp;spn=0.029163,0.05579&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+    <div id="panel">
+    </div>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+var map;
+
+function initialize() {
+  directionsDisplay = new google.maps.DirectionsRenderer();
+  var chicago = new google.maps.LatLng(41.850033, -87.6500523);
+  var mapOptions = {
+    zoom:7,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: chicago
+  }
+  map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  directionsDisplay.setMap(map);
+}
+
+function calcRoute() {
+  var start = document.getElementById("start").value;
+  var end = document.getElementById("end").value;
+  var request = {
+    origin:start,
+    destination:end,
+    travelMode: google.maps.TravelMode.DRIVING
+  };
+  directionsService.route(request, function(result, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(result);
+    }
+  });
+}
+
+</script>
 </br></br>
 Die LAN Halle befinet sich unter folgender Adresse:
 </br></br>

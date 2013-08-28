@@ -82,6 +82,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         </div>
       <?php //echo $this->element('breadcrumb'); ?>
     </div>
+        </div>
   <?php echo $this->element('footer'); ?>
 
 </body>

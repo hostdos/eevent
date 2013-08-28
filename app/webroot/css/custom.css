@@ -126,6 +126,11 @@ p{
 	text-align: center;
 }
 
+.kickdesc h5 p{
+	color: white;
+	vertical-align: center;
+}
+
 .kickprogress h2 {
 	color: white;
 	text-align: center;
@@ -358,6 +363,10 @@ margin-top: 20px;
 }
 .sidelogin a{
   font-weight: bold;
+}
+
+.sidelogin hr {
+	margin: 7px 0px;
 }
 
 .pinnedcontent {
@@ -603,4 +612,12 @@ background: #8228cc;
 .searchlists td {
   float: left;
   clear: both;
+}
+
+.search_index a img {
+	max-width: 420px;
+	margin-top: 10px;
+}
+.search_index div {
+	text-align: center;
 }

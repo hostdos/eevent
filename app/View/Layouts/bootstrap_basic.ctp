@@ -9,17 +9,18 @@ $cakeDescription = __d('eevent', 'eevent');
 
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
   <!-- Titel -->
-  <title>eevent</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Beschreibung -->
-  <meta name="description" content="eevent lan website">
-  <meta name="keywords" content="lan switzerland eevent myinsanity">
-  <meta name="author" content="Dominique Hostettler">
+	<TITLE>EEvent 3.0</TITLE>
   <?php
-    echo $this->Html->meta('favicon.ico');
+?>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<META NAME="description" CONTENT="Die EEvent 3.0 LAN-Party lädt Gamer aus der ganzen Schweiz zum Spiel und spass ein. Wir freuen uns alle unsere Besucher wieder begrüssen zu dürfen und hoffen auf eine erfolgreiche EEvent!">
+	<META NAME="keywords" CONTENT="lan-party, party, gaming, lan, eevent, event, schweiz, suisse, myinsanity">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Beschreibung -->
+	<meta name="author" content="Dominique Hostettler">
+	<meta charset="UTF-8">
+<?php
 
     //echo $this->Html->css('cake.generic');
   //      echo $this->Html->css('bootstrap-responsive');
@@ -81,6 +82,7 @@ $cakeDescription = __d('eevent', 'eevent');
         <?php echo $this->element('sponsors'); ?>
       </div>
     </div>
+        </div>
   <?php echo $this->element('footer'); ?>
 
 </body>

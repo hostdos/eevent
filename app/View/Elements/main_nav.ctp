@@ -2,8 +2,8 @@
           <div class="navbar-inner">
               <div class="container">
                   <div class="nav-collapse">
+					<a id="menu" href="#menu"></a>
 					<ul class="nav nav-tabs">
-						<a id="menu" href="#menu"></a>
 					<?php $menupoints = array(
 					'News' => array('controller' => 'news', 'action' => 'index', 'admin' => null, '#' => 'menu'),
 					 'Event' => array( 'controller' => 'event', 'action' => 'index', 'admin' => null , '#' => 'menu'),
@@ -30,10 +30,7 @@
 					  echo '<li class="main_nav_bar">';
 					//} 
 					  echo $this->Html->link($menubar[$num],$point);  
-					  echo '<div>
-					        </div>
-					        </a>
-					      </li>';
+					      echo '</li>';
 					      $num ++;
 					}
 					

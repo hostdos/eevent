@@ -25,10 +25,9 @@
 
 	</div>
 	<div class="kickdesc span2">
-		<h5>
-			Für jeden Teilnehmer wird der Preispool um 10Chf Grösser!
-			Die Teilnehmer wählen selbst zu welchem Spiel Ihre 10Chf gehen!
-		</h5>
+		<p>
+			Entscheide selbst welches Spiel deine 10CHF Preisgeld bekommt!
+		<p>
 	</div>
 	
 		<div class="kickprogress span4">
@@ -58,5 +57,4 @@
 			</div>
 		</div>
 	</div>
-</div>
 </div>
