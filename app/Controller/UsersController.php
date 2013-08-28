@@ -26,6 +26,9 @@ public $helpers = array('Html');
 		// )
 	}
 
+	public function noauth(){
+		
+	}
 
 /**
  * index method

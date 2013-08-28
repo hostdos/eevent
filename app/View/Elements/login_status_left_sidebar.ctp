@@ -50,7 +50,7 @@
             echo 'Bestellte Energy Drinks: <br/>';
             echo $preord['Preorders']['amount'];
             $totalticketprice += $preord['Preorders']['amount'];
-            echo '<br/>';
+            echo '<br/>'; 
 			echo '<hr/>';
            }
         }
@@ -63,7 +63,7 @@
          echo '</span>';
         } else {
          
-          echo $this->Form->create('User', array('controller' => 'users','action' => 'login'));
+          echo $this->Form->create('User', array('action' => 'login'));
           echo $this->Form->input('username', array('placeholder' => 'username', 'label' => false));
           echo $this->Form->password('password', array('placeholder' => 'passwort')); // No div, no label
           echo $this->Form->submit('login', array('class' => 'btn'));

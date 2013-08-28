@@ -179,7 +179,7 @@ class AuthComponent extends Component {
  */
 	public $loginAction = array(
 		'controller' => 'users',
-		'action' => 'login',
+		'action' => 'noauth',
 		'plugin' => null
 	);
 
@@ -223,7 +223,7 @@ class AuthComponent extends Component {
  *
  * @var mixed
  */
-	public $unauthorizedRedirect = true;
+	public $unauthorizedRedirect = array('controller' => 'news', 'action' => 'noauth');
 
 /**
  * Controller actions for which user validation is not required.
