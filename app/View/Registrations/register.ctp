@@ -6,7 +6,7 @@
 	<fieldset>
 		<legend><?php echo __('Grillfleisch vorbestellen'); ?></legend>
 	<?php
-		echo $this->Form->input('preorder.spiesstype', array('type' => 'select', 'options' => array(null => 'Kein Spiessli','Poulet Spiesse' => 'Poulet Spiesse','Rinds entercote' => 'Rinds entercote'), 'label' => ''));
+		echo $this->Form->input('preorder.spiesstype', array('type' => 'select', 'options' => array(null => 'Kein Essen','Poulet Spiesse' => 'Poulet Spiesse','Rinds entercote' => 'Rinds entercote'), 'label' => ''));
 		echo "Poulet Spiesse = 14 CHf, Rinds entercote = 16 CHf";
 	?>
 	</fieldset>
@@ -15,7 +15,7 @@
 	<fieldset>
 		<legend><?php echo __('Buffalo Energy-Drinks vorbestellen'); ?></legend>
 	<?php
-		echo $this->Form->input('preorders.amount', array('type' => 'text', 'label' => 'Menge'));
+		echo $this->Form->input('preorders.amount', array('type' => 'number', 'label' => 'Menge'));
 		echo "1 Dose = 1 Schweizer Franken";
 	?>
 	</fieldset>
@@ -52,6 +52,23 @@
 </div>
 
 <script>
+$(document).ready(function() {
+	$("#preorderSpiesstype").val('Rinds entercote');
+	calculatePrice();
+});
+
+$("#preordersAmount").keypress(function(){
+    var value = $(this).val();
+    value = value.replace(/[^0-9]+/g, '');
+    $(this).val(value);
+});
+
+$("#preordersAmount").keyup(function(){
+    var value = $(this).val();
+    value = value.replace(/[^0-9]+/g, '');
+    $(this).val(value);
+});
+
 
 $('#registrationsPriceLol').keyup(function(){
 	validatePrice();

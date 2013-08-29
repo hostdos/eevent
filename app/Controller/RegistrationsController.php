@@ -50,7 +50,7 @@ public $components = array('Auth','Email','RequestHandler');
 		if(empty ($registr)) {
 			$this->Registration->create();
 			$regist['user_id'] = $user['id'];
-			$regist['registered'] = s;
+			$regist['registered'] = 1;
 			$regist['price_lol'] = $this->data['registrations']['price_lol'];
 			$regist['price_cs'] = $this->data['registrations']['price_csgo'];
 			$regist['price_sc'] = $this->data['registrations']['price_hots'];

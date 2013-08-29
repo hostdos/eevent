@@ -187,6 +187,7 @@ public function oldlogin() {
 		if ($this->request->is('post')) {
 		
 		//validate price
+/*
 			$pricemoney = array(); 
 			$pricemoney['lol'] = $this->request->data['User']['price_lol'];
 			$pricemoney['csgo'] = $this->request->data['User']['price_csgo'];
@@ -204,6 +205,7 @@ public function oldlogin() {
 			}else{
 				
 			}
+*/
 			
 			
 			$condoptions = array('conditions' => array(
@@ -242,6 +244,7 @@ public function oldlogin() {
 				//create registration and set the valuezzzz
 				
 			if ($this->User->save($this->request->data)) {
+/*
 				if($pricemoney){
 
 					$this->loadModel('Registrations');
@@ -256,6 +259,7 @@ public function oldlogin() {
 						$this->Session->setFlash(__('Your Pricemoney could not be saved.'));
 					}
 					}
+*/
 				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {

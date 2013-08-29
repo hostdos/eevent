@@ -70,7 +70,6 @@
           echo $this->Form->end();
           echo $this->Html->link('Registrieren', array('controller' => 'users','action'=>'add','admin'=> null));
           echo '<br />';
-			echo '<hr/>';
           echo $this->Html->link('Passwort vergessen?', array('controller' => 'users', 'action' => 'forgotpass'));
         }
         ?>

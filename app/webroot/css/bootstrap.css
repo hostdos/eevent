@@ -213,7 +213,13 @@ body {
 }
 a {
   color: #214799;
-  text-decoration: none;
+  text-decoration: underline;
+}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,h7 a,h8 a{
+	text-decoration: none;
+}
+a.btn {
+	text-decoration: none;
 }
 a:hover {
   color: brighten(#214799, 10%);

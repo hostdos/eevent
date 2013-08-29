@@ -12,5 +12,5 @@
 		echo $this->Form->input('website');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Submit'), array('class' => 'btn')); ?>
 </div>

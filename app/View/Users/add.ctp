@@ -44,6 +44,7 @@
 		echo $this->Form->input('website', array('label' => 'Website', 'placeholder' => 'Website', 'placeholder' => 'www.retardmagnetgaming.ch.vu'));
 	?>
 	</fieldset>
+<!--
 	<fieldset class="pricemoneysliders">
 		<div class="priceinfo">
 		<h4>
@@ -67,6 +68,7 @@
 			</p>
 		</div>
 	</fieldset>
+-->
 
 <?php 
 		echo $this->Form->submit(__('Registrieren'), array('class' => 'btn btn-large btn-primary', 'id' => 'submitbutton'));
