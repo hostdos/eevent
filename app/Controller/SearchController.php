@@ -74,9 +74,8 @@ class SearchController extends AppController {
         $commentUsers = array();
         $i = 0;
         foreach($comments as $comment) {
-            $commentUsers[$i]['id'] = $comment['Adcomment']['id'];
-            $commentUser = $this->Users->find('first', array('conditions' => array('id' => $comment['Adcomment']['users_id'])));
-            $commentUsers[$i]['username'] = $commentUser['Users']['username'];
+            $commentUser = $this->Users->find('all', array('conditions' => array('id' => $comment['Adcomment']['users_id'])));
+            $commentUsers[$comment['Adcomment']['id']] = $commentUser[0]['Users']['username'];
             $i++;
         }
         $this->set('commentUsers', $commentUsers);

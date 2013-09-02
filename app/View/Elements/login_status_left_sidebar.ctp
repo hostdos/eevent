@@ -54,12 +54,19 @@
 			echo '<hr/>';
            }
         }
+        
+		if(isset($userRegistr) && $userRegistr != null 
+        && !empty($userRegistr) ){
+			if($userRegistr[0]['Registrations']['registered'] == 1){
+				echo __('Dein Ticketpreis: ',true) .
+				$totalticketprice . __('Chf.-',true);
+				echo '<hr/>';
+				echo '<br />';
+			}
+		}
 		
-			echo __('Dein Ticketpreis: ',true) . $totalticketprice . __('Chf.-',true);
-			echo '<hr/>';
-			echo '<br />';
 		
-         echo $this->Html->link('Ausloggen?', array('action'=>'logout','admin' => null));
+         echo $this->Html->link('Ausloggen?', array('controller' => 'users','action'=>'logout','admin' => null));
          echo '</span>';
         } else {
          

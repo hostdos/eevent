@@ -11,6 +11,15 @@
 </script>
 <div>
     <h3><?php echo $advert['Search']['title']; ?></h3>
+    <h4>
+    <?php
+	if($advert['Search']['type'] == 1){
+		echo "Suche Team";
+	}elseif($advert['Search']['type'] == 0){
+		echo "Suche Spieler";
+	} 
+    ?>
+    </h4>
     <table class="fullWidth margin-bottom10">
         <tr>
             <td class="column1">
@@ -30,6 +39,7 @@
             </td>
         </tr>
     </table>
+	<hr>
     <?php foreach($comments as $comment) { ?>
     <table class="fullWidth margin-bottom10">
         <tr>
@@ -37,11 +47,7 @@
             <td class="column1">
                 <div class="min-height100 margin-top10">
                     <b><?php 
-                        foreach($commentUsers as $commentUser) {
-                            if($commentUser['id'] == $comment['Adcomment']['users_id']) {
-                                echo $commentUser['username'];
-                            }
-                        }
+                            echo $commentUsers[$comment['Adcomment']['id']];
                     ?></b>
                 </div>
             </td>
