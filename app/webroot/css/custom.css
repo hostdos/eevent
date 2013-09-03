@@ -86,6 +86,11 @@ p{
 	color: #173675;
 }
 
+.kickdesc p {
+	color: #ffffff;
+	margin-top: 50px;
+}
+
 .bannertitle h4 {
 	font-weight: normal;
 	color: #FEFEFE;
@@ -620,4 +625,7 @@ background: #8228cc;
 }
 .search_index div {
 	text-align: center;
+}
+.error-message {
+	color: #F02311;
 }

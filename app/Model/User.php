@@ -142,7 +142,7 @@ class User extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'rule' => '/[0-9]{4}/',
-			'message' => 'Wenn de scho es Telefon agisch de bitte richtig',
+			'message' => 'PLZ nicht Korrekt angegeben, eine PLZ besteht aus 4 Zahlen',
 		),
 		'street' => array(
 			'notempty' => array(
