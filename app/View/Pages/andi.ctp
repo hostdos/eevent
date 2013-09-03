@@ -22,7 +22,7 @@
              <div class="csoon">
                <div class="padd">
                   <!-- Coming Soon section. -->
-                  <h2>EEvent 2.0</h2>
+                  <h2>EEvent 3.0</h2>
                   <p>228 Gamer. Mehrzweckhalle Subingen. 3 - 5 Mai. 4 Turniere.</p>
                </div>
              </div>

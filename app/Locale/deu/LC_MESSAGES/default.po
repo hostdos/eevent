@@ -101,15 +101,15 @@ msgstr "Post konnte nicht gelöscht werden"
 
 #: Controller/RegistrationsController.php:41
 msgid "Registrierung fÃ¼r EEvent 2.0"
-msgstr "Anmeldung für den Eevent 2.0"
+msgstr "Anmeldung für den Eevent 3.0"
 
 #: Controller/RegistrationsController.php:42;60
 msgid "Du hast dich fÃ¼r die EEvent 2.0 angemeldet!"
-msgstr "Du hast dich erfolgreich für den Eevent 2.0 angemeldet!"
+msgstr "Du hast dich erfolgreich für den Eevent 3.0 angemeldet!"
 
 #: Controller/RegistrationsController.php:44;62
 msgid "You are now registered"
-msgstr "Du hast dich erfolgreich für den Eevent 2.0 angemeldet!"
+msgstr "Du hast dich erfolgreich für den Eevent 3.0 angemeldet!"
 
 #: Controller/RegistrationsController.php:47;68;100;117;160;183
 msgid "The registration could not be saved. Please, try again."
@@ -117,15 +117,15 @@ msgstr "Die Anmeldunge konnte nicht gespeichert werden"
 
 #: Controller/RegistrationsController.php:59
 msgid "Anmeldung fÃ¼r EEvent 2.0"
-msgstr "Anmeldung für den Eevent 2.0"
+msgstr "Anmeldung für den Eevent 3.0"
 
 #: Controller/RegistrationsController.php:95;111
 msgid "Abmeldung fÃ¼r EEvent 2.0"
-msgstr "Abmeldung für den Eevent 2.0"
+msgstr "Abmeldung für den Eevent 3.0"
 
 #: Controller/RegistrationsController.php:96;112
 msgid "Du hast dich von der EEvent 2.0 Abgemeldet, schade :("
-msgstr "Du hast dich von dem Eevent 2.0 Abgemeldet, schade."
+msgstr "Du hast dich von dem Eevent 3.0 Abgemeldet, schade."
 
 #: Controller/RegistrationsController.php:97;114
 msgid "You are now unregistered"
@@ -904,11 +904,11 @@ msgstr "Du hast keine berechtigungen diesen User zu editieren."
 
 #: Controller/UsersController.php:65
 msgid "You are registered"
-msgstr "Du bist für die Eevent 2.0 angemeldet"
+msgstr "Du bist für die Eevent 3.0 angemeldet"
 
 #: Controller/UsersController.php:65
 msgid "You are not registered"
-msgstr "Du bist nicht für die Eevent 2.0 angemeldet"
+msgstr "Du bist nicht für die Eevent 3.0 angemeldet"
 
 #: Controller/UsersController.php:65
 msgid "Unregister?"

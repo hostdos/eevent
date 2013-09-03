@@ -64,7 +64,7 @@ public $components = array('Auth','Email','RequestHandler');
 				$Email->subject(__('Registrierung für EEvent 2.0'));
 
 				$emailstring = "Hallo ". $user['username'] .",
-				Deine Anmeldung für die eevent LAN-Party 2.0 war erfolgreich!
+				Deine Anmeldung für die eevent LAN-Party 3.0 war erfolgreich!
 				Damit du einen Sitzplatz auswählen kannst und du definitiv einen Platz hast, musst du nun nur noch den Unkostenbeitrag von CHF 45.00 auf folgendes Konto überweisen.
 
 				Zahlungsdetails:
@@ -75,7 +75,7 @@ public $components = array('Auth','Email','RequestHandler');
 				Valiant Bank
 				3001 Bern
 
-				Betreff: Nickname, eevent 2.0
+				Betreff: Nickname, eevent 3.0
 
 				Bei Zahlungen für mehrere Personen einfach alle Nicknamen angeben.
 

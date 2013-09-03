@@ -104,11 +104,11 @@ msgstr ""
 
 #: Controller/RegistrationsController.php:41
 msgid "Registrierung fuer EEvent 2.0"
-msgstr ""
+msgstr "Registrierung fuer EEvent 3.0"
 
 #: Controller/RegistrationsController.php:42;60
 msgid "Du hast dich fuer die EEvent 2.0 angemeldet!"
-msgstr ""
+msgstr "Du hast dich fuer die EEvent 3.0 angemeldet!"
 
 #: Controller/RegistrationsController.php:44;62
 msgid "You are now registered"
@@ -120,15 +120,15 @@ msgstr ""
 
 #: Controller/RegistrationsController.php:59
 msgid "Anmeldung fuer EEvent 2.0"
-msgstr ""
+msgstr "Anmeldung fuer EEvent 3.0"
 
 #: Controller/RegistrationsController.php:95;111
 msgid "Abmeldung fuer EEvent 2.0"
-msgstr ""
+msgstr "Abmeldung fuer EEvent 3.0"
 
 #: Controller/RegistrationsController.php:96;112
 msgid "Du hast dich von der EEvent 2.0 Abgemeldet, schade :("
-msgstr ""
+msgstr "Du hast dich von der EEvent 3.0 Abgemeldet, schade :("
 
 #: Controller/RegistrationsController.php:97;114
 msgid "You are now unregistered"

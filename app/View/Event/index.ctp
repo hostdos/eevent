@@ -78,7 +78,7 @@ CH41 0630 0016 9466 1000 6</br>
 Valiant Bank</br>
 3001 Bern</br>
 </br>
-Betreff: Nickname, eevent 2.0</br>
+Betreff: Nickname, eevent 3.0</br>
 </br>
 Bei Zahlungen für mehrere Personen einfach alle Nicknamen angeben.</br>
 </br>

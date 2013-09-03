@@ -15,7 +15,7 @@
 	<fieldset>
 		<legend><?php echo __('Buffalo Energy-Drinks vorbestellen'); ?></legend>
 	<?php
-		echo $this->Form->input('preorders.amount', array('type' => 'number', 'label' => 'Menge'));
+		echo $this->Form->input('preorders.amount', array('type' => 'number', 'label' => 'Menge', 'min' => 0, 'max' => 200));
 		echo "1 Dose = 1 Schweizer Franken";
 	?>
 	</fieldset>
