@@ -28,7 +28,7 @@
         }
 		$totalticketprice = 45;
          foreach($preorder as $preord){
-           if(isset($preord) && $preord['Preorders']['spiesstype'] != '' && $preord['Preorders']['spiesstype'] != null && $preord['Preorders']['spiesstype'] != 'energy'){
+           if(isset($preord) && $preord['Preorders']['spiesstype'] != '' && $preord['Preorders']['spiesstype'] != null && $preord['Preorders']['spiesstype'] != 'energy' && isset($userRegistr) && $userRegistr != null){
             echo 'Bestelltes Essen: <br/>';
             switch ($preord['Preorders']['spiesstype']) {
               case 'Poulet Spiesse':

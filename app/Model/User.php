@@ -81,7 +81,10 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'rule' => '/[A-Z0-9a-z._%+-]+@[A-Z0-9a-z.-]+\.[A-Za-z]{2,4}/',
+			'message' => 'Eingegeben E-Mail ist nicht Valid.',
 		),
+
 		'gender' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
@@ -92,6 +95,7 @@ class User extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+		
 		'prename' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
@@ -102,6 +106,7 @@ class User extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+		
 		'surname' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
@@ -112,6 +117,7 @@ class User extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+		
 		'birthdate' => array(
 			'date' => array(
 				'rule' => array('date', 'dmy'),
@@ -121,7 +127,10 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'rule' => '/[0-3][0-9](.)[0-1][0-9](.)[1-2][0-9]{2}[0-9]/',
+			'message' => 'Eingegebenes Geburtsdatum ist nicht Valid.',
 		),
+
 		'place' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
