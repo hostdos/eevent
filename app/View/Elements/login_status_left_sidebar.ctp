@@ -18,6 +18,8 @@
          }
           if($userRegistr[0]['Registrations']['paid'] == 1){
             echo __('Wir haben noch keine Zahlung von dir erhalten.');
+			echo '<br/>';
+         echo $this->Html->link(__('Zahlungsinfo'), array('controller' => 'event', 'action' => 'index', '#' => 'zahlungsdetails'));
             echo '<br/>';
 			echo '<hr/>';
           }elseif($userRegistr[0]['Registrations']['paid'] == 0){
