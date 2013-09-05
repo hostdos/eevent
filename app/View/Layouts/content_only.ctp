@@ -11,8 +11,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-	<title>EEvent 3.0 LAN-Party</title>
-
+	<title>EEvent 3.0 LAN-Party vom 01.11 bis 03.11 in Subingen, LoL, SC2 und CS:GO Turnier</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Beschreibung -->
   <meta name="description" content="eevent lan website">

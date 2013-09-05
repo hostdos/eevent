@@ -10,8 +10,7 @@ $cakeDescription = __d('eevent', 'eevent');
 
 <head>
   <!-- Titel -->
-	<title>EEvent 3.0 LAN-Party</title>
-  <?php
+	<title>EEvent 3.0 LAN-Party vom 01.11 bis 03.11 in Subingen, LoL, SC2 und CS:GO Turnier</title>  <?php
 ?>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<META NAME="description" CONTENT="Die EEvent 3.0 LAN-Party lädt Gamer aus der ganzen Schweiz  zum gemütlichen gamen ein">
