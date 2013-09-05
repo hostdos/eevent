@@ -1,5 +1,8 @@
 
 <div class="row-fluid headerawesome">
+<h1 class="bannerheader">
+Die EEvent 3.0 wartet mit spannenden Turnieren und Super Catering auf die Besucher!
+</h1>
 <div class="container">
     <div class="bannerdiv span3">
       <?php echo $this->Html->image('welcome/logo.png', array('class'=>'bannerimg')); ?>

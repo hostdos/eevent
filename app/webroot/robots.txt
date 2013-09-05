@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /app/tmp/
+Disallow: /tmp/
+Disallow: /kasse

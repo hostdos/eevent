@@ -21,8 +21,8 @@ public $helpers = array('Html');
 		$conditions = array('Comments.news_id' => $nws['News']['users_id']);
 	$_output .= '<article class="fullnews news">';
 	$_output .= '<header>';
-	$_output .= '<h1>' .$this->Html->link($nws['News']['title'], array('controller' => 'news',
-		'action'=>'view',$nws['News']['id'])). '</h1>';
+	$_output .= '<h2>' .$this->Html->link($nws['News']['title'], array('controller' => 'news',
+		'action'=>'view',$nws['News']['id'])). '</h2>';
 			$_output .= '<div class="author">';
 	$_output .= 'geschrieben von: ';
 	//$_output .=  $this->Html->link($user['Users']['username'], array('controller' => 'users', 'action' => 'view'
@@ -53,8 +53,8 @@ public $helpers = array('Html');
 		$conditions = array('Comments.news_id' => $nws['News']['users_id']);
 	$_output .= '<article class="fullnews news">';
 	$_output .= '<header>';
-	$_output .= '<h1>' .$this->Html->link($nws['News']['title'], array('controller' => 'news',
-		'action'=>'view',$nws['News']['id'])). '</h1>';
+	$_output .= '<h2>' .$this->Html->link($nws['News']['title'], array('controller' => 'news',
+		'action'=>'view',$nws['News']['id'])). '</h2>';
 			$_output .= '<div class="author">';
 	$_output .= 'geschrieben von: ';
 //	$_output .=  $this->Html->link($user['Users']['username'], array('controller' => 'users', 'action' => 'view'
@@ -96,8 +96,8 @@ public $helpers = array('Html');
 		} else { $commentnum = 0;}
 	$_output .= '<article class="news">';
 	$_output .= '<header>';
-	$_output .= '<h1>' .$this->Html->link($nws['News']['title'], array('controller' => 'news',
-		'action'=>'view',$nws['News']['id'])). '</h1>';
+	$_output .= '<h2>' .$this->Html->link($nws['News']['title'], array('controller' => 'news',
+		'action'=>'view',$nws['News']['id'])). '</h2>';
 	$_output .= '</header>';
 	$_output .= '<p>';
 	$_output .= $nws['News']['content'];
@@ -141,8 +141,8 @@ public $helpers = array('Html');
 		} else { $commentnum = 0;}
 	$_output .= '<article class="news">';
 	$_output .= '<header>';
-	$_output .= '<h1>' .$this->Html->link($nws['News']['title'], array('controller' => 'news',
-		'action'=>'view',$nws['News']['id'])). '</h1>';
+	$_output .= '<h2>' .$this->Html->link($nws['News']['title'], array('controller' => 'news',
+		'action'=>'view',$nws['News']['id'])). '</h2>';
 	$_output .= '</header>';
 	$_output .= '<p>';
 	$_output .= $nws['News']['content'];

@@ -13,7 +13,10 @@
 	</dl>
 </div>
 
-<ul>
+<ul class="tviewteamlist">
+<lh>
+<h3>Angemeldete Teams</h3>
+</lh>
 <?php 
 if(!empty($teilnehmer)){
 foreach($teilnehmer as $spieler){

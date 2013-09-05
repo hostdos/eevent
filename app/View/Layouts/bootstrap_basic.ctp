@@ -10,11 +10,11 @@ $cakeDescription = __d('eevent', 'eevent');
 
 <head>
   <!-- Titel -->
-	<TITLE>EEvent 3.0</TITLE>
+	<title>EEvent 3.0 LAN-Party</title>
   <?php
 ?>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<META NAME="description" CONTENT="Die EEvent 3.0 LAN-Party lädt Gamer aus der ganzen Schweiz zum Spiel und spass ein. Wir freuen uns alle unsere Besucher wieder begrüssen zu dürfen und hoffen auf eine erfolgreiche EEvent!">
+	<META NAME="description" CONTENT="Die EEvent 3.0 LAN-Party lädt Gamer aus der ganzen Schweiz  zum gemütlichen gamen ein">
 	<META NAME="keywords" CONTENT="lan-party, party, gaming, lan, eevent, event, schweiz, suisse, myinsanity">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Beschreibung -->

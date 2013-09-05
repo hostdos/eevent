@@ -46,7 +46,9 @@
             echo '<br/>';
 			echo '<hr/>';
            }
-          if(isset($preorder) && $preord['Preorders']['spiesstype'] == 'energy'){
+          if(
+          isset($userRegistr) && $userRegistr != null &&
+          isset($preorder) && $preord['Preorders']['spiesstype'] == 'energy'){
             echo 'Bestellte Energy Drinks: <br/>';
             echo $preord['Preorders']['amount'];
             $totalticketprice += $preord['Preorders']['amount'];

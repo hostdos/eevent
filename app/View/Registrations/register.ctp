@@ -47,7 +47,7 @@
 	</fieldset>
 
 <?php 
-		echo $this->Form->submit(__('Registrieren'), array('class' => 'btn btn-large btn-primary', 'id' => 'submitbutton'));
+		echo $this->Form->submit(__('Für die EEvent 3.0 Anmelden!'), array('class' => 'btn btn-large btn-primary', 'id' => 'submitbutton'));
 		echo $this->Form->end(); ?>
 </div>
 
