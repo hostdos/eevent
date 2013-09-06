@@ -13,5 +13,5 @@
 
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Teilnehmen')); ?>
+<?php echo $this->Form->end(__('Teilnehmen'), array('class' => 'btn')); ?>
 </div>

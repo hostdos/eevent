@@ -956,3 +956,9 @@ msgstr "Sobald wir deine Zahlung erhalten haben kannst du einen Sitzplatz reserv
 
 msgid  "You are already registered"
 msgstr "Du bist schon Registriert!"
+
+msgid  "Add Participant"
+msgstr "Team Beitreten"
+
+msgid  "Parent Participants"
+msgstr "Team"
