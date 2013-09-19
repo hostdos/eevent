@@ -1,6 +1,6 @@
-<p><a id="intro" href="#intro"><h3>Der Filmsoft Verein ist stolz, die eevent - LAN 2013 zu präsentieren.</h3></a>
+<p><a id="intro" href="#intro"><h3>Der Filmsoft Verein ist stolz, die eevent 3 - LAN 2013 zu präsentieren.</h3></a>
 </br>
-<h5>Vom 03. - 05. Mai 2013 erwartet die Crew rund um den eevent, 228 Teilnehmer in Subingen im Kanton Solothurn, wo um sagenhafte CHF 2100 Preisgeld, so wie diverse andere Überraschungen, gespielt wird!</h5>
+<h5>Vom 08. - 10. Nov 2013 erwartet die Crew rund um den eevent, 200 Teilnehmer in Subingen im Kanton Solothurn, wo um das Preisgeld eurer wahl sowie diverse andere Überraschungen gespielt wird!</h5>
 </br>
 Die Voraussetzungen sind einfach nur genial! Wir haben eine super Location, ein sensationelles Internet, ein unumstössliches Netzwerk, tolle Preisgelder, erfahrene LAN-Organisatoren sowie eine riesen Motivation! Diese LAN wird zu einem E-Sport Spektakel, lässt jedoch auch die eher gemütlichen Gamer-Herzen nicht kalt. Ein grosses Chill Out mit Bar und Spielekonsolen werden für die nötige Abwechslung sorgen.
 </br></br></br>
@@ -9,20 +9,22 @@ Die Voraussetzungen sind einfach nur genial! Wir haben eine super Location, ein 
 <h4>Die Sitzplatzreservierung wird zwei Wochen vor der LAN geöffnet!</h4>
 </br>
 <a id="infos" href="#infos"><h4>Infos</h4></a>
-<b>Datum:</b> 03-05. Mai 2013</br>
+<b>Datum:</b> 08-10. Nov. 2013</br>
 <b>Ort:</b> Mehrzweckhalle Subingen (SO)</br>
-<b>Teilnehmerzahl:</b> 228 Gamer</br>
+<b>Teilnehmerzahl:</b> 200 Gamer</br>
 <b>Eintritt:</b> CHF 45.00 Vorkasse , CHF 50.00 Abendkasse</br>
 <b>Turniere:</b>
+<b>Folgende Turniere werden gespielt mit dem genannten Basic Preispool:</b>
 <ul class="turnierliste">
-<li>Starcraft 2 HotS 1v1:			CHF 600.00</li>
-<li>League of Legends 5v5:			CHF 1500.00</li>
-<li>Counter-Strike: GO 5v5:			Hardware Preise sowie Forge Points </li>
-<li>Shootmania 1v1:					Hardware Preise</li>
-<li>AoE2HD 1v1:						Hardware Preise</li>
-<li>Überraschungsturnier ?v?:		Überraschungspreise</li>		
-<a href="http://eevent.ch/images/zeitplan_erneuert.pdf">Turnier Zeitplan</a>
-
+<li>Starcraft 2 HotS 1v1:			CHF 200.00</li>
+<li>League of Legends 5v5:			CHF 300.00</li>
+<li>Counter-Strike: GO 5v5:			CHF 100.00</li>
+</ul>
+Folgende Fun-Turniere werden ohne Preispool ausgetragen:
+<ul class="turnierliste">
+<li>Call of Duty 4 5v5</li>
+<li>Blur ffa</li>
+<li>Überraschungsturnier</li>		
 </ul>
 </br>
 <a id="anreise" href="#anreise"><h4>Anreise</h4></a>
@@ -81,5 +83,10 @@ Valiant Bank</br>
 Betreff: Nickname, eevent 3.0</br>
 </br>
 Bei Zahlungen für mehrere Personen einfach alle Nicknamen angeben.</br>
+Beispiel für den
+<?php
+echo $this->Html->link('Einahlungsschein','/files/einzahlungsschein.pdf');
+?>
+</br>
 </br>
 Bei weiteren Fragen könnt Ihr das Orga team unter <a href="mailto:info@eevent.ch">info@eevent.ch</a> erreichen.

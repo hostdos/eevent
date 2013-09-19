@@ -8,12 +8,12 @@
                 Mit dem Abschicken der Anmeldung bzw. dem Betreten der Räumlichkeiten werden diese
                 Regeln anerkannt. Vielen Dank für eurer Verständnis !
             </p>
-            <b>§1 Bezahlung und Warteliste</b> Die Anmeldung wird am 08.04.2012 ab ca. 18.00Uhr
-            Uhr freigeschaltet. Alle persönlichen Angaben sind wahrheitsgemäss auszufüllen.
-            Mit der Anmeldung ist ein Eintrag auf der Teilnehmerliste verbunden. Bis zur Überweisung
-            (spätestens bis eine Woche vor der Lanparty) des Unkostenbeitrags von 45.00 CHF
-            ist noch kein Platz reserviert. Erst nach Bezahlung erhält man den Status "Bezahlt"
-            und hat Anspruch auf einen Sitzplatz.</p>
+        <b>§1 Bezahlung und Warteliste</b>
+         <p>Die Anmeldung wird am 18.09.2013 freigeschaltet.
+            Alle persönlichen Angaben sind wahrheitsgemäss auszufüllen. Mit der Anmeldung ist ein Eintrag
+            auf der Teilnehmerliste verbunden. Bis zur Überweisung des Unkostenbeitrags Early Bird: CHF 45.00
+            Bis zum 10.10.2013 oder Normaler Eintritt CHF 50.00 ist noch kein Platz reserviert.
+            Erst nach Bezahlung erhält man den Status "Bezahlt" und hat Anspruch auf einen Sitzplatz.</p>
         <b>§2 Teilnahme minderjähriger Personen</b>
         <p>
             Das Mindestalter, um an der Party teilnehmen zu können, beträgt 14 Jahre. Teilnehmer

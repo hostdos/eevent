@@ -117,7 +117,7 @@ class SearchController extends AppController {
         $userid = $user['id'];
 
         if(empty($user) || $user == null){
-	        $this->redirect(array('controller' => 'users','action' => 'login'));
+	        $this->redirect(array('controller' => 'users','action' => 'noauth'));
         }
         $this->Adcomment->create();
         $this->Adcomment->set('text', $this->request->data['adcomment']['text']);

@@ -13,7 +13,7 @@
 </div>
 <div class="preorders form">
 	<fieldset>
-		<legend><?php echo __('Buffalo Energy-Drinks vorbestellen'); ?></legend>
+		<legend><?php echo __('<a href ="http://www.monsterenergy.com/us/en/products/monster-energy/">Monster</a> Energy-Drinks vorbestellen'); ?></legend>
 	<?php
 		echo $this->Form->input('preorders.amount', array('type' => 'number', 'label' => 'Menge', 'min' => 0, 'max' => 200));
 		echo "1 Dose = 1 Schweizer Franken";
@@ -45,7 +45,12 @@
 			</p>
 		</div>
 	</fieldset>
-
+	<fieldset>
+			<?php
+		echo $this->Form->input('agb', array(
+			'label' => 'Um dich anzumelden musst du unsere '. $this->Html->link('AGB',array('controller' => 'pages','action'=>'agb')) .' akzeptieren','type' => 'checkbox', 'required' => 'true'));
+		?>
+	</fieldset>
 <?php 
 		echo $this->Form->submit(__('Für die EEvent 3.0 Anmelden!'), array('class' => 'btn btn-large btn-primary', 'id' => 'submitbutton'));
 		echo $this->Form->end(); ?>

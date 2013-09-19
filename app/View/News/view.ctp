@@ -1,5 +1,4 @@
 <?php
-debug($authUser);
 if($authUser != null && $authUser['status'] == 1){
 echo $this->News->getAdminNewsSingle($id);
 echo $this->Comments->getAdminComments($newsid);
