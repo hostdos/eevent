@@ -78,9 +78,12 @@ class AppController extends Controller {
 		$this->Registrations->find('all', array('conditions' => array('Registrations.registered' => 1), 'fields' => 'SUM(price_go)'));
 		$pricemoney['sc'] = 
 		$this->Registrations->find('all', array('conditions' => array('Registrations.registered' => 1), 'fields' => 'SUM(price_sc)'));
-		$pricemoney['lol'] = substr($pricemoney['lol'][0][0]['SUM(price_lol)'], 0, -3);		
-		$pricemoney['cs'] = substr($pricemoney['cs'][0][0]['SUM(price_go)'], 0, -3);
-		$pricemoney['sc'] = substr($pricemoney['sc'][0][0]['SUM(price_sc)'], 0, -3);
+		$pricemoney['lol'] = (int)substr($pricemoney['lol'][0][0]['SUM(price_lol)'], 0, -3);		
+		$pricemoney['cs'] = (int)substr($pricemoney['cs'][0][0]['SUM(price_go)'], 0, -3);
+		$pricemoney['sc'] = (int)substr($pricemoney['sc'][0][0]['SUM(price_sc)'], 0, -3);
+		$pricemoney['cs'] += 100;
+		$pricemoney['lol'] += 300;
+		$pricemoney['sc'] += 200;
 		$this->set('pricemoney', $pricemoney);
 
 		$this->allowAccess(); 
