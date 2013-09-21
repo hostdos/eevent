@@ -47,6 +47,9 @@
 <?php if ($isowner == true) :?>
 <div class="actions">
 	<ul>
+		<li>
+		<?php echo $this->Html->link('Zahlungsdetails',array('controller' => 'event', 'action' => 'index', '#' => 'zahlungsdetails')); ?>
+		</li>
 		<li><?php
 		if($isregistered == 1){
 			echo __('You are registered') . " " . $this->Html->link(__('Unregister?'), array('controller' => 'registrations', 'action' => 'unregister'));

@@ -1,6 +1,6 @@
 <div class="text-center">
-    <h3>Wähle ein Spiel aus</h3>
-    <h4>Spielersuche oder Teamsuche</h4>
+    <h3>Spielersuche oder Teamsuche</h3>
+    <h4>Wähle ein Spiel aus</h4>
 </div>
 <div class ="search_index">
     <div class="left text-center width400">

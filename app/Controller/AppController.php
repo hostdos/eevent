@@ -51,7 +51,7 @@ class AppController extends Controller {
         	'conditions' => array('user_id' => $user['id'])));
         $this->set('preorder',$preorder);
 
-		$all = 228;
+		$all = 200;
 		$angemeldet = $this->Registrations->find('count', array(
         'conditions' => array('Registrations.registered' => 1)));
    		$bezahlt = $this->Registrations->find('count', array(
