@@ -233,7 +233,7 @@ public function oldlogin() {
 				Um definitiv angemeldet zu sein, klicke bitte auf der http://www.eevent.ch auf die Schaltfläche “Jetzt für den eevent anmelden”</br>
 				oder klicke auf folgenden Link:</br>
 				<a href="www.eevent.ch/registrations/register" link </a></br>
-				Vielen Dank für deine Teilnahme, wir freuen uns, dich vom 03-05 Mai in Subingen begrüssen zu dürfen.</br>
+				Vielen Dank für deine Teilnahme, wir freuen uns, dich vom 08-10 November in Subingen begrüssen zu dürfen.</br>
 </br>
 </br>
 				Liebe Grüsse</br>

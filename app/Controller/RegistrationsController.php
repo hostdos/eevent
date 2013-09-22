@@ -52,7 +52,7 @@ public $components = array('Auth','Email','RequestHandler');
 			$regist['user_id'] = $user['id'];
 			$regist['registered'] = 1;
 			$regist['price_lol'] = $this->data['registrations']['price_lol'];
-			$regist['price_cs'] = $this->data['registrations']['price_csgo'];
+			$regist['price_go'] = $this->data['registrations']['price_csgo'];
 			$regist['price_sc'] = $this->data['registrations']['price_hots'];
 
 			if($this->Registration->save($regist)){
@@ -61,7 +61,7 @@ public $components = array('Auth','Email','RequestHandler');
 				$Email = new CakeEmail();
 				$Email->from(array('info@eevent.ch' => 'Eevent info'));
 				$Email->to(array( $usermail => $user['username']));
-				$Email->subject(__('Registrierung für EEvent 2.0'));
+				$Email->subject(__('Registrierung für EEvent 3.0'));
 
 				$emailstring = "Hallo ". $user['username'] .",
 				Deine Anmeldung für die eevent LAN-Party 3.0 war erfolgreich!
@@ -79,7 +79,7 @@ public $components = array('Auth','Email','RequestHandler');
 
 				Bei Zahlungen für mehrere Personen einfach alle Nicknamen angeben.
 
-				Vielen Dank. Wir freuen uns sehr, dich vom 03-05 Mai in Subingen begrüssen zu dürfen.
+				Vielen Dank. Wir freuen uns sehr, dich vom 08-10 November in Subingen begrüssen zu dürfen.
 
 				Liebe Grüsse
 				Dein Eevent Team
@@ -158,8 +158,8 @@ public $components = array('Auth','Email','RequestHandler');
 			$Email = new CakeEmail();
 			$Email->from(array('info@eevent.ch' => 'Eevent info'));
 			$Email->to(array( $usermail => $user['username']));
-			$Email->subject(__('Abmeldung für EEvent 2.0'));
-			$Email->send(__('Du hast dich von der EEvent 2.0 Abgemeldet, schade :('));
+			$Email->subject(__('Abmeldung für EEvent 3.0'));
+			$Email->send(__('Du hast dich von der EEvent 3.0 Abgemeldet, schade :('));
 			$this->Session->setFlash(__('You are now unregistered'));
 			$this->redirect(array('controller' => 'news', 'action' => 'index'));
 		}else{
@@ -174,8 +174,8 @@ public $components = array('Auth','Email','RequestHandler');
 			$Email = new CakeEmail();
 			$Email->from(array('info@eevent.ch' => 'Eevent info'));
 			$Email->to(array( $usermail => $user['username']));
-			$Email->subject(__('Abmeldung für EEvent 2.0'));
-			$Email->send(__('Du hast dich von der EEvent 2.0 Abgemeldet, schade :('));
+			$Email->subject(__('Abmeldung für EEvent 3.0'));
+			$Email->send(__('Du hast dich von der EEvent 3.0 Abgemeldet, schade :('));
 
 			$this->Session->setFlash(__('You are now unregistered'));
 			$this->redirect(array('controller' => 'news', 'action' => 'index'));

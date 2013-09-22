@@ -10,7 +10,7 @@ Die EEvent 3.0 wartet mit spannenden Turnieren und Super Catering auf die Besuch
     
 	<div class="bannertitle span3">
 	<h4>
-	200 Gamer, 4 Turniere
+	200 Gamer, 7 Turniere
 	</h4>
   <?php 
   if(empty($userRegistr)){

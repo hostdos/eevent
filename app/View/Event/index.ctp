@@ -20,6 +20,7 @@ Die Voraussetzungen sind einfach nur genial! Wir haben eine super Location, ein 
 </ul>
 Folgende Fun-Turniere werden ohne Preispool ausgetragen:
 <ul class="turnierliste">
+<li>DotA2 5v5</li>
 <li>Call of Duty 4 5v5</li>
 <li>Blur ffa</li>
 <li>Überraschungsturnier</li>		

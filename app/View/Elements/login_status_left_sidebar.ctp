@@ -16,13 +16,13 @@
 			echo '<hr/>';
          
          }
-          if($userRegistr[0]['Registrations']['paid'] == 1){
+          if($userRegistr[0]['Registrations']['paid'] == 0){
             echo __('Wir haben noch keine Zahlung von dir erhalten.');
 			echo '<br/>';
          echo $this->Html->link(__('Zahlungsinfo'), array('controller' => 'event', 'action' => 'index', '#' => 'zahlungsdetails'));
             echo '<br/>';
 			echo '<hr/>';
-          }elseif($userRegistr[0]['Registrations']['paid'] == 0){
+          }elseif($userRegistr[0]['Registrations']['paid'] == 1){
             echo __('Deine Zahlung ist bei uns angekommen!');
             echo '<br/>';
 			echo '<hr/>';
@@ -63,7 +63,9 @@
         && !empty($userRegistr) ){
 			if($userRegistr[0]['Registrations']['registered'] == 1){
 				echo __('Dein Ticketpreis: ',true) .
-				$totalticketprice . __('Chf.-',true);
+				$totalticketprice . __('Chf',true);
+        echo '<br />';
+        echo $this->Html->link('Zahlungsdetails',array('controller' => 'event', 'action' => 'index', '#' => 'zahlungsdetails')); 
 				echo '<hr/>';
 				echo '<br />';
 			}

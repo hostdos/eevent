@@ -96,6 +96,9 @@ function validatePrice() {
 	var lol = parseInt($('#registrationsPriceLol').val());
 	var go = parseInt($('#registrationsPriceCsgo').val());
 	var sc = parseInt($('#registrationsPriceHots').val());
+	var lol = (-1)*lol.toFixed(0);
+	var go = (-1)*go.toFixed(0);
+	var sc = (-1)*sc.toFixed(0);
 	var total = lol + go + sc;
 
 	if(total == 10){
